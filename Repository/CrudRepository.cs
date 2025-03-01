@@ -1,87 +1,78 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Configuration;
+﻿using IRepository;
 using Microsoft.EntityFrameworkCore;
-using DbModel.ElRancho;
-using IRepository;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class CrudRepository<TEntity> : ICrudRepository<TEntity> where TEntity : class
+    public class CrudRepository<T> : ICrudRepository<T> where T : class
     {
-        private readonly IHttpContextAccessor _httpContextAccessor;
-        private readonly IConfiguration _configuration;
-        private readonly ElRanchoDbContext _db;
-        protected readonly DbSet<TEntity> dbSet;
+        private readonly DbContext _context;
+        private readonly DbSet<T> _dbSet;
 
-        public CrudRepository(IHttpContextAccessor httpContextAccessor, IConfiguration configuration, DbContextOptions<ElRanchoDbContext> options)
+        public CrudRepository(DbContext context)
         {
-            _configuration = configuration;
-            _httpContextAccessor = httpContextAccessor;
-            _db = new ElRanchoDbContext(options);
-            this.dbSet = _db.Set<TEntity>();
+            _context = context ?? throw new ArgumentNullException(nameof(context));
+            _dbSet = _context.Set<T>();
         }
 
-        public async Task<List<TEntity>> GetAll()
+        // ---------------------- OBTENER DATOS ----------------------
+        public async Task<T> GetByIdAsync(object id)
+            => await _dbSet.FindAsync(id);
+
+        public async Task<List<T>> GetAllAsync()
+            => await _dbSet.ToListAsync();
+
+        public async Task<List<T>> FindAsync(Expression<Func<T, bool>> predicate)
+            => await _dbSet.Where(predicate).ToListAsync();
+
+        // ---------------------- AGREGAR ----------------------
+        public async Task AddAsync(T entity)
+            => await _dbSet.AddAsync(entity);
+
+        public async Task AddRangeAsync(IEnumerable<T> entities)
+            => await _dbSet.AddRangeAsync(entities);
+
+        // ---------------------- ACTUALIZAR ----------------------
+        public async Task UpdateAsync(T entity)
         {
-            return await dbSet.ToListAsync();
+            _dbSet.Attach(entity);
+            _context.Entry(entity).State = EntityState.Modified;
         }
 
-        public async Task<TEntity> GetById(object id)
-        {
-            return await dbSet.FindAsync(id);
-        }
+        public async Task UpdateRangeAsync(IEnumerable<T> entities)
+            => _dbSet.UpdateRange(entities);
 
-        public async Task<TEntity> Create(TEntity entity)
-        {
-            dbSet.Add(entity);
-            await _db.SaveChangesAsync();
-            return entity;
-        }
+        // ---------------------- ELIMINAR ----------------------
+        public async Task DeleteAsync(T entity)
+            => _dbSet.Remove(entity);
 
-        public async Task<TEntity> Update(TEntity entity)
-        {
-            dbSet.Update(entity);
-            await _db.SaveChangesAsync();
-            return entity;
-        }
+        public async Task DeleteRangeAsync(IEnumerable<T> entities)
+            => _dbSet.RemoveRange(entities);
 
-        public async Task<int> Delete(object id)
+        // ---------------------- TRANSACCIONES ----------------------
+        public async Task<int> SaveChangesAsync()
+            => await _context.SaveChangesAsync();
+
+        // ---------------------- DISPOSE ----------------------
+        private bool _disposed = false;
+
+        protected virtual void Dispose(bool disposing)
         {
-            var entity = await dbSet.FindAsync(id);
-            if (entity != null)
+            if (!_disposed && disposing)
             {
-                dbSet.Remove(entity);
-                return await _db.SaveChangesAsync();
+                _context.Dispose();
             }
-            return 0;
-        }
-
-        public async Task<int> DeleteMultipleItems(List<TEntity> lista)
-        {
-            dbSet.RemoveRange(lista);
-            return await _db.SaveChangesAsync();
-        }
-
-        public async Task<List<TEntity>> InsertMultiple(List<TEntity> lista)
-        {
-            dbSet.AddRange(lista);
-            await _db.SaveChangesAsync();
-            return lista;
-        }
-
-        public async Task<List<TEntity>> UpdateMultiple(List<TEntity> lista)
-        {
-            dbSet.UpdateRange(lista);
-            await _db.SaveChangesAsync();
-            return lista;
+            _disposed = true;
         }
 
         public void Dispose()
         {
-            _db.Dispose();
+            Dispose(true);
+            GC.SuppressFinalize(this);
         }
     }
 }

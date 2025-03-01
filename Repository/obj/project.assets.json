@@ -979,19 +979,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\edgardo\\.nuget\\packages\\": {}
+    "/home/edgardo/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ElRancho\\Repository\\Repository.csproj",
+      "projectUniqueName": "/home/edgardo/Documentos/finalbackElRancho/Repository/Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "D:\\ElRancho\\Repository\\Repository.csproj",
-      "packagesPath": "C:\\Users\\edgardo\\.nuget\\packages\\",
-      "outputPath": "D:\\ElRancho\\Repository\\obj\\",
+      "projectPath": "/home/edgardo/Documentos/finalbackElRancho/Repository/Repository.csproj",
+      "packagesPath": "/home/edgardo/.nuget/packages/",
+      "outputPath": "/home/edgardo/Documentos/finalbackElRancho/Repository/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\edgardo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/edgardo/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1003,11 +1003,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\ElRancho\\DbModel\\DbModel.csproj": {
-              "projectPath": "D:\\ElRancho\\DbModel\\DbModel.csproj"
+            "/home/edgardo/Documentos/finalbackElRancho/DbModel/DbModel.csproj": {
+              "projectPath": "/home/edgardo/Documentos/finalbackElRancho/DbModel/DbModel.csproj"
             },
-            "D:\\ElRancho\\IRepository\\IRepository.csproj": {
-              "projectPath": "D:\\ElRancho\\IRepository\\IRepository.csproj"
+            "/home/edgardo/Documentos/finalbackElRancho/IRepository/IRepository.csproj": {
+              "projectPath": "/home/edgardo/Documentos/finalbackElRancho/IRepository/IRepository.csproj"
             }
           }
         }
@@ -1016,11 +1016,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1047,12 +1042,18 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.13, 8.0.13]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.113/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

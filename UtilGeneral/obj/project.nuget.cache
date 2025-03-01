@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QGA2dY+zE9o=",
+  "dgSpecHash": "qGjN7/Fr8MFt5B3DwQ+pT1XPJhHfDqc8KDbs/34WyqErCsdY3ydsqmDVgmjNPN1hN/G4rAmvc7+1tvy2rwK1yA==",
   "success": true,
-  "projectFilePath": "D:\\ElRancho\\UtilGeneral\\UtilGeneral.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/UtilGeneral.csproj",
+  "expectedPackageFiles": [
+    "/home/edgardo/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.13/microsoft.aspnetcore.app.ref.8.0.13.nupkg.sha512"
+  ],
   "logs": []
 }

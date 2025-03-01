@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Bussnies;
+using Business;
 using IBussnies;
 using Microsoft.AspNetCore.Mvc;
 using Model.Request;
@@ -12,101 +12,79 @@ namespace YourNamespace.Controllers
     [ApiController]
     public class AdministradorController : ControllerBase
     {
-        private readonly IAdministradorBussnies _AdministradorBussnies; // Cambia a IAdministradorBussnies
+        private readonly IAdministradorBusiness _administradorBusiness; // Nombre correcto
 
-        public AdministradorController(IAdministradorBussnies AdministradorBussnies)
+        public AdministradorController(IAdministradorBusiness administradorBusiness)
         {
-            _AdministradorBussnies = AdministradorBussnies;
+            _administradorBusiness = administradorBusiness;
         }
 
         [HttpGet]
         public async Task<ActionResult<List<AdministradorResponse>>> GetAll()
         {
-            var Administradors = await _AdministradorBussnies.GetAll();
-            return Ok(Administradors);
+            var administradores = await _administradorBusiness.GetAll();
+            return Ok(administradores);
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<AdministradorResponse>> GetById(int id)
         {
-            var Administrador = await _AdministradorBussnies.GetById(id);
-            if (Administrador == null)
-            {
-                return NotFound();
-            }
-            return Ok(Administrador);
+            var administrador = await _administradorBusiness.GetById(id);
+            if (administrador == null) return NotFound();
+            return Ok(administrador);
         }
 
-        [HttpGet("name/{AdministradorName}")]
-        public async Task<ActionResult<AdministradorResponse?>> GetByName(string AdministradorName)
+        [HttpGet("name/{name}")]
+        public async Task<ActionResult<AdministradorResponse?>> GetByName(string name)
         {
-            var Administrador = await _AdministradorBussnies.GetByName(AdministradorName);
-            if (Administrador == null)
-            {
-                return NotFound();
-            }
-            return Ok(Administrador);
+            var administrador = await _administradorBusiness.GetByName(name);
+            if (administrador == null) return NotFound();
+            return Ok(administrador);
         }
 
         [HttpPost]
         public async Task<ActionResult<AdministradorResponse>> Create(AdministradorRequest request)
         {
-            var Administrador = await _AdministradorBussnies.Create(request);
-            return CreatedAtAction(nameof(GetById), new { id = Administrador.Id }, Administrador);
+            var administrador = await _administradorBusiness.Create(request);
+            return CreatedAtAction(nameof(GetById), new { id = administrador.Id }, administrador);
         }
 
         [HttpPost("multiple")]
         public async Task<ActionResult<List<AdministradorResponse>>> CreateMultiple(List<AdministradorRequest> request)
         {
-            var Administradors = await _AdministradorBussnies.CreateMultiple(request);
-            return CreatedAtAction(nameof(GetAll), Administradors);
+            var administradores = await _administradorBusiness.CreateMultiple(request);
+            return CreatedAtAction(nameof(GetAll), administradores);
         }
 
         [HttpPut("{id}")]
         public async Task<ActionResult<AdministradorResponse>> Update(int id, AdministradorRequest request)
         {
-            if (id != request.Id)
-            {
-                return BadRequest();
-            }
-
-            var updatedAdministrador = await _AdministradorBussnies.Update(request);
-            if (updatedAdministrador == null)
-            {
-                return NotFound();
-            }
-
+            if (id != request.Id) return BadRequest();
+            var updatedAdministrador = await _administradorBusiness.Update(request);
+            if (updatedAdministrador == null) return NotFound();
             return Ok(updatedAdministrador);
         }
 
         [HttpPut("multiple")]
         public async Task<ActionResult<List<AdministradorResponse>>> UpdateMultiple(List<AdministradorRequest> request)
         {
-            var updatedAdministradors = await _AdministradorBussnies.UpdateMultiple(request);
+            var updatedAdministradors = await _administradorBusiness.UpdateMultiple(request);
             return Ok(updatedAdministradors);
         }
 
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteById(int id)
         {
-            var result = await _AdministradorBussnies.DeleteById(id);
-            if (result == 0)
-            {
-                return NotFound();
-            }
-
+            var result = await _administradorBusiness.DeleteById(id);
+            if (result == 0) return NotFound();
             return NoContent();
         }
 
         [HttpDelete("multiple")]
         public async Task<ActionResult> DeleteMultiple(List<AdministradorRequest> request)
         {
-            var result = await _AdministradorBussnies.DeleteMultiple(request);
-            if (result == 0)
-            {
-                return NotFound();
-            }
-
+            var result = await _administradorBusiness.DeleteMultiple(request);
+            if (result == 0) return NotFound();
             return NoContent();
         }
     }

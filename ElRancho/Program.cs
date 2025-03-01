@@ -1,4 +1,5 @@
-using Bussnies;
+using Business;
+using Business.Profiles; // Añade este using para los perfiles de AutoMapper
 using DbModel.ElRancho;
 using IBussnies;
 using IRepository;
@@ -7,30 +8,43 @@ using Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// =============================================
+// 1. Configuración de servicios
+// =============================================
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-string con = "Data Source=DESKTOP-9N28ARR;Initial Catalog=FibertelDBase;Integrated Security=True;TrustServerCertificate=True";
-
-// Configuración del DbContext
-builder.Services.AddDbContext<ElRanchoDbContext>(options =>
-    options.UseSqlServer(con, b => b.MigrationsAssembly("FibertelApiRest"))
+// =============================================
+// 2. Configuración de la base de datos (SQLite)
+// =============================================
+const string connectionString = "Data Source=ElRancho.db";
+builder.Services.AddDbContext<ElRanchoDbContext>(options => 
+    options.UseSqlite(
+        connectionString,
+        b => b.MigrationsAssembly("ElRancho") // Asegúrate que el nombre del proyecto sea correcto
+    )
 );
 
-builder.Services.AddHttpContextAccessor();
-builder.Services.AddAutoMapper(typeof(Program)); // Asegúrate de usar la clase correcta aquí
+// =============================================
+// 3. Configuración de AutoMapper (CORREGIDO)
+// =============================================
+builder.Services.AddAutoMapper(typeof(AdministradorProfile)); // Usa el perfil específico
 
-// Registrar el repositorio genérico
-builder.Services.AddScoped(typeof(ICrudRepository<Administrador>), typeof(AdministradorRepository));
+// =============================================
+// 4. Registro de dependencias
+// =============================================
+builder.Services.AddScoped<ICrudRepository<Administrador>, AdministradorRepository>();
+builder.Services.AddScoped<IAdministradorBusiness, AdministradorBusiness>();
 
-// Registrar las capas de negocio
-builder.Services.AddScoped<IAdministradorBussnies, AdministradorBussnies>();
-
+// =============================================
+// 5. Construcción de la aplicación
+// =============================================
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// =============================================
+// 6. Configuración del pipeline HTTP
+// =============================================
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -40,5 +54,14 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
+
+// =============================================
+// 7. Aplicar migraciones automáticamente (OPCIONAL)
+// =============================================
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<ElRanchoDbContext>();
+    dbContext.Database.Migrate(); // Aplica migraciones pendientes
+}
 
 app.Run();

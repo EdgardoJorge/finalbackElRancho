@@ -1,15 +1,21 @@
-﻿
+﻿using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
+
 namespace IRepository
 {
-    public interface ICrudRepository<T>: IDisposable where T : class
+    public interface ICrudRepository<T> : IDisposable where T : class
     {
-        Task<List<T>> GetAll();
-        Task<T> GetById(object id);
-        Task<T> Create(T entity);
-        Task<T> Update(T entity);
-        Task<int> Delete(object id);
-        Task<int> DeleteMultipleItems(List<T> lista);
-        Task<List<T>> InsertMultiple(List<T> lista);
-        Task<List<T>> UpdateMultiple(List<T> lista);
+        // Métodos ASÍNCRONOS
+        Task<T> GetByIdAsync(object id);
+        Task<List<T>> GetAllAsync();
+        Task<List<T>> FindAsync(Expression<Func<T, bool>> predicate);
+        Task AddAsync(T entity);
+        Task AddRangeAsync(IEnumerable<T> entities);
+        Task UpdateAsync(T entity);
+        Task UpdateRangeAsync(IEnumerable<T> entities);
+        Task DeleteAsync(T entity);
+        Task DeleteRangeAsync(IEnumerable<T> entities);
+        Task<int> SaveChangesAsync();
     }
 }

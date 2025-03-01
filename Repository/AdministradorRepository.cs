@@ -1,86 +1,56 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 using DbModel.ElRancho;
 using IRepository;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 
 namespace Repository
 {
     public class AdministradorRepository : ICrudRepository<Administrador>
     {
-        private readonly IHttpContextAccessor _httpContextAccessor;
-        private readonly IConfiguration _configuration;
-        private readonly DbContext _context;
+        private readonly ElRanchoDbContext _context;
 
-        public AdministradorRepository(IHttpContextAccessor httpContextAccessor, IConfiguration configuration, DbContext context)
+        // Constructor simplificado (sin parámetros innecesarios)
+        public AdministradorRepository(ElRanchoDbContext context)
         {
-            _httpContextAccessor = httpContextAccessor;
-            _configuration = configuration;
             _context = context;
         }
 
-        public async Task<List<Administrador>> GetAll()
-        {
-            return await _context.Set<Administrador>().ToListAsync();
-        }
+        // ---------------------- MÉTODOS ASÍNCRONOS ----------------------
+        public async Task<Administrador> GetByIdAsync(object id)
+            => await _context.Administradores.FindAsync(id);
 
-        public async Task<Administrador> GetById(object id)
-        {
-#pragma warning disable CS8603 // Possible null reference return.
-            return await _context.Set<Administrador>().FindAsync(id);
-#pragma warning restore CS8603 // Possible null reference return.
-        }
+        public async Task<List<Administrador>> GetAllAsync()
+            => await _context.Administradores.ToListAsync();
 
-        public async Task<Administrador> Create(Administrador entity)
-        {
-            _context.Set<Administrador>().Add(entity);
-            await _context.SaveChangesAsync();
-            return entity;
-        }
+        public async Task<List<Administrador>> FindAsync(Expression<Func<Administrador, bool>> predicate)
+            => await _context.Administradores.Where(predicate).ToListAsync();
 
-        public async Task<Administrador> Update(Administrador entity)
-        {
-            _context.Set<Administrador>().Update(entity);
-            await _context.SaveChangesAsync();
-            return entity;
-        }
+        public async Task AddAsync(Administrador entity)
+            => await _context.Administradores.AddAsync(entity);
 
-        public async Task<int> Delete(object id)
-        {
-            var admin = await _context.Set<Administrador>().FindAsync(id);
-            if (admin != null)
-            {
-                _context.Set<Administrador>().Remove(admin);
-                return await _context.SaveChangesAsync();
-            }
-            return 0;
-        }
+        public async Task AddRangeAsync(IEnumerable<Administrador> entities)
+            => await _context.Administradores.AddRangeAsync(entities);
 
-        public async Task<int> DeleteMultipleItems(List<Administrador> lista)
-        {
-            _context.Set<Administrador>().RemoveRange(lista);
-            return await _context.SaveChangesAsync();
-        }
+        public async Task UpdateAsync(Administrador entity)
+            => _context.Administradores.Update(entity);
 
-        public async Task<List<Administrador>> InsertMultiple(List<Administrador> lista)
-        {
-            _context.Set<Administrador>().AddRange(lista);
-            await _context.SaveChangesAsync();
-            return lista;
-        }
+        public async Task UpdateRangeAsync(IEnumerable<Administrador> entities)
+            => _context.Administradores.UpdateRange(entities);
 
-        public async Task<List<Administrador>> UpdateMultiple(List<Administrador> lista)
-        {
-            _context.Set<Administrador>().UpdateRange(lista);
-            await _context.SaveChangesAsync();
-            return lista;
-        }
+        public async Task DeleteAsync(Administrador entity)
+            => _context.Administradores.Remove(entity);
 
+        public async Task DeleteRangeAsync(IEnumerable<Administrador> entities)
+            => _context.Administradores.RemoveRange(entities);
+
+        public async Task<int> SaveChangesAsync()
+            => await _context.SaveChangesAsync();
+
+        // ---------------------- DISPOSE ----------------------
         public void Dispose()
-        {
-            _context?.Dispose();
-        }
+            => _context.Dispose();
     }
 }

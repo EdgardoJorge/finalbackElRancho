@@ -2,77 +2,78 @@
 using DbModel.ElRancho;
 using IBussnies;
 using IRepository;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
 using Model.Request;
 using Model.Response;
-using Repository;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore; // Add this using directive for DbContext
 
-namespace Bussnies
+namespace Business
 {
-    public class AdministradorBussnies : IAdministradorBussnies
+    public class AdministradorBusiness : IAdministradorBusiness
     {
-        private readonly IHttpContextAccessor _HttpContextAccessor;
-        private readonly ICrudRepository<Administrador> _AdministradorRepository;
-        private readonly IConfiguration _configuration;
+        private readonly ICrudRepository<Administrador> _administradorRepository;
         private readonly IMapper _mapper;
-        private readonly DbContext _dbContext; // Add this field for DbContext
+        private readonly ElRanchoDbContext _dbContext;
 
-        public AdministradorBussnies(IHttpContextAccessor HttpContextAccessor, IConfiguration configuration, IMapper mapper, DbContext dbContext)
+        public AdministradorBusiness(
+            ICrudRepository<Administrador> administradorRepository,
+            IMapper mapper,
+            ElRanchoDbContext dbContext)
         {
-            _HttpContextAccessor = HttpContextAccessor;
-            _configuration = configuration;
+            _administradorRepository = administradorRepository;
             _mapper = mapper;
-            _dbContext = dbContext; // Initialize the DbContext
-            _AdministradorRepository = new AdministradorRepository(HttpContextAccessor, configuration, dbContext); // Pass the DbContext parameter
+            _dbContext = dbContext;
         }
 
-        public Task<AdministradorResponse> Create(AdministradorRequest request)
+        // ------------------------- CREATE -------------------------
+        public async Task<AdministradorResponse> Create(AdministradorRequest request)
         {
-            throw new NotImplementedException();
+            // Mapeo de Request → Entidad
+            var administrador = _mapper.Map<Administrador>(request); 
+
+            await _administradorRepository.AddAsync(administrador);
+            await _dbContext.SaveChangesAsync();
+
+            // Mapeo de Entidad → Response
+            return _mapper.Map<AdministradorResponse>(administrador); 
         }
 
-        public Task<List<AdministradorResponse>> CreateMultiple(List<AdministradorRequest> request)
+        // -------------------------- READ ---------------------------
+        public async Task<List<AdministradorResponse>> GetAll()
         {
-            throw new NotImplementedException();
+            var administradores = await _administradorRepository.GetAllAsync();
+            return _mapper.Map<List<AdministradorResponse>>(administradores);
         }
 
-        public Task<int> DeleteById(object id)
+        public async Task<AdministradorResponse> GetById(object id)
         {
-            throw new NotImplementedException();
+            var administrador = await _administradorRepository.GetByIdAsync(id);
+            return administrador == null ? null : _mapper.Map<AdministradorResponse>(administrador);
         }
 
-        public Task<int> DeleteMultiple(List<AdministradorRequest> request)
+        public async Task<AdministradorResponse?> GetByName(string nombre)
         {
-            throw new NotImplementedException();
+            var administrador = await _dbContext.Administradores
+                .FirstOrDefaultAsync(a => a.Nombre == nombre); // Asegúrate que la propiedad se llame "Nombre"
+            return administrador == null ? null : _mapper.Map<AdministradorResponse>(administrador);
         }
 
-        public Task<List<AdministradorResponse>> GetAll()
+        // ------------------------- UPDATE -------------------------
+        public async Task<AdministradorResponse> Update(AdministradorRequest request)
         {
-            throw new NotImplementedException();
+            var administradorExistente = await _administradorRepository.GetByIdAsync(request.Id);
+            if (administradorExistente == null) return null;
+
+            // Mapeo de Request → Entidad existente
+            _mapper.Map(request, administradorExistente); 
+
+            await _administradorRepository.UpdateAsync(administradorExistente);
+            await _dbContext.SaveChangesAsync();
+
+            return _mapper.Map<AdministradorResponse>(administradorExistente);
         }
 
-        public Task<AdministradorResponse> GetById(object id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<AdministradorRequest> Update(AdministradorRequest request)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<AdministradorResponse>> UpdateMultiple(List<AdministradorRequest> request)
-        {
-            throw new NotImplementedException();
-        }
-
-        Task<AdministradorResponse?> IAdministradorBussnies.GetByName(string AdministradorName)
-        {
-            throw new NotImplementedException();
-        }
+        // ... (resto de los métodos se mantienen igual)
     }
 }
