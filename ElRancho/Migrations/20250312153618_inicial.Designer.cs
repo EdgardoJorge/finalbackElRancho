@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ElRancho.Migrations
 {
     [DbContext(typeof(ElRanchoDbContext))]
-    [Migration("20250228200452_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250312153618_inicial")]
+    partial class inicial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -56,7 +56,7 @@ namespace ElRancho.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Administrador", "persona");
+                    b.ToTable("Administrador", "Persona");
                 });
 
             modelBuilder.Entity("DbModel.ElRancho.Banner", b =>

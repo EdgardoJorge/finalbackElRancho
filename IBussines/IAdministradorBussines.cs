@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Model.Request;
 using Model.Response;
 
-namespace IBussnies // Asegúrate de que el namespace sea correcto
+namespace IBusiness // Asegúrate de que el namespace sea correcto
 {
     public interface IAdministradorBusiness // Corrige el nombre a "Business"
     {

@@ -37,21 +37,30 @@ namespace Repository
             => await _dbSet.AddRangeAsync(entities);
 
         // ---------------------- ACTUALIZAR ----------------------
-        public async Task UpdateAsync(T entity)
+        public Task UpdateAsync(T entity)
         {
-            _dbSet.Attach(entity);
-            _context.Entry(entity).State = EntityState.Modified;
+            _dbSet.Update(entity);
+            return Task.CompletedTask;
         }
 
-        public async Task UpdateRangeAsync(IEnumerable<T> entities)
-            => _dbSet.UpdateRange(entities);
+        public Task UpdateRangeAsync(IEnumerable<T> entities)
+        {
+            _dbSet.UpdateRange(entities);
+            return Task.CompletedTask;
+        }
 
         // ---------------------- ELIMINAR ----------------------
-        public async Task DeleteAsync(T entity)
-            => _dbSet.Remove(entity);
+        public Task DeleteAsync(T entity)
+        {
+            _dbSet.Remove(entity);
+            return Task.CompletedTask;
+        }
 
-        public async Task DeleteRangeAsync(IEnumerable<T> entities)
-            => _dbSet.RemoveRange(entities);
+        public Task DeleteRangeAsync(IEnumerable<T> entities)
+        {
+            _dbSet.RemoveRange(entities);
+            return Task.CompletedTask;
+        }
 
         // ---------------------- TRANSACCIONES ----------------------
         public async Task<int> SaveChangesAsync()

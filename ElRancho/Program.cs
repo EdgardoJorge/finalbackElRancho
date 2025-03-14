@@ -1,7 +1,7 @@
 using Business;
-using Business.Profiles; // Añade este using para los perfiles de AutoMapper
+using Business.Profiles; // Perfiles de AutoMapper
 using DbModel.ElRancho;
-using IBussnies;
+using IBusiness;
 using IRepository;
 using Microsoft.EntityFrameworkCore;
 using Repository;
@@ -19,23 +19,28 @@ builder.Services.AddSwaggerGen();
 // 2. Configuración de la base de datos (SQLite)
 // =============================================
 const string connectionString = "Data Source=ElRancho.db";
-builder.Services.AddDbContext<ElRanchoDbContext>(options => 
+builder.Services.AddDbContext<ElRanchoDbContext>(options =>
     options.UseSqlite(
         connectionString,
-        b => b.MigrationsAssembly("ElRancho") // Asegúrate que el nombre del proyecto sea correcto
+        b => b.MigrationsAssembly("ElRancho") // Asegúrate de que el nombre del proyecto sea correcto
     )
 );
 
 // =============================================
-// 3. Configuración de AutoMapper (CORREGIDO)
+// 3. Configuración de AutoMapper
 // =============================================
-builder.Services.AddAutoMapper(typeof(AdministradorProfile)); // Usa el perfil específico
+builder.Services.AddAutoMapper(typeof(AdministradorProfile), typeof(BannerProfile));
 
 // =============================================
 // 4. Registro de dependencias
 // =============================================
-builder.Services.AddScoped<ICrudRepository<Administrador>, AdministradorRepository>();
+// Registrar CrudRepository para cualquier entidad genérica
+builder.Services.AddScoped(typeof(ICrudRepository<>), typeof(CrudRepository<>));
+builder.Services.AddScoped(typeof(CrudRepository<>)); // Registro sin la interfaz
+
+// Registrar servicios específicos
 builder.Services.AddScoped<IAdministradorBusiness, AdministradorBusiness>();
+builder.Services.AddScoped<IBannerBusiness, BannerBusiness>();
 
 // =============================================
 // 5. Construcción de la aplicación
@@ -61,7 +66,14 @@ app.MapControllers();
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<ElRanchoDbContext>();
-    dbContext.Database.Migrate(); // Aplica migraciones pendientes
+    try
+    {
+        dbContext.Database.Migrate(); // Aplica migraciones pendientes
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error al aplicar migraciones: {ex.Message}");
+    }
 }
 
 app.Run();

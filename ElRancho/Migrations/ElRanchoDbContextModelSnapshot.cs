@@ -53,7 +53,7 @@ namespace ElRancho.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Administrador", "persona");
+                    b.ToTable("Administrador", "Persona");
                 });
 
             modelBuilder.Entity("DbModel.ElRancho.Banner", b =>

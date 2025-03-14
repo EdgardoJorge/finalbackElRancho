@@ -6,16 +6,19 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ElRancho.Migrations
 {
     /// <inheritdoc />
-    public partial class Inicial : Migration
+    public partial class inicial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.EnsureSchema(
-                name: "persona");
+                name: "Persona");
 
             migrationBuilder.EnsureSchema(
                 name: "producto");
+
+            migrationBuilder.EnsureSchema(
+                name: "persona");
 
             migrationBuilder.EnsureSchema(
                 name: "pedido");
@@ -25,18 +28,18 @@ namespace ElRancho.Migrations
 
             migrationBuilder.CreateTable(
                 name: "Administrador",
-                schema: "persona",
+                schema: "Persona",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombres = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ApellidoPaterno = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ApellidoMaterno = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DNI = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    TelefonoMovil = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CorreoElectronico = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Cargo = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Nombres = table.Column<string>(type: "TEXT", nullable: false),
+                    ApellidoPaterno = table.Column<string>(type: "TEXT", nullable: false),
+                    ApellidoMaterno = table.Column<string>(type: "TEXT", nullable: false),
+                    DNI = table.Column<string>(type: "TEXT", nullable: false),
+                    TelefonoMovil = table.Column<string>(type: "TEXT", nullable: false),
+                    CorreoElectronico = table.Column<string>(type: "TEXT", nullable: false),
+                    Cargo = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -48,9 +51,9 @@ namespace ElRancho.Migrations
                 schema: "producto",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    CategoriaNombre = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    CategoriaNombre = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -62,18 +65,18 @@ namespace ElRancho.Migrations
                 schema: "persona",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombres = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ApellidoPaterno = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ApellidoMaterno = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DNI = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false),
-                    RUC = table.Column<string>(type: "nvarchar(11)", maxLength: 11, nullable: false),
-                    TelefonoMovil = table.Column<string>(type: "nvarchar(9)", maxLength: 9, nullable: false),
-                    TelefonoFijo = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: true),
-                    CorreoElectronico = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Direccion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CodigoPostal = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Nombres = table.Column<string>(type: "TEXT", nullable: false),
+                    ApellidoPaterno = table.Column<string>(type: "TEXT", nullable: false),
+                    ApellidoMaterno = table.Column<string>(type: "TEXT", nullable: false),
+                    DNI = table.Column<string>(type: "TEXT", maxLength: 8, nullable: false),
+                    RUC = table.Column<string>(type: "TEXT", maxLength: 11, nullable: false),
+                    TelefonoMovil = table.Column<string>(type: "TEXT", maxLength: 9, nullable: false),
+                    TelefonoFijo = table.Column<string>(type: "TEXT", maxLength: 10, nullable: true),
+                    CorreoElectronico = table.Column<string>(type: "TEXT", nullable: false),
+                    Direccion = table.Column<string>(type: "TEXT", nullable: false),
+                    CodigoPostal = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -85,22 +88,22 @@ namespace ElRancho.Migrations
                 schema: "error",
                 columns: table => new
                 {
-                    id = table.Column<long>(type: "bigint", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    url = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    controller = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
-                    ip = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
-                    method = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
-                    user_agent = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: true),
-                    host = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    class_component = table.Column<string>(type: "varchar(100)", unicode: false, maxLength: 100, nullable: true),
-                    function_name = table.Column<string>(type: "varchar(100)", unicode: false, maxLength: 100, nullable: true),
-                    line_number = table.Column<int>(type: "int", nullable: false),
-                    error = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    StackTrace = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    status = table.Column<short>(type: "smallint", nullable: false),
-                    request = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    error_code = table.Column<int>(type: "int", nullable: false)
+                    id = table.Column<long>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    url = table.Column<string>(type: "TEXT", nullable: true),
+                    controller = table.Column<string>(type: "TEXT", maxLength: 200, nullable: true),
+                    ip = table.Column<string>(type: "TEXT", maxLength: 100, nullable: true),
+                    method = table.Column<string>(type: "TEXT", maxLength: 20, nullable: true),
+                    user_agent = table.Column<string>(type: "TEXT", maxLength: 150, nullable: true),
+                    host = table.Column<string>(type: "TEXT", nullable: true),
+                    class_component = table.Column<string>(type: "TEXT", unicode: false, maxLength: 100, nullable: true),
+                    function_name = table.Column<string>(type: "TEXT", unicode: false, maxLength: 100, nullable: true),
+                    line_number = table.Column<int>(type: "INTEGER", nullable: false),
+                    error = table.Column<string>(type: "TEXT", nullable: true),
+                    StackTrace = table.Column<string>(type: "TEXT", nullable: true),
+                    status = table.Column<short>(type: "INTEGER", nullable: false),
+                    request = table.Column<string>(type: "TEXT", nullable: true),
+                    error_code = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -112,9 +115,9 @@ namespace ElRancho.Migrations
                 schema: "pedido",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Estado = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Estado = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -125,12 +128,12 @@ namespace ElRancho.Migrations
                 name: "Evento",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    TipoEvento = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FechaEvento = table.Column<DateOnly>(type: "date", nullable: false),
-                    Ubicacion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    AdministradorId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    TipoEvento = table.Column<string>(type: "TEXT", nullable: false),
+                    FechaEvento = table.Column<DateOnly>(type: "TEXT", nullable: false),
+                    Ubicacion = table.Column<string>(type: "TEXT", nullable: false),
+                    AdministradorId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -142,13 +145,13 @@ namespace ElRancho.Migrations
                 schema: "pedido",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    FechaPedido = table.Column<DateOnly>(type: "date", nullable: false),
-                    Total = table.Column<double>(type: "float", nullable: false),
-                    Direccion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CodigoPostal = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FechaRecojo = table.Column<DateOnly>(type: "date", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    FechaPedido = table.Column<DateOnly>(type: "TEXT", nullable: false),
+                    Total = table.Column<double>(type: "REAL", nullable: false),
+                    Direccion = table.Column<string>(type: "TEXT", nullable: false),
+                    CodigoPostal = table.Column<string>(type: "TEXT", nullable: false),
+                    FechaRecojo = table.Column<DateOnly>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -160,15 +163,15 @@ namespace ElRancho.Migrations
                 schema: "producto",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Precio = table.Column<double>(type: "float", nullable: false),
-                    Activo = table.Column<bool>(type: "bit", nullable: false),
-                    Imagen = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Imagen2 = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Imagen3 = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Nombre = table.Column<string>(type: "TEXT", nullable: false),
+                    Descripcion = table.Column<string>(type: "TEXT", nullable: false),
+                    Precio = table.Column<double>(type: "REAL", nullable: false),
+                    Activo = table.Column<bool>(type: "INTEGER", nullable: false),
+                    Imagen = table.Column<string>(type: "TEXT", nullable: false),
+                    Imagen2 = table.Column<string>(type: "TEXT", nullable: false),
+                    Imagen3 = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -180,9 +183,9 @@ namespace ElRancho.Migrations
                 schema: "pedido",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    FormaEntrega = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    FormaEntrega = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -194,14 +197,14 @@ namespace ElRancho.Migrations
                 schema: "producto",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Titulo = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UrlImagen = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Redireccion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Activo = table.Column<bool>(type: "bit", nullable: false),
-                    ProductoId = table.Column<int>(type: "int", nullable: false),
-                    CategoriaId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Titulo = table.Column<string>(type: "TEXT", nullable: false),
+                    UrlImagen = table.Column<string>(type: "TEXT", nullable: false),
+                    Redireccion = table.Column<string>(type: "TEXT", nullable: false),
+                    Activo = table.Column<bool>(type: "INTEGER", nullable: false),
+                    ProductoId = table.Column<int>(type: "INTEGER", nullable: false),
+                    CategoriaId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -227,13 +230,13 @@ namespace ElRancho.Migrations
                 schema: "pedido",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Cantidad = table.Column<int>(type: "int", nullable: false),
-                    PrecioUnitario = table.Column<double>(type: "float", nullable: false),
-                    PrecioTotal = table.Column<double>(type: "float", nullable: false),
-                    ProductoId = table.Column<int>(type: "int", nullable: false),
-                    PedidoId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Cantidad = table.Column<int>(type: "INTEGER", nullable: false),
+                    PrecioUnitario = table.Column<double>(type: "REAL", nullable: false),
+                    PrecioTotal = table.Column<double>(type: "REAL", nullable: false),
+                    ProductoId = table.Column<int>(type: "INTEGER", nullable: false),
+                    PedidoId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -259,15 +262,15 @@ namespace ElRancho.Migrations
                 schema: "producto",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    TituloOferta = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FechaInicio = table.Column<DateOnly>(type: "date", nullable: false),
-                    FechaFin = table.Column<DateOnly>(type: "date", nullable: false),
-                    Activo = table.Column<bool>(type: "bit", nullable: false),
-                    ProductoId = table.Column<int>(type: "int", nullable: false),
-                    CategoriaId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    TituloOferta = table.Column<string>(type: "TEXT", nullable: false),
+                    Descripcion = table.Column<string>(type: "TEXT", nullable: false),
+                    FechaInicio = table.Column<DateOnly>(type: "TEXT", nullable: false),
+                    FechaFin = table.Column<DateOnly>(type: "TEXT", nullable: false),
+                    Activo = table.Column<bool>(type: "INTEGER", nullable: false),
+                    ProductoId = table.Column<int>(type: "INTEGER", nullable: false),
+                    CategoriaId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -330,7 +333,7 @@ namespace ElRancho.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Administrador",
-                schema: "persona");
+                schema: "Persona");
 
             migrationBuilder.DropTable(
                 name: "banner",

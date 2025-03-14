@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Business;
-using IBussnies;
+using IBusiness;
 using Microsoft.AspNetCore.Mvc;
 using Model.Request;
 using Model.Response;

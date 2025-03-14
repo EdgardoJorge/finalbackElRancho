@@ -5,15 +5,15 @@ using Model.Response;
 
 namespace Business.Profiles
 {
-    public class AdministradorProfile : Profile
+    public class BannerProfile : Profile
     {
-        public AdministradorProfile()
+        public BannerProfile()
         {
             // Mapeo de Request → Entidad
-            CreateMap<AdministradorRequest, Administrador>();
+            CreateMap<BannerRequest, Banner>();
 
             // Mapeo de Entidad → Response
-            CreateMap<Administrador, AdministradorResponse>();
+            CreateMap<Banner, BannerResponse>();
         }
     }
 }
