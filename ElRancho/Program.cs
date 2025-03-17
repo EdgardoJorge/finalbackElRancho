@@ -29,18 +29,29 @@ builder.Services.AddDbContext<ElRanchoDbContext>(options =>
 // =============================================
 // 3. Configuración de AutoMapper
 // =============================================
-builder.Services.AddAutoMapper(typeof(AdministradorProfile), typeof(BannerProfile));
+builder.Services.AddAutoMapper(
+    typeof(AdministradorProfile),
+    typeof(BannerProfile),
+    typeof(CategoriaProfile)
+);
 
 // =============================================
 // 4. Registro de dependencias
 // =============================================
-// Registrar CrudRepository para cualquier entidad genérica
+// Registrar el contexto de la base de datos como `DbContext`
+builder.Services.AddScoped<DbContext, ElRanchoDbContext>();
+
+// Registrar CrudRepository con el contexto correcto
 builder.Services.AddScoped(typeof(ICrudRepository<>), typeof(CrudRepository<>));
-builder.Services.AddScoped(typeof(CrudRepository<>)); // Registro sin la interfaz
+
+// Registrar repositorios
+builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
+builder.Services.AddScoped<IBannerRepository, BannerRepository>(); // ✅ Agregado
 
 // Registrar servicios específicos
 builder.Services.AddScoped<IAdministradorBusiness, AdministradorBusiness>();
 builder.Services.AddScoped<IBannerBusiness, BannerBusiness>();
+builder.Services.AddScoped<ICategoriaBusiness, CategoriaBusiness>();
 
 // =============================================
 // 5. Construcción de la aplicación

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IBussines")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+692113fffd24535ff748050cb37f599e073dcc18")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34d98f265bce842e37dddd7c278841c21e16c8f7")]
 [assembly: System.Reflection.AssemblyProductAttribute("IBussines")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IBussines")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

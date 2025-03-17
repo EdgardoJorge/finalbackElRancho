@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Model.Request;
 using Model.Response;
-using Repository;
 using DbModel.ElRancho;
 using IBusiness;
 using IRepository;
@@ -11,9 +10,9 @@ namespace Business
 {
     public class BannerBusiness : IBannerBusiness
     {
-        private readonly ICrudRepository<Banner> _bannerRepository;
+        private readonly IBannerRepository _bannerRepository;
 
-        public BannerBusiness(ICrudRepository<Banner> bannerRepository)
+        public BannerBusiness(IBannerRepository bannerRepository)
         {
             _bannerRepository = bannerRepository;
         }

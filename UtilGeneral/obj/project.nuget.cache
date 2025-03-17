@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qGjN7/Fr8MFt5B3DwQ+pT1XPJhHfDqc8KDbs/34WyqErCsdY3ydsqmDVgmjNPN1hN/G4rAmvc7+1tvy2rwK1yA==",
+  "dgSpecHash": "nuOKMfmX1rs+17LHxbY77t13hmtBsAqD9ei86QeKEAW00ud8zOHyBuDMabYn4jdhK/yefgkApQdAlTEDdBETbA==",
   "success": true,
   "projectFilePath": "/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/UtilGeneral.csproj",
   "expectedPackageFiles": [
-    "/home/edgardo/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.13/microsoft.aspnetcore.app.ref.8.0.13.nupkg.sha512"
+    "/home/edgardo/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.14/microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "JPxizCefKV5PoWTVBRSYd1BYyEO597O0XNmTF3TD+WfbVq8t4Fodf8As27xqjbjM81jUUxHdFJ4ut2anG/vXnA==",
+  "dgSpecHash": "vuwg0C5VsfT50ftz/UypyPp88OES9kqkD802BQU3DdL3hFyML30pe1G7fb3Tai6X0W7/Dabv4VeEJhByLMm4hQ==",
   "success": true,
   "projectFilePath": "/home/edgardo/Documentos/finalbackElRancho/Documentation/Documentation.csproj",
   "expectedPackageFiles": [
-    "/home/edgardo/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.13/microsoft.aspnetcore.app.ref.8.0.13.nupkg.sha512"
+    "/home/edgardo/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.14/microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512"
   ],
   "logs": []
 }

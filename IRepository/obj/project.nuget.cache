@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Gi8Ctz/NpLGYxaDn9YDVKw8m+eHYgSg6U8o70maA19UBLkF4wmGZtXVzMC/edBuUatpA/EtB6vwmsB3uvG27Ew==",
+  "dgSpecHash": "Bk/tMuNYXmg1OylLEIbLxi77y4S+cNM/o650MciN/evHJNQOKkHA2FeWmcqX0d3Vli2qeUC978y4yqt/mFjDHw==",
   "success": true,
   "projectFilePath": "/home/edgardo/Documentos/finalbackElRancho/IRepository/IRepository.csproj",
   "expectedPackageFiles": [
@@ -15,7 +15,7 @@
     "/home/edgardo/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
     "/home/edgardo/.nuget/packages/microsoft.extensions.options/8.0.2/microsoft.extensions.options.8.0.2.nupkg.sha512",
     "/home/edgardo/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
-    "/home/edgardo/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.13/microsoft.aspnetcore.app.ref.8.0.13.nupkg.sha512"
+    "/home/edgardo/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.14/microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512"
   ],
   "logs": []
 }

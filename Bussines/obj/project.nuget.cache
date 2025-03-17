@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "y1OWiLodp8rNYmWWx411ce0jq0n7wGMnnVW70u+GfCdxc5D7yefRq3sTd0G1KCTE8/T5y+lsBSLZIpiePbESpw==",
+  "dgSpecHash": "fhDi9RO+4XRPxAyeMCD7jPvrSsWuvd4Y0Ak3qa2Kxk7uLlbxQJgxYYsKJab+5pQ6+q1+Y1HEkPNlet5268UFBg==",
   "success": true,
   "projectFilePath": "/home/edgardo/Documentos/finalbackElRancho/Bussines/Bussines.csproj",
   "expectedPackageFiles": [
@@ -26,7 +26,7 @@
     "/home/edgardo/.nuget/packages/microsoft.net.http.headers/2.3.0/microsoft.net.http.headers.2.3.0.nupkg.sha512",
     "/home/edgardo/.nuget/packages/system.buffers/4.6.0/system.buffers.4.6.0.nupkg.sha512",
     "/home/edgardo/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
-    "/home/edgardo/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.13/microsoft.aspnetcore.app.ref.8.0.13.nupkg.sha512"
+    "/home/edgardo/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.14/microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512"
   ],
   "logs": []
 }
