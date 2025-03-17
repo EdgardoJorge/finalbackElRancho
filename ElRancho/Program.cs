@@ -32,7 +32,8 @@ builder.Services.AddDbContext<ElRanchoDbContext>(options =>
 builder.Services.AddAutoMapper(
     typeof(AdministradorProfile),
     typeof(BannerProfile),
-    typeof(CategoriaProfile)
+    typeof(CategoriaProfile),
+    typeof(ProductoProfile)
 );
 
 // =============================================
@@ -46,12 +47,13 @@ builder.Services.AddScoped(typeof(ICrudRepository<>), typeof(CrudRepository<>));
 
 // Registrar repositorios
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
-builder.Services.AddScoped<IBannerRepository, BannerRepository>(); // ✅ Agregado
-
+builder.Services.AddScoped<IBannerRepository, BannerRepository>();
+builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
 // Registrar servicios específicos
 builder.Services.AddScoped<IAdministradorBusiness, AdministradorBusiness>();
 builder.Services.AddScoped<IBannerBusiness, BannerBusiness>();
 builder.Services.AddScoped<ICategoriaBusiness, CategoriaBusiness>();
+builder.Services.AddScoped<IProductoBusiness, ProductoBusiness>();
 
 // =============================================
 // 5. Construcción de la aplicación

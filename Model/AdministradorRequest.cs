@@ -5,8 +5,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Model.Request
 {
     public class AdministradorRequest
-{
-    public int Id { get; set; }  // Agregar la propiedad Id
+{ // Agregar la propiedad Id
 
     [Required]
     public string Nombres { get; set; }

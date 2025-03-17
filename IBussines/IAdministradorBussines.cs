@@ -3,18 +3,18 @@ using System.Threading.Tasks;
 using Model.Request;
 using Model.Response;
 
-namespace IBusiness // Asegúrate de que el namespace sea correcto
+namespace IBusiness
 {
-    public interface IAdministradorBusiness // Corrige el nombre a "Business"
+    public interface IAdministradorBusiness
     {
         Task<List<AdministradorResponse>> GetAll();
-        Task<AdministradorResponse> GetById(object id);
+        Task<AdministradorResponse> GetById(int id);
         Task<AdministradorResponse> Create(AdministradorRequest request);
-        Task<AdministradorResponse> Update(AdministradorRequest request);
-        Task<int> DeleteById(object id);
-        Task<int> DeleteMultiple(List<AdministradorRequest> requests);
+        Task<AdministradorResponse> Update(int id, AdministradorRequest request);
+        Task<int> DeleteById(int id);
+        Task<int> DeleteMultiple(List<int> ids);
         Task<List<AdministradorResponse>> CreateMultiple(List<AdministradorRequest> requests);
-        Task<List<AdministradorResponse>> UpdateMultiple(List<AdministradorRequest> requests);
+        Task<List<AdministradorResponse>> UpdateMultiple(Dictionary<int, AdministradorRequest> requests);
         Task<AdministradorResponse?> GetByName(string name);
     }
 }
