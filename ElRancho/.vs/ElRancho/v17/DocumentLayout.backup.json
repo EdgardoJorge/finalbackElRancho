@@ -1,106 +1,275 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\ElRancho\\ElRancho\\",
+  "WorkspaceRootPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\ElRancho\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\ElRancho\\Migrations\\20250218184931_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250218184931_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43129D9C-D10E-4C79-AE2F-3FF3828465D3}|..\\DbModel\\DbModel.csproj|c:\\users\\user\\documents\\elrancho\\dbmodel\\elrancho\\elranchodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43129D9C-D10E-4C79-AE2F-3FF3828465D3}|..\\DbModel\\DbModel.csproj|c:\\users\\user\\documents\\elrancho\\dbmodel\\elrancho\\banner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43129D9C-D10E-4C79-AE2F-3FF3828465D3}|..\\DbModel\\DbModel.csproj|c:\\users\\user\\documents\\elrancho\\dbmodel\\elrancho\\oferta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43129D9C-D10E-4C79-AE2F-3FF3828465D3}|..\\DbModel\\DbModel.csproj|c:\\users\\user\\documents\\elrancho\\dbmodel\\elrancho\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A460980-F44A-4A9A-B84B-17DBFC54E4ED}|ElRancho.csproj|c:\\users\\user\\documents\\elrancho\\elrancho\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8A460980-F44A-4A9A-B84B-17DBFC54E4ED}|ElRancho.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\elrancho\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A460980-F44A-4A9A-B84B-17DBFC54E4ED}|ElRancho.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\ElRancho\\Migrations\\20250218171922_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250218171922_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E498290-486E-43DB-A02F-AB4F87DEE81B}|..\\Repository\\Repository.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\repository\\detalledepedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A460980-F44A-4A9A-B84B-17DBFC54E4ED}|ElRancho.csproj|c:\\users\\user\\documents\\elrancho\\elrancho\\controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC04667A-269C-4AF2-91C3-7713760EEBEF}|..\\IRepository\\IRepository.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\irepository\\idetalledepedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC04667A-269C-4AF2-91C3-7713760EEBEF}|..\\IRepository\\IRepository.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\irepository\\icrudrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC04667A-269C-4AF2-91C3-7713760EEBEF}|..\\IRepository\\IRepository.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\irepository\\iestadopedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9969141A-1133-4615-8516-8EB554194B81}|..\\Bussines\\Bussines.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\bussines\\profile\\ofertaprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9969141A-1133-4615-8516-8EB554194B81}|..\\Bussines\\Bussines.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\bussines\\profile\\eventoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A460980-F44A-4A9A-B84B-17DBFC54E4ED}|ElRancho.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\elrancho\\controllers\\ofertacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A460980-F44A-4A9A-B84B-17DBFC54E4ED}|ElRancho.csproj|solutionrelative:controllers\\ofertacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A460980-F44A-4A9A-B84B-17DBFC54E4ED}|ElRancho.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\elrancho\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A460980-F44A-4A9A-B84B-17DBFC54E4ED}|ElRancho.csproj|solutionrelative:controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9969141A-1133-4615-8516-8EB554194B81}|..\\Bussines\\Bussines.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\bussines\\ofertabusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D12A9486-1024-46E9-A4BA-DCCCD297E3CB}|..\\IBussines\\IBussines.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\ibussines\\iofertabusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC04667A-269C-4AF2-91C3-7713760EEBEF}|..\\IRepository\\IRepository.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\irepository\\iofertarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8821EBD1-28E1-42CB-B866-BB39BD95246C}|..\\Model\\Model.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\model\\ofertaresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8821EBD1-28E1-42CB-B866-BB39BD95246C}|..\\Model\\Model.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\model\\ofertarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8821EBD1-28E1-42CB-B866-BB39BD95246C}|..\\Model\\Model.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\model\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8821EBD1-28E1-42CB-B866-BB39BD95246C}|..\\Model\\Model.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\model\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E498290-486E-43DB-A02F-AB4F87DEE81B}|..\\Repository\\Repository.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\repository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E498290-486E-43DB-A02F-AB4F87DEE81B}|..\\Repository\\Repository.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\repository\\estadopedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E498290-486E-43DB-A02F-AB4F87DEE81B}|..\\Repository\\Repository.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\repository\\ofertarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E498290-486E-43DB-A02F-AB4F87DEE81B}|..\\Repository\\Repository.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\repository\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E498290-486E-43DB-A02F-AB4F87DEE81B}|..\\Repository\\Repository.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\repository\\pedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9969141A-1133-4615-8516-8EB554194B81}|..\\Bussines\\Bussines.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\bussines\\profile\\pedidoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A460980-F44A-4A9A-B84B-17DBFC54E4ED}|ElRancho.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\elrancho\\controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A460980-F44A-4A9A-B84B-17DBFC54E4ED}|ElRancho.csproj|solutionrelative:controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8821EBD1-28E1-42CB-B866-BB39BD95246C}|..\\Model\\Model.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\model\\eventoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8821EBD1-28E1-42CB-B866-BB39BD95246C}|..\\Model\\Model.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\model\\eventorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9969141A-1133-4615-8516-8EB554194B81}|..\\Bussines\\Bussines.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\bussines\\eventobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D12A9486-1024-46E9-A4BA-DCCCD297E3CB}|..\\IBussines\\IBussines.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\ibussines\\ieventobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC04667A-269C-4AF2-91C3-7713760EEBEF}|..\\IRepository\\IRepository.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\irepository\\ieventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9969141A-1133-4615-8516-8EB554194B81}|..\\Bussines\\Bussines.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\bussines\\profile\\estadopedidoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A460980-F44A-4A9A-B84B-17DBFC54E4ED}|ElRancho.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\elrancho\\controllers\\estadopedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A460980-F44A-4A9A-B84B-17DBFC54E4ED}|ElRancho.csproj|solutionrelative:controllers\\estadopedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8821EBD1-28E1-42CB-B866-BB39BD95246C}|..\\Model\\Model.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\model\\estadopedidoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8821EBD1-28E1-42CB-B866-BB39BD95246C}|..\\Model\\Model.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\model\\estadopedidorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9969141A-1133-4615-8516-8EB554194B81}|..\\Bussines\\Bussines.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\bussines\\estadopedidobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D12A9486-1024-46E9-A4BA-DCCCD297E3CB}|..\\IBussines\\IBussines.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\ibussines\\iestadopedidobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A460980-F44A-4A9A-B84B-17DBFC54E4ED}|ElRancho.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\elrancho\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A460980-F44A-4A9A-B84B-17DBFC54E4ED}|ElRancho.csproj|solutionrelative:controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A460980-F44A-4A9A-B84B-17DBFC54E4ED}|ElRancho.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\elrancho\\controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A460980-F44A-4A9A-B84B-17DBFC54E4ED}|ElRancho.csproj|solutionrelative:controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9969141A-1133-4615-8516-8EB554194B81}|..\\Bussines\\Bussines.csproj|c:\\users\\user\\documents\\elrancho\\bussines\\administradorbussines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8821EBD1-28E1-42CB-B866-BB39BD95246C}|..\\Model\\Model.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\model\\pedidoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D12A9486-1024-46E9-A4BA-DCCCD297E3CB}|..\\IBussines\\IBussines.csproj|c:\\users\\user\\documents\\elrancho\\ibussines\\iadministradorbussines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8821EBD1-28E1-42CB-B866-BB39BD95246C}|..\\Model\\Model.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\model\\pedidorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E498290-486E-43DB-A02F-AB4F87DEE81B}|..\\Repository\\Repository.csproj|c:\\users\\user\\documents\\elrancho\\repository\\crudrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D12A9486-1024-46E9-A4BA-DCCCD297E3CB}|..\\IBussines\\IBussines.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\ibussines\\ipedidobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43129D9C-D10E-4C79-AE2F-3FF3828465D3}|..\\DbModel\\DbModel.csproj|c:\\users\\user\\documents\\elrancho\\dbmodel\\elrancho\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9969141A-1133-4615-8516-8EB554194B81}|..\\Bussines\\Bussines.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\bussines\\pedidobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43129D9C-D10E-4C79-AE2F-3FF3828465D3}|..\\DbModel\\DbModel.csproj|c:\\users\\user\\documents\\elrancho\\dbmodel\\elrancho\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC04667A-269C-4AF2-91C3-7713760EEBEF}|..\\IRepository\\IRepository.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\irepository\\ipedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43129D9C-D10E-4C79-AE2F-3FF3828465D3}|..\\DbModel\\DbModel.csproj|c:\\users\\user\\documents\\elrancho\\dbmodel\\elrancho\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8821EBD1-28E1-42CB-B866-BB39BD95246C}|..\\Model\\Model.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\model\\detalledepedidorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43129D9C-D10E-4C79-AE2F-3FF3828465D3}|..\\DbModel\\DbModel.csproj|c:\\users\\user\\documents\\elrancho\\dbmodel\\elrancho\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A460980-F44A-4A9A-B84B-17DBFC54E4ED}|ElRancho.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\elrancho\\controllers\\detalledepedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A460980-F44A-4A9A-B84B-17DBFC54E4ED}|ElRancho.csproj|solutionrelative:controllers\\detalledepedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43129D9C-D10E-4C79-AE2F-3FF3828465D3}|..\\DbModel\\DbModel.csproj|c:\\users\\user\\documents\\elrancho\\dbmodel\\elrancho\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9969141A-1133-4615-8516-8EB554194B81}|..\\Bussines\\Bussines.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\bussines\\detalledepedidobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43129D9C-D10E-4C79-AE2F-3FF3828465D3}|..\\DbModel\\DbModel.csproj|c:\\users\\user\\documents\\elrancho\\dbmodel\\elrancho\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D12A9486-1024-46E9-A4BA-DCCCD297E3CB}|..\\IBussines\\IBussines.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\ibussines\\idetalledepedidobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43129D9C-D10E-4C79-AE2F-3FF3828465D3}|..\\DbModel\\DbModel.csproj|c:\\users\\user\\documents\\elrancho\\dbmodel\\elrancho\\tipoentrega.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D12A9486-1024-46E9-A4BA-DCCCD297E3CB}|..\\IBussines\\IBussines.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\ibussines\\iclientebusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43129D9C-D10E-4C79-AE2F-3FF3828465D3}|..\\DbModel\\DbModel.csproj|c:\\users\\user\\documents\\elrancho\\dbmodel\\elrancho\\estadopedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9969141A-1133-4615-8516-8EB554194B81}|..\\Bussines\\Bussines.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\bussines\\profile\\detalledepedidoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43129D9C-D10E-4C79-AE2F-3FF3828465D3}|..\\DbModel\\DbModel.csproj|c:\\users\\user\\documents\\elrancho\\dbmodel\\elrancho\\detallepedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8821EBD1-28E1-42CB-B866-BB39BD95246C}|..\\Model\\Model.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\model\\detalledepedidoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E498290-486E-43DB-A02F-AB4F87DEE81B}|..\\Repository\\Repository.csproj|c:\\users\\user\\documents\\elrancho\\repository\\administradorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9969141A-1133-4615-8516-8EB554194B81}|..\\Bussines\\Bussines.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\bussines\\clientebusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC04667A-269C-4AF2-91C3-7713760EEBEF}|..\\IRepository\\IRepository.csproj|c:\\users\\user\\documents\\elrancho\\irepository\\icrudrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8821EBD1-28E1-42CB-B866-BB39BD95246C}|..\\Model\\Model.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\model\\clienteresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8821EBD1-28E1-42CB-B866-BB39BD95246C}|..\\Model\\Model.csproj|c:\\users\\user\\documents\\elrancho\\model\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9969141A-1133-4615-8516-8EB554194B81}|..\\Bussines\\Bussines.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\bussines\\administradorbussines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC04667A-269C-4AF2-91C3-7713760EEBEF}|..\\IRepository\\IRepository.csproj|c:\\users\\user\\documents\\elrancho\\irepository\\iadministradorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8821EBD1-28E1-42CB-B866-BB39BD95246C}|..\\Model\\Model.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\model\\clienterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8821EBD1-28E1-42CB-B866-BB39BD95246C}|..\\Model\\Model.csproj|c:\\users\\user\\documents\\elrancho\\model\\administradorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E498290-486E-43DB-A02F-AB4F87DEE81B}|..\\Repository\\Repository.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\repository\\repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8821EBD1-28E1-42CB-B866-BB39BD95246C}|..\\Model\\Model.csproj|c:\\users\\user\\documents\\elrancho\\model\\administradorrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC04667A-269C-4AF2-91C3-7713760EEBEF}|..\\IRepository\\IRepository.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\irepository\\iclienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43129D9C-D10E-4C79-AE2F-3FF3828465D3}|..\\DbModel\\DbModel.csproj|c:\\users\\user\\documents\\elrancho\\dbmodel\\dbmodel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{9969141A-1133-4615-8516-8EB554194B81}|..\\Bussines\\Bussines.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\bussines\\profile\\clienteprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D35607DB-7712-4741-A673-19332EF68937}|..\\UtilGeneral\\UtilGeneral.csproj|c:\\users\\user\\documents\\elrancho\\utilgeneral\\automapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D12A9486-1024-46E9-A4BA-DCCCD297E3CB}|..\\IBussines\\IBussines.csproj|c:\\users\\edgardo\\documents\\finalbackelrancho\\ibussines\\iadministradorbussines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8821EBD1-28E1-42CB-B866-BB39BD95246C}|..\\Model\\Model.csproj|c:\\users\\user\\documents\\elrancho\\model\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC04667A-269C-4AF2-91C3-7713760EEBEF}|..\\IRepository\\IRepository.csproj|c:\\users\\user\\documents\\elrancho\\irepository\\iproductorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\ElRancho\\Migrations\\20250218184931_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC04667A-269C-4AF2-91C3-7713760EEBEF}|..\\IRepository\\IRepository.csproj|c:\\users\\user\\documents\\elrancho\\irepository\\ipersonarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\ElRancho\\Migrations\\20250218171922_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D12A9486-1024-46E9-A4BA-DCCCD297E3CB}|..\\IBussines\\IBussines.csproj|c:\\users\\user\\documents\\elrancho\\ibussines\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Oferta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Banner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\IBussines\\IAdministradorBussines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\Bussines\\AdministradorBussines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\Repository\\AdministradorRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\ElRanchoDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\Repository\\CrudRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\TipoEntrega.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\EstadoPedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\DetallePedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\IRepository\\ICrudRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\Model\\LoginResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\Model\\AdministradorResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\Model\\AdministradorRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\UtilGeneral\\AutoMapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\Model\\LoginRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\IRepository\\IAdministradorRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\DbModel\\DbModel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\IRepository\\IProductoRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\IRepository\\IPersonaRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\ElRancho\\IBussines\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -115,418 +284,1104 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20250218184931_Inicial.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\ElRancho\\Migrations\\20250218184931_Inicial.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250218184931_Inicial.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\ElRancho\\Migrations\\20250218184931_Inicial.cs",
-              "RelativeToolTip": "Migrations\\20250218184931_Inicial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T18:49:31.935Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "20250218171922_Inicial.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\ElRancho\\Migrations\\20250218171922_Inicial.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250218171922_Inicial.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\ElRancho\\Migrations\\20250218171922_Inicial.cs",
-              "RelativeToolTip": "Migrations\\20250218171922_Inicial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T17:19:22.965Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\ElRancho\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\ElRancho\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\ElRancho\\Program.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\ElRancho\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAADEAAACAMjMzMzMLwEoAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-18T17:06:00.735Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IDetalleDePedidoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IDetalleDePedidoRepository.cs",
+              "RelativeDocumentMoniker": "..\\IRepository\\IDetalleDePedidoRepository.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IDetalleDePedidoRepository.cs",
+              "RelativeToolTip": "..\\IRepository\\IDetalleDePedidoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T12:17:01.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IEstadoPedidoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IEstadoPedidoRepository.cs",
+              "RelativeDocumentMoniker": "..\\IRepository\\IEstadoPedidoRepository.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IEstadoPedidoRepository.cs",
+              "RelativeToolTip": "..\\IRepository\\IEstadoPedidoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:05:20.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICrudRepository.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\ICrudRepository.cs",
+              "RelativeDocumentMoniker": "..\\IRepository\\ICrudRepository.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\ICrudRepository.cs",
+              "RelativeToolTip": "..\\IRepository\\ICrudRepository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwBQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:34:47.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DetalleDePedidoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Repository\\DetalleDePedidoRepository.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\DetalleDePedidoRepository.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Repository\\DetalleDePedidoRepository.cs",
+              "RelativeToolTip": "..\\Repository\\DetalleDePedidoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T12:17:47.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OfertaProfile.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\profile\\OfertaProfile.cs",
+              "RelativeDocumentMoniker": "..\\Bussines\\profile\\OfertaProfile.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\profile\\OfertaProfile.cs",
+              "RelativeToolTip": "..\\Bussines\\profile\\OfertaProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T19:45:39.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EventoProfile.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\profile\\EventoProfile.cs",
+              "RelativeDocumentMoniker": "..\\Bussines\\profile\\EventoProfile.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\profile\\EventoProfile.cs",
+              "RelativeToolTip": "..\\Bussines\\profile\\EventoProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:43:24.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "OfertaController.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\ElRancho\\Controllers\\OfertaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OfertaController.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\ElRancho\\Controllers\\OfertaController.cs",
+              "RelativeToolTip": "Controllers\\OfertaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T19:44:02.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IOfertaBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IOfertaBusiness.cs",
+              "RelativeDocumentMoniker": "..\\IBussines\\IOfertaBusiness.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IOfertaBusiness.cs",
+              "RelativeToolTip": "..\\IBussines\\IOfertaBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T17:12:51.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IOfertaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IOfertaRepository.cs",
+              "RelativeDocumentMoniker": "..\\IRepository\\IOfertaRepository.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IOfertaRepository.cs",
+              "RelativeToolTip": "..\\IRepository\\IOfertaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:57:03.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OfertaResponse.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\OfertaResponse.cs",
+              "RelativeDocumentMoniker": "..\\Model\\OfertaResponse.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\OfertaResponse.cs",
+              "RelativeToolTip": "..\\Model\\OfertaResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T17:23:29.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OfertaRequest.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\OfertaRequest.cs",
+              "RelativeDocumentMoniker": "..\\Model\\OfertaRequest.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\OfertaRequest.cs",
+              "RelativeToolTip": "..\\Model\\OfertaRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T17:17:07.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OfertaBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\OfertaBusiness.cs",
+              "RelativeDocumentMoniker": "..\\Bussines\\OfertaBusiness.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\OfertaBusiness.cs",
+              "RelativeToolTip": "..\\Bussines\\OfertaBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T17:13:37.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\ElRancho\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\ElRancho\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "Controllers\\ClienteController.cs",
+              "ViewState": "AgIAACEAAABQZmZmZmYuwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T07:01:34.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "..\\Model\\LoginResponse.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\LoginResponse.cs",
+              "RelativeToolTip": "..\\Model\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T17:19:34.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "..\\Model\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\LoginRequest.cs",
+              "RelativeToolTip": "..\\Model\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T17:19:16.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OfertaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Repository\\OfertaRepository.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\OfertaRepository.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Repository\\OfertaRepository.cs",
+              "RelativeToolTip": "..\\Repository\\OfertaRepository.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:58:43.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EventoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Repository\\EventoRepository.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\EventoRepository.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Repository\\EventoRepository.cs",
+              "RelativeToolTip": "..\\Repository\\EventoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:37:28.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EstadoPedidoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Repository\\EstadoPedidoRepository.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\EstadoPedidoRepository.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Repository\\EstadoPedidoRepository.cs",
+              "RelativeToolTip": "..\\Repository\\EstadoPedidoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:09:19.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ClienteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Repository\\ClienteRepository.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\ClienteRepository.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Repository\\ClienteRepository.cs",
+              "RelativeToolTip": "..\\Repository\\ClienteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T07:09:52.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PedidoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Repository\\PedidoRepository.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\PedidoRepository.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Repository\\PedidoRepository.cs",
+              "RelativeToolTip": "..\\Repository\\PedidoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T15:21:55.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EventoResponse.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\EventoResponse.cs",
+              "RelativeDocumentMoniker": "..\\Model\\EventoResponse.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\EventoResponse.cs",
+              "RelativeToolTip": "..\\Model\\EventoResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:41:50.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EventoController.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\ElRancho\\Controllers\\EventoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EventoController.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\ElRancho\\Controllers\\EventoController.cs",
+              "RelativeToolTip": "Controllers\\EventoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:42:58.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EventoRequest.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\EventoRequest.cs",
+              "RelativeDocumentMoniker": "..\\Model\\EventoRequest.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\EventoRequest.cs",
+              "RelativeToolTip": "..\\Model\\EventoRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:41:26.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PedidoProfile.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\profile\\PedidoProfile.cs",
+              "RelativeDocumentMoniker": "..\\Bussines\\profile\\PedidoProfile.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\profile\\PedidoProfile.cs",
+              "RelativeToolTip": "..\\Bussines\\profile\\PedidoProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T15:30:05.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "EventoBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\EventoBusiness.cs",
+              "RelativeDocumentMoniker": "..\\Bussines\\EventoBusiness.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\EventoBusiness.cs",
+              "RelativeToolTip": "..\\Bussines\\EventoBusiness.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAwEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:40:43.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IEventoBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IEventoBusiness.cs",
+              "RelativeDocumentMoniker": "..\\IBussines\\IEventoBusiness.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IEventoBusiness.cs",
+              "RelativeToolTip": "..\\IBussines\\IEventoBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:40:13.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IEventoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IEventoRepository.cs",
+              "RelativeDocumentMoniker": "..\\IRepository\\IEventoRepository.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IEventoRepository.cs",
+              "RelativeToolTip": "..\\IRepository\\IEventoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:32:29.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "EstadoPedidoResponse.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\EstadoPedidoResponse.cs",
+              "RelativeDocumentMoniker": "..\\Model\\EstadoPedidoResponse.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\EstadoPedidoResponse.cs",
+              "RelativeToolTip": "..\\Model\\EstadoPedidoResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:14:55.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EstadoPedidoController.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\ElRancho\\Controllers\\EstadoPedidoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EstadoPedidoController.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\ElRancho\\Controllers\\EstadoPedidoController.cs",
+              "RelativeToolTip": "Controllers\\EstadoPedidoController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAuwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:15:36.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "EstadoPedidoProfile.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\profile\\EstadoPedidoProfile.cs",
+              "RelativeDocumentMoniker": "..\\Bussines\\profile\\EstadoPedidoProfile.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\profile\\EstadoPedidoProfile.cs",
+              "RelativeToolTip": "..\\Bussines\\profile\\EstadoPedidoProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:18:35.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "EstadoPedidoRequest.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\EstadoPedidoRequest.cs",
+              "RelativeDocumentMoniker": "..\\Model\\EstadoPedidoRequest.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\EstadoPedidoRequest.cs",
+              "RelativeToolTip": "..\\Model\\EstadoPedidoRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:14:31.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "EstadoPedidoBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\EstadoPedidoBusiness.cs",
+              "RelativeDocumentMoniker": "..\\Bussines\\EstadoPedidoBusiness.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\EstadoPedidoBusiness.cs",
+              "RelativeToolTip": "..\\Bussines\\EstadoPedidoBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:12:53.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IEstadoPedidoBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IEstadoPedidoBusiness.cs",
+              "RelativeDocumentMoniker": "..\\IBussines\\IEstadoPedidoBusiness.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IEstadoPedidoBusiness.cs",
+              "RelativeToolTip": "..\\IBussines\\IEstadoPedidoBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:11:15.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PedidoController.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\ElRancho\\Controllers\\PedidoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PedidoController.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\ElRancho\\Controllers\\PedidoController.cs",
+              "RelativeToolTip": "Controllers\\PedidoController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T15:29:37.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "PedidoResponse.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\PedidoResponse.cs",
+              "RelativeDocumentMoniker": "..\\Model\\PedidoResponse.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\PedidoResponse.cs",
+              "RelativeToolTip": "..\\Model\\PedidoResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T15:29:01.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "PedidoRequest.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\PedidoRequest.cs",
+              "RelativeDocumentMoniker": "..\\Model\\PedidoRequest.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\PedidoRequest.cs",
+              "RelativeToolTip": "..\\Model\\PedidoRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T15:28:27.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IPedidoBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IPedidoBusiness.cs",
+              "RelativeDocumentMoniker": "..\\IBussines\\IPedidoBusiness.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IPedidoBusiness.cs",
+              "RelativeToolTip": "..\\IBussines\\IPedidoBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T15:25:03.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "PedidoBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\PedidoBusiness.cs",
+              "RelativeDocumentMoniker": "..\\Bussines\\PedidoBusiness.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\PedidoBusiness.cs",
+              "RelativeToolTip": "..\\Bussines\\PedidoBusiness.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T15:24:32.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
               "Title": "AdministradorController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\ElRancho\\Controllers\\AdministradorController.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\ElRancho\\Controllers\\AdministradorController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdministradorController.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\ElRancho\\Controllers\\AdministradorController.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\ElRancho\\Controllers\\AdministradorController.cs",
               "RelativeToolTip": "Controllers\\AdministradorController.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAmwA8AAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-18T17:02:57.947Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Banner.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Banner.cs",
-              "RelativeDocumentMoniker": "..\\DbModel\\ElRancho\\Banner.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Banner.cs",
-              "RelativeToolTip": "..\\DbModel\\ElRancho\\Banner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 40,
+              "Title": "IPedidoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IPedidoRepository.cs",
+              "RelativeDocumentMoniker": "..\\IRepository\\IPedidoRepository.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IPedidoRepository.cs",
+              "RelativeToolTip": "..\\IRepository\\IPedidoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T16:21:06.941Z",
+              "WhenOpened": "2025-03-18T15:22:33.673Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Error.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Error.cs",
-              "RelativeDocumentMoniker": "..\\DbModel\\ElRancho\\Error.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Error.cs",
-              "RelativeToolTip": "..\\DbModel\\ElRancho\\Error.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAowEQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 43,
+              "Title": "DetalleDePedidoBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\DetalleDePedidoBusiness.cs",
+              "RelativeDocumentMoniker": "..\\Bussines\\DetalleDePedidoBusiness.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\DetalleDePedidoBusiness.cs",
+              "RelativeToolTip": "..\\Bussines\\DetalleDePedidoBusiness.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAwD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T02:33:15.777Z",
+              "WhenOpened": "2025-03-18T13:01:40.113Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Evento.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Evento.cs",
-              "RelativeDocumentMoniker": "..\\DbModel\\ElRancho\\Evento.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Evento.cs",
-              "RelativeToolTip": "..\\DbModel\\ElRancho\\Evento.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 44,
+              "Title": "IDetalleDePedidoBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IDetalleDePedidoBusiness.cs",
+              "RelativeDocumentMoniker": "..\\IBussines\\IDetalleDePedidoBusiness.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IDetalleDePedidoBusiness.cs",
+              "RelativeToolTip": "..\\IBussines\\IDetalleDePedidoBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T18:32:22.884Z",
+              "WhenOpened": "2025-03-18T12:58:41.578Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Oferta.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Oferta.cs",
-              "RelativeDocumentMoniker": "..\\DbModel\\ElRancho\\Oferta.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Oferta.cs",
-              "RelativeToolTip": "..\\DbModel\\ElRancho\\Oferta.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 42,
+              "Title": "DetalleDePedidoController.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\ElRancho\\Controllers\\DetalleDePedidoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DetalleDePedidoController.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\ElRancho\\Controllers\\DetalleDePedidoController.cs",
+              "RelativeToolTip": "Controllers\\DetalleDePedidoController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAwDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T18:35:36.676Z",
+              "WhenOpened": "2025-03-18T14:24:37.226Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Pedido.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Pedido.cs",
-              "RelativeDocumentMoniker": "..\\DbModel\\ElRancho\\Pedido.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Pedido.cs",
-              "RelativeToolTip": "..\\DbModel\\ElRancho\\Pedido.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 41,
+              "Title": "DetalleDePedidoRequest.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\DetalleDePedidoRequest.cs",
+              "RelativeDocumentMoniker": "..\\Model\\DetalleDePedidoRequest.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\DetalleDePedidoRequest.cs",
+              "RelativeToolTip": "..\\Model\\DetalleDePedidoRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T02:22:51.92Z",
+              "WhenOpened": "2025-03-18T13:02:26.386Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ElRanchoDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\ElRanchoDbContext.cs",
-              "RelativeDocumentMoniker": "..\\DbModel\\ElRancho\\ElRanchoDbContext.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\ElRanchoDbContext.cs",
-              "RelativeToolTip": "..\\DbModel\\ElRancho\\ElRanchoDbContext.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAqwDAAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 45,
+              "Title": "IClienteBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IClienteBusiness.cs",
+              "RelativeDocumentMoniker": "..\\IBussines\\IClienteBusiness.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IClienteBusiness.cs",
+              "RelativeToolTip": "..\\IBussines\\IClienteBusiness.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T16:12:53.769Z",
+              "WhenOpened": "2025-03-18T06:55:27.219Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Cliente.cs",
-              "RelativeDocumentMoniker": "..\\DbModel\\ElRancho\\Cliente.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Cliente.cs",
-              "RelativeToolTip": "..\\DbModel\\ElRancho\\Cliente.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAcwBoAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 46,
+              "Title": "DetalleDePedidoProfile.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\profile\\DetalleDePedidoProfile.cs",
+              "RelativeDocumentMoniker": "..\\Bussines\\profile\\DetalleDePedidoProfile.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\profile\\DetalleDePedidoProfile.cs",
+              "RelativeToolTip": "..\\Bussines\\profile\\DetalleDePedidoProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T18:16:13.658Z",
+              "WhenOpened": "2025-03-18T14:29:52.58Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Producto.cs",
-              "RelativeDocumentMoniker": "..\\DbModel\\ElRancho\\Producto.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Producto.cs",
-              "RelativeToolTip": "..\\DbModel\\ElRancho\\Producto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 47,
+              "Title": "DetalleDePedidoResponse.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\DetalleDePedidoResponse.cs",
+              "RelativeDocumentMoniker": "..\\Model\\DetalleDePedidoResponse.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\DetalleDePedidoResponse.cs",
+              "RelativeToolTip": "..\\Model\\DetalleDePedidoResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T02:27:58.555Z",
+              "WhenOpened": "2025-03-18T13:03:30.744Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 48,
+              "Title": "ClienteBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\ClienteBusiness.cs",
+              "RelativeDocumentMoniker": "..\\Bussines\\ClienteBusiness.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\ClienteBusiness.cs",
+              "RelativeToolTip": "..\\Bussines\\ClienteBusiness.cs",
+              "ViewState": "AgIAAHcAAAAAZmZmZmYuwKgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T06:58:10.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ClienteResponse.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\ClienteResponse.cs",
+              "RelativeDocumentMoniker": "..\\Model\\ClienteResponse.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\ClienteResponse.cs",
+              "RelativeToolTip": "..\\Model\\ClienteResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T07:04:16.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
               "Title": "AdministradorBussines.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\Bussines\\AdministradorBussines.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\AdministradorBussines.cs",
               "RelativeDocumentMoniker": "..\\Bussines\\AdministradorBussines.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\Bussines\\AdministradorBussines.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\AdministradorBussines.cs",
               "RelativeToolTip": "..\\Bussines\\AdministradorBussines.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAAwLMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T12:57:39.929Z",
+              "WhenOpened": "2025-03-18T05:31:16.956Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CrudRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\Repository\\CrudRepository.cs",
-              "RelativeDocumentMoniker": "..\\Repository\\CrudRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\Repository\\CrudRepository.cs",
-              "RelativeToolTip": "..\\Repository\\CrudRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 51,
+              "Title": "ClienteRequest.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\ClienteRequest.cs",
+              "RelativeDocumentMoniker": "..\\Model\\ClienteRequest.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\ClienteRequest.cs",
+              "RelativeToolTip": "..\\Model\\ClienteRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T13:20:15.959Z",
+              "WhenOpened": "2025-03-18T07:03:46.084Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IAdministradorBussines.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\IBussines\\IAdministradorBussines.cs",
-              "RelativeDocumentMoniker": "..\\IBussines\\IAdministradorBussines.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\IBussines\\IAdministradorBussines.cs",
-              "RelativeToolTip": "..\\IBussines\\IAdministradorBussines.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T13:14:26.057Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Categoria.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Categoria.cs",
-              "RelativeDocumentMoniker": "..\\DbModel\\ElRancho\\Categoria.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Categoria.cs",
-              "RelativeToolTip": "..\\DbModel\\ElRancho\\Categoria.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T18:13:29.112Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Administrador.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Administrador.cs",
-              "RelativeDocumentMoniker": "..\\DbModel\\ElRancho\\Administrador.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Administrador.cs",
-              "RelativeToolTip": "..\\DbModel\\ElRancho\\Administrador.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T02:35:22.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TipoEntrega.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\TipoEntrega.cs",
-              "RelativeDocumentMoniker": "..\\DbModel\\ElRancho\\TipoEntrega.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\TipoEntrega.cs",
-              "RelativeToolTip": "..\\DbModel\\ElRancho\\TipoEntrega.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T02:31:13.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "EstadoPedido.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\EstadoPedido.cs",
-              "RelativeDocumentMoniker": "..\\DbModel\\ElRancho\\EstadoPedido.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\EstadoPedido.cs",
-              "RelativeToolTip": "..\\DbModel\\ElRancho\\EstadoPedido.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T18:30:34.307Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "DetallePedido.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\DetallePedido.cs",
-              "RelativeDocumentMoniker": "..\\DbModel\\ElRancho\\DetallePedido.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\DetallePedido.cs",
-              "RelativeToolTip": "..\\DbModel\\ElRancho\\DetallePedido.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T18:26:59.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AdministradorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\Repository\\AdministradorRepository.cs",
-              "RelativeDocumentMoniker": "..\\Repository\\AdministradorRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\Repository\\AdministradorRepository.cs",
-              "RelativeToolTip": "..\\Repository\\AdministradorRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T13:19:32.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ICrudRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\IRepository\\ICrudRepository.cs",
-              "RelativeDocumentMoniker": "..\\IRepository\\ICrudRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\IRepository\\ICrudRepository.cs",
-              "RelativeToolTip": "..\\IRepository\\ICrudRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T02:45:13.7Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "LoginResponse.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\Model\\LoginResponse.cs",
-              "RelativeDocumentMoniker": "..\\Model\\LoginResponse.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\Model\\LoginResponse.cs",
-              "RelativeToolTip": "..\\Model\\LoginResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T12:53:53.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "AdministradorResponse.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\Model\\AdministradorResponse.cs",
-              "RelativeDocumentMoniker": "..\\Model\\AdministradorResponse.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\Model\\AdministradorResponse.cs",
-              "RelativeToolTip": "..\\Model\\AdministradorResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T13:08:17.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "AdministradorRequest.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\Model\\AdministradorRequest.cs",
-              "RelativeDocumentMoniker": "..\\Model\\AdministradorRequest.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\Model\\AdministradorRequest.cs",
-              "RelativeToolTip": "..\\Model\\AdministradorRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T13:08:35.969Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "AutoMapping.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\UtilGeneral\\AutoMapping.cs",
-              "RelativeDocumentMoniker": "..\\UtilGeneral\\AutoMapping.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\UtilGeneral\\AutoMapping.cs",
-              "RelativeToolTip": "..\\UtilGeneral\\AutoMapping.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T13:00:27.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "LoginRequest.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\Model\\LoginRequest.cs",
-              "RelativeDocumentMoniker": "..\\Model\\LoginRequest.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\Model\\LoginRequest.cs",
-              "RelativeToolTip": "..\\Model\\LoginRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T12:52:06.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "IAdministradorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\IRepository\\IAdministradorRepository.cs",
-              "RelativeDocumentMoniker": "..\\IRepository\\IAdministradorRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\IRepository\\IAdministradorRepository.cs",
-              "RelativeToolTip": "..\\IRepository\\IAdministradorRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T12:49:09.132Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "DbModel.csproj",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\DbModel.csproj",
-              "RelativeDocumentMoniker": "..\\DbModel\\DbModel.csproj",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\DbModel.csproj",
-              "RelativeToolTip": "..\\DbModel\\DbModel.csproj",
+              "DocumentIndex": 52,
+              "Title": "Repository",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Repository\\Repository.csproj",
+              "RelativeDocumentMoniker": "..\\Repository\\Repository.csproj",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Repository\\Repository.csproj",
+              "RelativeToolTip": "..\\Repository\\Repository.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-17T16:12:20.022Z",
+              "WhenOpened": "2025-03-18T12:17:22.92Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "IProductoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\IRepository\\IProductoRepository.cs",
-              "RelativeDocumentMoniker": "..\\IRepository\\IProductoRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\IRepository\\IProductoRepository.cs",
-              "RelativeToolTip": "..\\IRepository\\IProductoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "DocumentIndex": 53,
+              "Title": "IClienteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IClienteRepository.cs",
+              "RelativeDocumentMoniker": "..\\IRepository\\IClienteRepository.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IClienteRepository.cs",
+              "RelativeToolTip": "..\\IRepository\\IClienteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T02:47:53.188Z",
+              "WhenOpened": "2025-03-18T07:08:13.859Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "IPersonaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\IRepository\\IPersonaRepository.cs",
-              "RelativeDocumentMoniker": "..\\IRepository\\IPersonaRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\IRepository\\IPersonaRepository.cs",
-              "RelativeToolTip": "..\\IRepository\\IPersonaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABCAAAAAAAAAA==",
+              "DocumentIndex": 54,
+              "Title": "ClienteProfile.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\profile\\ClienteProfile.cs",
+              "RelativeDocumentMoniker": "..\\Bussines\\profile\\ClienteProfile.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\profile\\ClienteProfile.cs",
+              "RelativeToolTip": "..\\Bussines\\profile\\ClienteProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T02:54:56.936Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T07:05:42.089Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\IBussines\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\IBussines\\Class1.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\IBussines\\Class1.cs",
-              "RelativeToolTip": "..\\IBussines\\Class1.cs",
+              "DocumentIndex": 56,
+              "Title": "Microsoft.PackageDependencyResolution.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ViewState": "AgIAAP0AAAAAAAAAAAApwAkBAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-03-18T05:12:38.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Error.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Error.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Error.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Error.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Error.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAowEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T02:33:15.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "IAdministradorBussines.cs",
+              "DocumentMoniker": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IAdministradorBussines.cs",
+              "RelativeDocumentMoniker": "..\\IBussines\\IAdministradorBussines.cs",
+              "ToolTip": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IAdministradorBussines.cs",
+              "RelativeToolTip": "..\\IBussines\\IAdministradorBussines.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T06:09:45.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "20250218184931_Inicial.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\ElRancho\\Migrations\\20250218184931_Inicial.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\ElRancho\\Migrations\\20250218184931_Inicial.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\ElRancho\\Migrations\\20250218184931_Inicial.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\ElRancho\\Migrations\\20250218184931_Inicial.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T16:09:40.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T18:49:31.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "Evento.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Evento.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Evento.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Evento.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Evento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T18:32:22.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Oferta.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Oferta.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Oferta.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Oferta.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Oferta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T18:35:36.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Banner.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Banner.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Banner.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Banner.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Banner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:21:06.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Pedido.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Pedido.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Pedido.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Pedido.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Pedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T02:22:51.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "IAdministradorBussines.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\IBussines\\IAdministradorBussines.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\IBussines\\IAdministradorBussines.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\IBussines\\IAdministradorBussines.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\IBussines\\IAdministradorBussines.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T13:14:26.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "AdministradorBussines.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\Bussines\\AdministradorBussines.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\Bussines\\AdministradorBussines.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\Bussines\\AdministradorBussines.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\Bussines\\AdministradorBussines.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAmwD0AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:57:39.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "AdministradorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\Repository\\AdministradorRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\Repository\\AdministradorRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\Repository\\AdministradorRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\Repository\\AdministradorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T13:19:32.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "ElRanchoDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\ElRanchoDbContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\ElRanchoDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\ElRanchoDbContext.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\ElRanchoDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:12:53.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "20250218171922_Inicial.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\ElRancho\\Migrations\\20250218171922_Inicial.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\ElRancho\\Migrations\\20250218171922_Inicial.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\ElRancho\\Migrations\\20250218171922_Inicial.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\ElRancho\\Migrations\\20250218171922_Inicial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T17:19:22.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Cliente.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Cliente.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Cliente.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Cliente.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwBoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T18:16:13.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Producto.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Producto.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Producto.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T02:27:58.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "CrudRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\Repository\\CrudRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\Repository\\CrudRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\Repository\\CrudRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\Repository\\CrudRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T13:20:15.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Categoria.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Categoria.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Categoria.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Categoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T18:13:29.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "Administrador.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Administrador.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Administrador.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Administrador.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\Administrador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T02:35:22.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "TipoEntrega.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\TipoEntrega.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\TipoEntrega.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\TipoEntrega.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\TipoEntrega.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T02:31:13.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "EstadoPedido.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\EstadoPedido.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\EstadoPedido.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\EstadoPedido.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\EstadoPedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T18:30:34.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "DetallePedido.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\DetallePedido.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\DetallePedido.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\DetallePedido.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\ElRancho\\DetallePedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T18:26:59.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "ICrudRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\IRepository\\ICrudRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\IRepository\\ICrudRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\IRepository\\ICrudRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\IRepository\\ICrudRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T02:45:13.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\Model\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\Model\\LoginResponse.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\Model\\LoginResponse.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\Model\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:53:53.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "AdministradorResponse.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\Model\\AdministradorResponse.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\Model\\AdministradorResponse.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\Model\\AdministradorResponse.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\Model\\AdministradorResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T13:08:17.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "AdministradorRequest.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\Model\\AdministradorRequest.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\Model\\AdministradorRequest.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\Model\\AdministradorRequest.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\Model\\AdministradorRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T13:08:35.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "AutoMapping.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\UtilGeneral\\AutoMapping.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\UtilGeneral\\AutoMapping.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\UtilGeneral\\AutoMapping.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\UtilGeneral\\AutoMapping.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T13:00:27.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\Model\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\Model\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\Model\\LoginRequest.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\Model\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:52:06.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "IAdministradorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\IRepository\\IAdministradorRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\IRepository\\IAdministradorRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\IRepository\\IAdministradorRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\IRepository\\IAdministradorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:49:09.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "DbModel.csproj",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\DbModel.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\DbModel.csproj",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\DbModel\\DbModel.csproj",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\DbModel\\DbModel.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-17T16:12:20.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "IProductoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\IRepository\\IProductoRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\IRepository\\IProductoRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\IRepository\\IProductoRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\IRepository\\IProductoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T02:47:53.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "IPersonaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\IRepository\\IPersonaRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\IRepository\\IPersonaRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\IRepository\\IPersonaRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\IRepository\\IPersonaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T02:54:56.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ElRancho\\IBussines\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Documents\\ElRancho\\IBussines\\Class1.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ElRancho\\IBussines\\Class1.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\User\\Documents\\ElRancho\\IBussines\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:09:40.722Z"
             }
           ]
         }

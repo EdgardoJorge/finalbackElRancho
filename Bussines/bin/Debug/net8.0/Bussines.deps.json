@@ -243,7 +243,10 @@
           "Microsoft.EntityFrameworkCore": "8.0.13"
         },
         "runtime": {
-          "DbModel.dll": {}
+          "DbModel.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "IBussines/1.0.0": {
@@ -251,7 +254,10 @@
           "Model": "1.0.0"
         },
         "runtime": {
-          "IBussines.dll": {}
+          "IBussines.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "IRepository/1.0.0": {
@@ -260,12 +266,18 @@
           "Model": "1.0.0"
         },
         "runtime": {
-          "IRepository.dll": {}
+          "IRepository.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Model/1.0.0": {
         "runtime": {
-          "Model.dll": {}
+          "Model.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Repository/1.0.0": {
@@ -276,12 +288,18 @@
           "Microsoft.Extensions.Configuration": "9.0.2"
         },
         "runtime": {
-          "Repository.dll": {}
+          "Repository.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "UtilGeneral/1.0.0": {
         "runtime": {
-          "UtilGeneral.dll": {}
+          "UtilGeneral.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

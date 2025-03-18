@@ -5186,41 +5186,49 @@
     ]
   },
   "packageFolders": {
-    "/home/edgardo/.nuget/packages/": {}
+    "C:\\Users\\edgardo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/edgardo/Documentos/finalbackElRancho/ElRancho/ElRancho.csproj",
+      "projectUniqueName": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\ElRancho\\ElRancho.csproj",
       "projectName": "ElRancho",
-      "projectPath": "/home/edgardo/Documentos/finalbackElRancho/ElRancho/ElRancho.csproj",
-      "packagesPath": "/home/edgardo/.nuget/packages/",
-      "outputPath": "/home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/",
+      "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\ElRancho\\ElRancho.csproj",
+      "packagesPath": "C:\\Users\\edgardo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\ElRancho\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/edgardo/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\edgardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/edgardo/Documentos/finalbackElRancho/Bussines/Bussines.csproj": {
-              "projectPath": "/home/edgardo/Documentos/finalbackElRancho/Bussines/Bussines.csproj"
+            "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\Bussines.csproj": {
+              "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\Bussines.csproj"
             },
-            "/home/edgardo/Documentos/finalbackElRancho/IBussines/IBussines.csproj": {
-              "projectPath": "/home/edgardo/Documentos/finalbackElRancho/IBussines/IBussines.csproj"
+            "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IBussines.csproj": {
+              "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IBussines.csproj"
             },
-            "/home/edgardo/Documentos/finalbackElRancho/IRepository/IRepository.csproj": {
-              "projectPath": "/home/edgardo/Documentos/finalbackElRancho/IRepository/IRepository.csproj"
+            "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IRepository.csproj": {
+              "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IRepository.csproj"
             },
-            "/home/edgardo/Documentos/finalbackElRancho/Model/Model.csproj": {
-              "projectPath": "/home/edgardo/Documentos/finalbackElRancho/Model/Model.csproj"
+            "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\Model.csproj"
             }
           }
         }
@@ -5229,7 +5237,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -5275,12 +5289,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.14, 8.0.14]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -5289,7 +5297,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.114/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

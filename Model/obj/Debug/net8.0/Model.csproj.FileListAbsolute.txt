@@ -32,3 +32,15 @@ D:/ElRancho/Model/obj/Debug/net8.0/ref/Model.dll
 /home/edgardo/Documentos/finalbackElRancho/Model/obj/Debug/net8.0/refint/Model.dll
 /home/edgardo/Documentos/finalbackElRancho/Model/obj/Debug/net8.0/Model.pdb
 /home/edgardo/Documentos/finalbackElRancho/Model/obj/Debug/net8.0/ref/Model.dll
+C:\Users\edgardo\Documents\finalbackElRancho\Model\bin\Debug\net8.0\Model.deps.json
+C:\Users\edgardo\Documents\finalbackElRancho\Model\bin\Debug\net8.0\Model.dll
+C:\Users\edgardo\Documents\finalbackElRancho\Model\bin\Debug\net8.0\Model.pdb
+C:\Users\edgardo\Documents\finalbackElRancho\Model\obj\Debug\net8.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edgardo\Documents\finalbackElRancho\Model\obj\Debug\net8.0\Model.AssemblyInfoInputs.cache
+C:\Users\edgardo\Documents\finalbackElRancho\Model\obj\Debug\net8.0\Model.AssemblyInfo.cs
+C:\Users\edgardo\Documents\finalbackElRancho\Model\obj\Debug\net8.0\Model.csproj.CoreCompileInputs.cache
+C:\Users\edgardo\Documents\finalbackElRancho\Model\obj\Debug\net8.0\Model.sourcelink.json
+C:\Users\edgardo\Documents\finalbackElRancho\Model\obj\Debug\net8.0\Model.dll
+C:\Users\edgardo\Documents\finalbackElRancho\Model\obj\Debug\net8.0\refint\Model.dll
+C:\Users\edgardo\Documents\finalbackElRancho\Model\obj\Debug\net8.0\Model.pdb
+C:\Users\edgardo\Documents\finalbackElRancho\Model\obj\Debug\net8.0\ref\Model.dll

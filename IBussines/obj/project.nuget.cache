@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vj1Z7v64g4e1w7g/+YiFgCLzexuS0WEpKoG0TbAKD08v4zTromAzwjEMAk67SMpiQNq9lJ4LE5pi2o9H4QOZHQ==",
+  "dgSpecHash": "BEfbOili2HM=",
   "success": true,
-  "projectFilePath": "/home/edgardo/Documentos/finalbackElRancho/IBussines/IBussines.csproj",
-  "expectedPackageFiles": [
-    "/home/edgardo/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.14/microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IBussines.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

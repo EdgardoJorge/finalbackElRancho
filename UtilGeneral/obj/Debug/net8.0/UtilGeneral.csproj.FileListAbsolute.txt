@@ -32,3 +32,15 @@ D:/ElRancho/UtilGeneral/obj/Debug/net8.0/ref/UtilGeneral.dll
 /home/edgardo/Documentos/finalbackElRancho/UtilGeneral/obj/Debug/net8.0/refint/UtilGeneral.dll
 /home/edgardo/Documentos/finalbackElRancho/UtilGeneral/obj/Debug/net8.0/UtilGeneral.pdb
 /home/edgardo/Documentos/finalbackElRancho/UtilGeneral/obj/Debug/net8.0/ref/UtilGeneral.dll
+C:\Users\edgardo\Documents\finalbackElRancho\UtilGeneral\bin\Debug\net8.0\UtilGeneral.deps.json
+C:\Users\edgardo\Documents\finalbackElRancho\UtilGeneral\bin\Debug\net8.0\UtilGeneral.dll
+C:\Users\edgardo\Documents\finalbackElRancho\UtilGeneral\bin\Debug\net8.0\UtilGeneral.pdb
+C:\Users\edgardo\Documents\finalbackElRancho\UtilGeneral\obj\Debug\net8.0\UtilGeneral.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edgardo\Documents\finalbackElRancho\UtilGeneral\obj\Debug\net8.0\UtilGeneral.AssemblyInfoInputs.cache
+C:\Users\edgardo\Documents\finalbackElRancho\UtilGeneral\obj\Debug\net8.0\UtilGeneral.AssemblyInfo.cs
+C:\Users\edgardo\Documents\finalbackElRancho\UtilGeneral\obj\Debug\net8.0\UtilGeneral.csproj.CoreCompileInputs.cache
+C:\Users\edgardo\Documents\finalbackElRancho\UtilGeneral\obj\Debug\net8.0\UtilGeneral.sourcelink.json
+C:\Users\edgardo\Documents\finalbackElRancho\UtilGeneral\obj\Debug\net8.0\UtilGeneral.dll
+C:\Users\edgardo\Documents\finalbackElRancho\UtilGeneral\obj\Debug\net8.0\refint\UtilGeneral.dll
+C:\Users\edgardo\Documents\finalbackElRancho\UtilGeneral\obj\Debug\net8.0\UtilGeneral.pdb
+C:\Users\edgardo\Documents\finalbackElRancho\UtilGeneral\obj\Debug\net8.0\ref\UtilGeneral.dll

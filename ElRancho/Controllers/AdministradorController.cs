@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
-using Business;
 using IBusiness;
 using Microsoft.AspNetCore.Mvc;
 using Model.Request;
@@ -12,7 +12,7 @@ namespace YourNamespace.Controllers
     [ApiController]
     public class AdministradorController : ControllerBase
     {
-        private readonly IAdministradorBusiness _administradorBusiness; // Nombre correcto
+        private readonly IAdministradorBusiness _administradorBusiness;
 
         public AdministradorController(IAdministradorBusiness administradorBusiness)
         {
@@ -20,27 +20,11 @@ namespace YourNamespace.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<AdministradorResponse>>> GetAll()
-        {
-            var administradores = await _administradorBusiness.GetAll();
-            return Ok(administradores);
-        }
+        public async Task<ActionResult<List<AdministradorResponse>>> GetAll() => Ok(await _administradorBusiness.GetAll());
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<AdministradorResponse>> GetById(int id)
-        {
-            var administrador = await _administradorBusiness.GetById(id);
-            if (administrador == null) return NotFound();
-            return Ok(administrador);
-        }
-
-        [HttpGet("name/{name}")]
-        public async Task<ActionResult<AdministradorResponse?>> GetByName(string name)
-        {
-            var administrador = await _administradorBusiness.GetByName(name);
-            if (administrador == null) return NotFound();
-            return Ok(administrador);
-        }
+        public async Task<ActionResult<AdministradorResponse?>> GetById(int id) =>
+            await _administradorBusiness.GetById(id) is { } administrador ? Ok(administrador) : NotFound();
 
         [HttpPost]
         public async Task<ActionResult<AdministradorResponse>> Create(AdministradorRequest request)
@@ -49,43 +33,12 @@ namespace YourNamespace.Controllers
             return CreatedAtAction(nameof(GetById), new { id = administrador.Id }, administrador);
         }
 
-        [HttpPost("multiple")]
-        public async Task<ActionResult<List<AdministradorResponse>>> CreateMultiple(List<AdministradorRequest> request)
-        {
-            var administradores = await _administradorBusiness.CreateMultiple(request);
-            return CreatedAtAction(nameof(GetAll), administradores);
-        }
-
         [HttpPut("{id}")]
-        public async Task<ActionResult<AdministradorResponse>> Update(int id, AdministradorRequest request)
-        {
-            if (id != request.Id) return BadRequest();
-            var updatedAdministrador = await _administradorBusiness.Update(request);
-            if (updatedAdministrador == null) return NotFound();
-            return Ok(updatedAdministrador);
-        }
-
-        [HttpPut("multiple")]
-        public async Task<ActionResult<List<AdministradorResponse>>> UpdateMultiple(List<AdministradorRequest> request)
-        {
-            var updatedAdministradors = await _administradorBusiness.UpdateMultiple(request);
-            return Ok(updatedAdministradors);
-        }
+        public async Task<ActionResult<AdministradorResponse>> Update(int id, AdministradorRequest request) =>
+            await _administradorBusiness.Update(id, request) is { } updatedAdministrador ? Ok(updatedAdministrador) : NotFound();
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult> DeleteById(int id)
-        {
-            var result = await _administradorBusiness.DeleteById(id);
-            if (result == 0) return NotFound();
-            return NoContent();
-        }
-
-        [HttpDelete("multiple")]
-        public async Task<ActionResult> DeleteMultiple(List<AdministradorRequest> request)
-        {
-            var result = await _administradorBusiness.DeleteMultiple(request);
-            if (result == 0) return NotFound();
-            return NoContent();
-        }
+        public async Task<ActionResult> DeleteById(int id) =>
+            await _administradorBusiness.DeleteById(id) > 0 ? NoContent() : NotFound();
     }
 }

@@ -35,3 +35,16 @@ D:/ElRancho/DbModel/obj/Debug/net8.0/ref/DbModel.dll
 /home/edgardo/Documentos/finalbackElRancho/DbModel/obj/Debug/net8.0/refint/DbModel.dll
 /home/edgardo/Documentos/finalbackElRancho/DbModel/obj/Debug/net8.0/DbModel.pdb
 /home/edgardo/Documentos/finalbackElRancho/DbModel/obj/Debug/net8.0/ref/DbModel.dll
+C:\Users\edgardo\Documents\finalbackElRancho\DbModel\obj\Debug\net8.0\DbModel.dll
+C:\Users\edgardo\Documents\finalbackElRancho\DbModel\obj\Debug\net8.0\refint\DbModel.dll
+C:\Users\edgardo\Documents\finalbackElRancho\DbModel\obj\Debug\net8.0\DbModel.pdb
+C:\Users\edgardo\Documents\finalbackElRancho\DbModel\bin\Debug\net8.0\DbModel.deps.json
+C:\Users\edgardo\Documents\finalbackElRancho\DbModel\bin\Debug\net8.0\DbModel.dll
+C:\Users\edgardo\Documents\finalbackElRancho\DbModel\bin\Debug\net8.0\DbModel.pdb
+C:\Users\edgardo\Documents\finalbackElRancho\DbModel\obj\Debug\net8.0\DbModel.csproj.AssemblyReference.cache
+C:\Users\edgardo\Documents\finalbackElRancho\DbModel\obj\Debug\net8.0\DbModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edgardo\Documents\finalbackElRancho\DbModel\obj\Debug\net8.0\DbModel.AssemblyInfoInputs.cache
+C:\Users\edgardo\Documents\finalbackElRancho\DbModel\obj\Debug\net8.0\DbModel.AssemblyInfo.cs
+C:\Users\edgardo\Documents\finalbackElRancho\DbModel\obj\Debug\net8.0\DbModel.csproj.CoreCompileInputs.cache
+C:\Users\edgardo\Documents\finalbackElRancho\DbModel\obj\Debug\net8.0\DbModel.sourcelink.json
+C:\Users\edgardo\Documents\finalbackElRancho\DbModel\obj\Debug\net8.0\ref\DbModel.dll

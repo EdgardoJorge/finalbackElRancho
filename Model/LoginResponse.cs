@@ -1,4 +1,4 @@
-﻿namespace Model.RequestResponse
+﻿namespace Model.Response
 {
     public class LoginResponse
     {

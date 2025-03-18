@@ -1,5 +1,6 @@
 using Business;
 using Business.Profiles; // Perfiles de AutoMapper
+using Bussines;
 using DbModel.ElRancho;
 using IBusiness;
 using IRepository;
@@ -33,7 +34,13 @@ builder.Services.AddAutoMapper(
     typeof(AdministradorProfile),
     typeof(BannerProfile),
     typeof(CategoriaProfile),
-    typeof(ProductoProfile)
+    typeof(ProductoProfile),
+    typeof(ClienteProfile),
+    typeof(DetalleDePedidoProfile),
+    typeof(PedidoProfile),
+    typeof(EstadoPedidoProfile),
+    typeof(EventoProfile),
+    typeof(OfertaProfile)
 );
 
 // =============================================
@@ -49,11 +56,23 @@ builder.Services.AddScoped(typeof(ICrudRepository<>), typeof(CrudRepository<>));
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddScoped<IBannerRepository, BannerRepository>();
 builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
+builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
+builder.Services.AddScoped<IDetallePedidoRepository, DetallePedidoRepository>();
+builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
+builder.Services.AddScoped<IEstadoPedidoRepository, EstadoPedidoRepository>();
+builder.Services.AddScoped<IEventoRepository, EventoRepository>();
+builder.Services.AddScoped<IOfertaRepository, OfertaRepository>();
 // Registrar servicios específicos
 builder.Services.AddScoped<IAdministradorBusiness, AdministradorBusiness>();
 builder.Services.AddScoped<IBannerBusiness, BannerBusiness>();
 builder.Services.AddScoped<ICategoriaBusiness, CategoriaBusiness>();
 builder.Services.AddScoped<IProductoBusiness, ProductoBusiness>();
+builder.Services.AddScoped<IClienteBusiness, ClienteBusiness>();
+builder.Services.AddScoped<IDetallePedidoBusiness, DetalleDePedidoBusiness>();
+builder.Services.AddScoped<IPedidoBusiness, PedidoBusiness>();
+builder.Services.AddScoped<IEstadoPedidoBusiness, EstadoPedidoBusiness>();
+builder.Services.AddScoped<IEventoBusiness, EventoBusiness>();
+builder.Services.AddScoped<IOfertaBusiness, OfertaBusiness>();
 
 // =============================================
 // 5. Construcción de la aplicación

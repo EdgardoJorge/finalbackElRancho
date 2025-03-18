@@ -8,7 +8,7 @@ namespace IBusiness
     public interface IAdministradorBusiness
     {
         Task<List<AdministradorResponse>> GetAll();
-        Task<AdministradorResponse> GetById(int id);
+        Task<AdministradorResponse?> GetById(int id);
         Task<AdministradorResponse> Create(AdministradorRequest request);
         Task<AdministradorResponse> Update(int id, AdministradorRequest request);
         Task<int> DeleteById(int id);
