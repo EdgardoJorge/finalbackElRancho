@@ -1,5 +1,6 @@
 ﻿using DbModel.ElRancho;
-using DTOs.TipoEntrega;
+using Model.Request;
+using Model.Response;
 using IBusiness;
 using IRepository;
 using System;

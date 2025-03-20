@@ -133,7 +133,7 @@
         },
         "runtime": {
           "DbModel.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -141,7 +141,7 @@
       "Model/1.0.0": {
         "runtime": {
           "Model.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }

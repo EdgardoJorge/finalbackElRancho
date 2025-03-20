@@ -40,7 +40,8 @@ builder.Services.AddAutoMapper(
     typeof(PedidoProfile),
     typeof(EstadoPedidoProfile),
     typeof(EventoProfile),
-    typeof(OfertaProfile)
+    typeof(OfertaProfile),
+    typeof(TipoEntregaProfile)
 );
 
 // =============================================
@@ -62,6 +63,7 @@ builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
 builder.Services.AddScoped<IEstadoPedidoRepository, EstadoPedidoRepository>();
 builder.Services.AddScoped<IEventoRepository, EventoRepository>();
 builder.Services.AddScoped<IOfertaRepository, OfertaRepository>();
+builder.Services.AddScoped<ITipoEntregaRepository, TipoEntregaRepository>();
 // Registrar servicios específicos
 builder.Services.AddScoped<IAdministradorBusiness, AdministradorBusiness>();
 builder.Services.AddScoped<IBannerBusiness, BannerBusiness>();
@@ -73,6 +75,7 @@ builder.Services.AddScoped<IPedidoBusiness, PedidoBusiness>();
 builder.Services.AddScoped<IEstadoPedidoBusiness, EstadoPedidoBusiness>();
 builder.Services.AddScoped<IEventoBusiness, EventoBusiness>();
 builder.Services.AddScoped<IOfertaBusiness, OfertaBusiness>();
+builder.Services.AddScoped<ITipoEntregaBusiness, TipoEntregaBusiness>();
 
 // =============================================
 // 5. Construcción de la aplicación

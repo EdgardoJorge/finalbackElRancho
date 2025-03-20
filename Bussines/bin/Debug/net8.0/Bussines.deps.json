@@ -244,7 +244,7 @@
         },
         "runtime": {
           "DbModel.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -255,7 +255,7 @@
         },
         "runtime": {
           "IBussines.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -267,7 +267,7 @@
         },
         "runtime": {
           "IRepository.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -275,7 +275,7 @@
       "Model/1.0.0": {
         "runtime": {
           "Model.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -289,7 +289,7 @@
         },
         "runtime": {
           "Repository.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -297,7 +297,7 @@
       "UtilGeneral/1.0.0": {
         "runtime": {
           "UtilGeneral.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }

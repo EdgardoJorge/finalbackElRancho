@@ -1,4 +1,5 @@
-﻿using DTOs.TipoEntrega;
+﻿using Model.Request;
+using Model.Response;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

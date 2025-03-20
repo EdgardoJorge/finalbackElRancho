@@ -1,49 +1,43 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\Bussines.csproj": {}
+    "/home/edgardo/Documentos/finalbackElRancho/Bussines/Bussines.csproj": {}
   },
   "projects": {
-    "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\Bussines.csproj": {
+    "/home/edgardo/Documentos/finalbackElRancho/Bussines/Bussines.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\Bussines.csproj",
+        "projectUniqueName": "/home/edgardo/Documentos/finalbackElRancho/Bussines/Bussines.csproj",
         "projectName": "Bussines",
-        "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\Bussines.csproj",
-        "packagesPath": "C:\\Users\\edgardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Bussines\\obj\\",
+        "projectPath": "/home/edgardo/Documentos/finalbackElRancho/Bussines/Bussines.csproj",
+        "packagesPath": "/home/edgardo/.nuget/packages/",
+        "outputPath": "/home/edgardo/Documentos/finalbackElRancho/Bussines/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\edgardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/edgardo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IBussines.csproj": {
-                "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IBussines.csproj"
+              "/home/edgardo/Documentos/finalbackElRancho/IBussines/IBussines.csproj": {
+                "projectPath": "/home/edgardo/Documentos/finalbackElRancho/IBussines/IBussines.csproj"
               },
-              "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IRepository.csproj": {
-                "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IRepository.csproj"
+              "/home/edgardo/Documentos/finalbackElRancho/IRepository/IRepository.csproj": {
+                "projectPath": "/home/edgardo/Documentos/finalbackElRancho/IRepository/IRepository.csproj"
               },
-              "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Repository\\Repository.csproj"
+              "/home/edgardo/Documentos/finalbackElRancho/Repository/Repository.csproj": {
+                "projectPath": "/home/edgardo/Documentos/finalbackElRancho/Repository/Repository.csproj"
               },
-              "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\UtilGeneral\\UtilGeneral.csproj": {
-                "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\UtilGeneral\\UtilGeneral.csproj"
+              "/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/UtilGeneral.csproj": {
+                "projectPath": "/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/UtilGeneral.csproj"
               }
             }
           }
@@ -58,7 +52,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -93,33 +87,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.104/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\DbModel\\DbModel.csproj": {
+    "/home/edgardo/Documentos/finalbackElRancho/DbModel/DbModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\DbModel\\DbModel.csproj",
+        "projectUniqueName": "/home/edgardo/Documentos/finalbackElRancho/DbModel/DbModel.csproj",
         "projectName": "DbModel",
-        "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\DbModel\\DbModel.csproj",
-        "packagesPath": "C:\\Users\\edgardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\DbModel\\obj\\",
+        "projectPath": "/home/edgardo/Documentos/finalbackElRancho/DbModel/DbModel.csproj",
+        "packagesPath": "/home/edgardo/.nuget/packages/",
+        "outputPath": "/home/edgardo/Documentos/finalbackElRancho/DbModel/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\edgardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/edgardo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -138,7 +126,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -165,41 +153,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.104/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IBussines.csproj": {
+    "/home/edgardo/Documentos/finalbackElRancho/IBussines/IBussines.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IBussines.csproj",
+        "projectUniqueName": "/home/edgardo/Documentos/finalbackElRancho/IBussines/IBussines.csproj",
         "projectName": "IBussines",
-        "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\IBussines.csproj",
-        "packagesPath": "C:\\Users\\edgardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IBussines\\obj\\",
+        "projectPath": "/home/edgardo/Documentos/finalbackElRancho/IBussines/IBussines.csproj",
+        "packagesPath": "/home/edgardo/.nuget/packages/",
+        "outputPath": "/home/edgardo/Documentos/finalbackElRancho/IBussines/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\edgardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/edgardo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\Model.csproj"
+              "/home/edgardo/Documentos/finalbackElRancho/Model/Model.csproj": {
+                "projectPath": "/home/edgardo/Documentos/finalbackElRancho/Model/Model.csproj"
               }
             }
           }
@@ -214,7 +196,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -235,44 +217,38 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.104/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IRepository.csproj": {
+    "/home/edgardo/Documentos/finalbackElRancho/IRepository/IRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IRepository.csproj",
+        "projectUniqueName": "/home/edgardo/Documentos/finalbackElRancho/IRepository/IRepository.csproj",
         "projectName": "IRepository",
-        "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IRepository.csproj",
-        "packagesPath": "C:\\Users\\edgardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\obj\\",
+        "projectPath": "/home/edgardo/Documentos/finalbackElRancho/IRepository/IRepository.csproj",
+        "packagesPath": "/home/edgardo/.nuget/packages/",
+        "outputPath": "/home/edgardo/Documentos/finalbackElRancho/IRepository/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\edgardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/edgardo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\DbModel\\DbModel.csproj": {
-                "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\DbModel\\DbModel.csproj"
+              "/home/edgardo/Documentos/finalbackElRancho/DbModel/DbModel.csproj": {
+                "projectPath": "/home/edgardo/Documentos/finalbackElRancho/DbModel/DbModel.csproj"
               },
-              "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\Model.csproj"
+              "/home/edgardo/Documentos/finalbackElRancho/Model/Model.csproj": {
+                "projectPath": "/home/edgardo/Documentos/finalbackElRancho/Model/Model.csproj"
               }
             }
           }
@@ -287,7 +263,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -308,33 +284,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.104/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\Model.csproj": {
+    "/home/edgardo/Documentos/finalbackElRancho/Model/Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\Model.csproj",
+        "projectUniqueName": "/home/edgardo/Documentos/finalbackElRancho/Model/Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\edgardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Model\\obj\\",
+        "projectPath": "/home/edgardo/Documentos/finalbackElRancho/Model/Model.csproj",
+        "packagesPath": "/home/edgardo/.nuget/packages/",
+        "outputPath": "/home/edgardo/Documentos/finalbackElRancho/Model/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\edgardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/edgardo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -353,7 +323,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -374,44 +344,38 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.104/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Repository\\Repository.csproj": {
+    "/home/edgardo/Documentos/finalbackElRancho/Repository/Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Repository\\Repository.csproj",
+        "projectUniqueName": "/home/edgardo/Documentos/finalbackElRancho/Repository/Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\edgardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\Repository\\obj\\",
+        "projectPath": "/home/edgardo/Documentos/finalbackElRancho/Repository/Repository.csproj",
+        "packagesPath": "/home/edgardo/.nuget/packages/",
+        "outputPath": "/home/edgardo/Documentos/finalbackElRancho/Repository/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\edgardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/edgardo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\DbModel\\DbModel.csproj": {
-                "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\DbModel\\DbModel.csproj"
+              "/home/edgardo/Documentos/finalbackElRancho/DbModel/DbModel.csproj": {
+                "projectPath": "/home/edgardo/Documentos/finalbackElRancho/DbModel/DbModel.csproj"
               },
-              "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IRepository.csproj": {
-                "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\IRepository\\IRepository.csproj"
+              "/home/edgardo/Documentos/finalbackElRancho/IRepository/IRepository.csproj": {
+                "projectPath": "/home/edgardo/Documentos/finalbackElRancho/IRepository/IRepository.csproj"
               }
             }
           }
@@ -426,7 +390,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -457,33 +421,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.104/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\UtilGeneral\\UtilGeneral.csproj": {
+    "/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/UtilGeneral.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\UtilGeneral\\UtilGeneral.csproj",
+        "projectUniqueName": "/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/UtilGeneral.csproj",
         "projectName": "UtilGeneral",
-        "projectPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\UtilGeneral\\UtilGeneral.csproj",
-        "packagesPath": "C:\\Users\\edgardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edgardo\\Documents\\finalbackElRancho\\UtilGeneral\\obj\\",
+        "projectPath": "/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/UtilGeneral.csproj",
+        "packagesPath": "/home/edgardo/.nuget/packages/",
+        "outputPath": "/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\edgardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/edgardo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -502,7 +460,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -523,7 +481,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.104/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
