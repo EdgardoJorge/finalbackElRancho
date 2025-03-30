@@ -16,6 +16,8 @@ namespace DbModel.ElRancho
         public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<Producto> Productos { get; set; }
         public DbSet<TipoEntrega> TiposEntrega { get; set; }
+        public DbSet<Reserva> Reservas { get; set; }
+        public DbSet<Mesa> Mesas { get; set; }
         public object? UpdateBehavior { get; private set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -57,6 +59,18 @@ namespace DbModel.ElRancho
                 .HasOne<Pedido>()
                 .WithMany()
                 .HasForeignKey(dp => dp.PedidoId);
+
+            // Relación entre Reserva y Cliente
+            modelBuilder.Entity<Reserva>()
+                .HasOne<Cliente>()
+                .WithMany()
+                .HasForeignKey(r => r.ClienteId);
+
+            // Relación entre Reserva y Mesa
+            modelBuilder.Entity<Reserva>()
+                .HasOne<Mesa>()
+                .WithMany()
+                .HasForeignKey(r => r.MesaId);
         }
     }
 }
