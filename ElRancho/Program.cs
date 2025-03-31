@@ -1,11 +1,14 @@
 using Business;
-using Business.Profiles; // Perfiles de AutoMapper
+using Business.Profiles;
 using Bussines;
 using DbModel.ElRancho;
 using IBusiness;
 using IRepository;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Repository;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +26,7 @@ const string connectionString = "Data Source=ElRancho.db";
 builder.Services.AddDbContext<ElRanchoDbContext>(options =>
     options.UseSqlite(
         connectionString,
-        b => b.MigrationsAssembly("ElRancho") // Asegúrate de que el nombre del proyecto sea correcto
+        b => b.MigrationsAssembly("ElRancho")
     )
 );
 
@@ -41,19 +44,16 @@ builder.Services.AddAutoMapper(
     typeof(EstadoPedidoProfile),
     typeof(EventoProfile),
     typeof(OfertaProfile),
-    typeof(TipoEntregaProfile)
+    typeof(TipoEntregaProfile),
+    typeof(MesaProfile),
+    typeof(ReservaProfile)
 );
 
 // =============================================
 // 4. Registro de dependencias
 // =============================================
-// Registrar el contexto de la base de datos como `DbContext`
 builder.Services.AddScoped<DbContext, ElRanchoDbContext>();
-
-// Registrar CrudRepository con el contexto correcto
 builder.Services.AddScoped(typeof(ICrudRepository<>), typeof(CrudRepository<>));
-
-// Registrar repositorios
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddScoped<IBannerRepository, BannerRepository>();
 builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
@@ -64,7 +64,8 @@ builder.Services.AddScoped<IEstadoPedidoRepository, EstadoPedidoRepository>();
 builder.Services.AddScoped<IEventoRepository, EventoRepository>();
 builder.Services.AddScoped<IOfertaRepository, OfertaRepository>();
 builder.Services.AddScoped<ITipoEntregaRepository, TipoEntregaRepository>();
-// Registrar servicios específicos
+builder.Services.AddScoped<IMesaRepository, MesaRepository>();
+builder.Services.AddScoped<IReservaRepository, ReservaRepository>();
 builder.Services.AddScoped<IAdministradorBusiness, AdministradorBusiness>();
 builder.Services.AddScoped<IBannerBusiness, BannerBusiness>();
 builder.Services.AddScoped<ICategoriaBusiness, CategoriaBusiness>();
@@ -76,14 +77,42 @@ builder.Services.AddScoped<IEstadoPedidoBusiness, EstadoPedidoBusiness>();
 builder.Services.AddScoped<IEventoBusiness, EventoBusiness>();
 builder.Services.AddScoped<IOfertaBusiness, OfertaBusiness>();
 builder.Services.AddScoped<ITipoEntregaBusiness, TipoEntregaBusiness>();
+builder.Services.AddScoped<IMesaBusiness, MesaBusiness>();
+builder.Services.AddScoped<IReservaBusiness, ReservaBusiness>();
 
 // =============================================
-// 5. Construcción de la aplicación
+// 5. Configuración de autenticación JWT
+// =============================================
+// Leer configuración del appsettings.json
+var jwtKey = builder.Configuration["Jwt:Key"] ?? throw new InvalidOperationException("JWT Key is missing.");
+var jwtIssuer = builder.Configuration["Jwt:Issuer"] ?? throw new InvalidOperationException("JWT Issuer is missing.");
+var jwtAudience = builder.Configuration["Jwt:Audience"] ?? throw new InvalidOperationException("JWT Audience is missing.");
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = jwtIssuer,
+            ValidAudience = jwtAudience,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
+        };
+    });
+
+builder.Services.AddAuthorization();
+builder.Services.AddScoped<AuthService>();
+
+// =============================================
+// 6. Construcción de la aplicación
 // =============================================
 var app = builder.Build();
 
 // =============================================
-// 6. Configuración del pipeline HTTP
+// 7. Configuración del pipeline HTTP
 // =============================================
 if (app.Environment.IsDevelopment())
 {
@@ -92,18 +121,19 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 
 // =============================================
-// 7. Aplicar migraciones automáticamente (OPCIONAL)
+// 8. Aplicar migraciones automáticamente (OPCIONAL)
 // =============================================
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<ElRanchoDbContext>();
     try
     {
-        dbContext.Database.Migrate(); // Aplica migraciones pendientes
+        dbContext.Database.Migrate();
     }
     catch (Exception ex)
     {

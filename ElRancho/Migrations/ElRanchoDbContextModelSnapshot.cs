@@ -39,7 +39,7 @@ namespace ElRancho.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("DNI")
+                    b.Property<string>("Dni")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -125,6 +125,10 @@ namespace ElRancho.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("ContraseñaHash")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("CorreoElectronico")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -154,6 +158,9 @@ namespace ElRancho.Migrations
                     b.Property<string>("TelefonoMovil")
                         .IsRequired()
                         .HasMaxLength(9)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("TokenRecuperacion")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -306,6 +313,30 @@ namespace ElRancho.Migrations
                     b.ToTable("Evento");
                 });
 
+            modelBuilder.Entity("DbModel.ElRancho.Mesa", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Capacidad")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Disponible")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Numero")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Ubicacion")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("mesa", "reservas");
+                });
+
             modelBuilder.Entity("DbModel.ElRancho.Oferta", b =>
                 {
                     b.Property<int>("Id")
@@ -409,6 +440,42 @@ namespace ElRancho.Migrations
                     b.ToTable("Producto", "producto");
                 });
 
+            modelBuilder.Entity("DbModel.ElRancho.Reserva", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<decimal>("Adelanto")
+                        .HasColumnType("decimal(10,2)");
+
+                    b.Property<int>("ClienteId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Confirmada")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("FechaReserva")
+                        .HasColumnType("TEXT");
+
+                    b.Property<TimeSpan>("HoraReserva")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("MesaId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("NumeroPersonas")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClienteId");
+
+                    b.HasIndex("MesaId");
+
+                    b.ToTable("reserva", "reservas");
+                });
+
             modelBuilder.Entity("DbModel.ElRancho.TipoEntrega", b =>
                 {
                     b.Property<int>("Id")
@@ -465,6 +532,21 @@ namespace ElRancho.Migrations
                     b.HasOne("DbModel.ElRancho.Producto", null)
                         .WithMany()
                         .HasForeignKey("ProductoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("DbModel.ElRancho.Reserva", b =>
+                {
+                    b.HasOne("DbModel.ElRancho.Cliente", null)
+                        .WithMany()
+                        .HasForeignKey("ClienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DbModel.ElRancho.Mesa", null)
+                        .WithMany()
+                        .HasForeignKey("MesaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

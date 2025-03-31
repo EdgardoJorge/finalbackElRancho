@@ -14,6 +14,12 @@ namespace IBusiness
         Task<List<ReservaResponse>> CreateMultiple(List<ReservaRequest> requests);
         Task<List<ReservaResponse>> UpdateMultiple(Dictionary<int, ReservaRequest> requests);
         Task<List<ReservaResponse>> GetByClienteId(int clienteId);
+        Task<List<ReservaResponse>> GetByMesaId(int mesaId); // Obtener reservas por mesa
         Task<List<ReservaResponse>> GetByDateRange(DateTime inicio, DateTime fin);
+        Task<List<ReservaResponse>> GetPendingReservations(); // Reservas no confirmadas
+        Task<List<ReservaResponse>> GetConfirmedReservations(); // Reservas confirmadas
+        Task<List<ReservaResponse>> GetUpcomingReservations(); // Reservas futuras
+        Task<bool> CancelReservation(int id); // Cancelar reserva
+        Task<bool> ConfirmReservation(int id); // Confirmar reserva
     }
 }

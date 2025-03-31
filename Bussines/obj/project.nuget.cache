@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "lkyZHAUScEo=",
+  "dgSpecHash": "UfOxlqIHFag=",
   "success": true,
   "projectFilePath": "/home/edgardo/Documentos/finalbackElRancho/Bussines/Bussines.csproj",
   "expectedPackageFiles": [
     "/home/edgardo/.nuget/packages/automapper/14.0.0/automapper.14.0.0.nupkg.sha512",
+    "/home/edgardo/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/home/edgardo/.nuget/packages/microsoft.aspnetcore.http/2.3.0/microsoft.aspnetcore.http.2.3.0.nupkg.sha512",
     "/home/edgardo/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.3.0/microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
     "/home/edgardo/.nuget/packages/microsoft.aspnetcore.http.features/2.3.0/microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
     "/home/edgardo/.nuget/packages/microsoft.aspnetcore.webutilities/2.3.0/microsoft.aspnetcore.webutilities.2.3.0.nupkg.sha512",
+    "/home/edgardo/.nuget/packages/microsoft.bcl.memory/9.0.0/microsoft.bcl.memory.9.0.0.nupkg.sha512",
     "/home/edgardo/.nuget/packages/microsoft.entityframeworkcore/8.0.13/microsoft.entityframeworkcore.8.0.13.nupkg.sha512",
     "/home/edgardo/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.13/microsoft.entityframeworkcore.abstractions.8.0.13.nupkg.sha512",
     "/home/edgardo/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.13/microsoft.entityframeworkcore.analyzers.8.0.13.nupkg.sha512",
@@ -23,8 +25,13 @@
     "/home/edgardo/.nuget/packages/microsoft.extensions.objectpool/8.0.11/microsoft.extensions.objectpool.8.0.11.nupkg.sha512",
     "/home/edgardo/.nuget/packages/microsoft.extensions.options/8.0.2/microsoft.extensions.options.8.0.2.nupkg.sha512",
     "/home/edgardo/.nuget/packages/microsoft.extensions.primitives/9.0.2/microsoft.extensions.primitives.9.0.2.nupkg.sha512",
+    "/home/edgardo/.nuget/packages/microsoft.identitymodel.abstractions/8.7.0/microsoft.identitymodel.abstractions.8.7.0.nupkg.sha512",
+    "/home/edgardo/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.7.0/microsoft.identitymodel.jsonwebtokens.8.7.0.nupkg.sha512",
+    "/home/edgardo/.nuget/packages/microsoft.identitymodel.logging/8.7.0/microsoft.identitymodel.logging.8.7.0.nupkg.sha512",
+    "/home/edgardo/.nuget/packages/microsoft.identitymodel.tokens/8.7.0/microsoft.identitymodel.tokens.8.7.0.nupkg.sha512",
     "/home/edgardo/.nuget/packages/microsoft.net.http.headers/2.3.0/microsoft.net.http.headers.2.3.0.nupkg.sha512",
     "/home/edgardo/.nuget/packages/system.buffers/4.6.0/system.buffers.4.6.0.nupkg.sha512",
+    "/home/edgardo/.nuget/packages/system.identitymodel.tokens.jwt/8.7.0/system.identitymodel.tokens.jwt.8.7.0.nupkg.sha512",
     "/home/edgardo/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512"
   ],
   "logs": []

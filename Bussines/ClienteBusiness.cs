@@ -6,6 +6,7 @@ using IRepository;
 using IBusiness;
 using Model.Request;
 using Model.Response;
+using BCrypt.Net;
 
 namespace Business
 {
@@ -21,20 +22,7 @@ namespace Business
         public async Task<List<ClienteResponse>> GetAll()
         {
             var clientes = await _clienteRepository.GetAllAsync();
-            return clientes.Select(c => new ClienteResponse
-            {
-                Id = c.Id,
-                Nombres = c.Nombres,
-                ApellidoPaterno = c.ApellidoPaterno,
-                ApellidoMaterno = c.ApellidoMaterno,
-                DNI = c.DNI,
-                RUC = c.RUC,
-                TelefonoMovil = c.TelefonoMovil,
-                TelefonoFijo = c.TelefonoFijo,
-                CorreoElectronico = c.CorreoElectronico,
-                Direccion = c.Direccion,
-                CodigoPostal = c.CodigoPostal
-            }).ToList();
+            return clientes.Select(MapToResponse).ToList();
         }
 
         public async Task<ClienteResponse> GetById(int id)
@@ -60,10 +48,8 @@ namespace Business
         public async Task<List<ClienteResponse>> CreateMultiple(List<ClienteRequest> requests)
         {
             var clientes = requests.Select(MapToEntity).ToList();
-
             await _clienteRepository.AddRangeAsync(clientes);
             await _clienteRepository.SaveChangesAsync();
-
             return clientes.Select(MapToResponse).ToList();
         }
 
@@ -116,7 +102,8 @@ namespace Business
             return clientes.Count;
         }
 
-        // Métodos auxiliares para mapeo
+        // 🔹 Métodos auxiliares para mapeo
+
         private Cliente MapToEntity(ClienteRequest request)
         {
             return new Cliente
@@ -130,7 +117,8 @@ namespace Business
                 TelefonoFijo = request.TelefonoFijo,
                 CorreoElectronico = request.CorreoElectronico,
                 Direccion = request.Direccion,
-                CodigoPostal = request.CodigoPostal
+                CodigoPostal = request.CodigoPostal,
+                ContraseñaHash = BCrypt.Net.BCrypt.HashPassword(request.Contraseña) // ✅ Encriptar la contraseña antes de guardar
             };
         }
 
@@ -149,6 +137,7 @@ namespace Business
                 CorreoElectronico = cliente.CorreoElectronico,
                 Direccion = cliente.Direccion,
                 CodigoPostal = cliente.CodigoPostal
+                // 🔹 No devolvemos la contraseña por seguridad
             };
         }
 
@@ -164,6 +153,11 @@ namespace Business
             cliente.CorreoElectronico = request.CorreoElectronico;
             cliente.Direccion = request.Direccion;
             cliente.CodigoPostal = request.CodigoPostal;
+
+            if (!string.IsNullOrEmpty(request.Contraseña))
+            {
+                cliente.ContraseñaHash = BCrypt.Net.BCrypt.HashPassword(request.Contraseña); // ✅ Encriptar solo si hay una nueva contraseña
+            }
         }
     }
 }

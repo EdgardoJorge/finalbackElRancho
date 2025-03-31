@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DbModel.ElRancho
 {
@@ -31,5 +26,11 @@ namespace DbModel.ElRancho
         [Required]
         public string Direccion { get; set; }
         public string CodigoPostal { get; set; }
+
+        // 🔐 Nueva propiedad para autenticación
+        [Required]
+        public string ContraseñaHash { get; set; } // Contraseña cifrada con BCrypt
+
+        public string? TokenRecuperacion { get; set; } // Opcional para recuperar contraseña
     }
 }

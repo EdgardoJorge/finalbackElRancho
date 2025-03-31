@@ -26,8 +26,6 @@ namespace DbModel.ElRancho
         [Required]
         public int NumeroPersonas { get; set; }
 
-        public string? Observaciones { get; set; } // Puede ser nulo, ya que no siempre hay observaciones
-
         [Required]
         public bool Confirmada { get; set; } = false; // Inicialización por defecto
 
