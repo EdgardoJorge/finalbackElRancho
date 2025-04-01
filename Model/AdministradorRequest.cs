@@ -27,5 +27,7 @@ namespace Model.Request
 
     [Required]
     public string Cargo { get; set; }
+    [Required]
+    public string Contraseña { get; set; }  // Se agregó la contraseña
 }
 }

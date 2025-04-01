@@ -7,6 +7,7 @@ using Model.Response;
 using IBusiness;
 using Microsoft.EntityFrameworkCore;
 using DbModel.ElRancho;
+using BCrypt.Net; // 🔐 Para encriptar contraseñas
 
 namespace Business
 {
@@ -28,7 +29,7 @@ namespace Business
                 Nombres = admin.Nombres,
                 ApellidoPaterno = admin.ApellidoPaterno,
                 ApellidoMaterno = admin.ApellidoMaterno,
-                Dni = admin.Dni,
+                Dni = admin.DNI, // ✅ Se mantiene en mayúsculas
                 TelefonoMovil = admin.TelefonoMovil,
                 CorreoElectronico = admin.CorreoElectronico,
                 Cargo = admin.Cargo
@@ -46,7 +47,7 @@ namespace Business
                 Nombres = administrador.Nombres,
                 ApellidoPaterno = administrador.ApellidoPaterno,
                 ApellidoMaterno = administrador.ApellidoMaterno,
-                Dni = administrador.Dni,
+                Dni = administrador.DNI, // ✅ Dni en mayúsculas
                 TelefonoMovil = administrador.TelefonoMovil,
                 CorreoElectronico = administrador.CorreoElectronico,
                 Cargo = administrador.Cargo
@@ -55,8 +56,7 @@ namespace Business
 
         public async Task<AdministradorResponse?> GetByName(string name)
         {
-            var administrador = await _dbContext.Administradores
-                .FirstOrDefaultAsync(a => a.Nombres == name);
+            var administrador = await _dbContext.Administradores.FirstOrDefaultAsync(a => a.Nombres == name);
             if (administrador == null) return null;
 
             return new AdministradorResponse
@@ -65,7 +65,7 @@ namespace Business
                 Nombres = administrador.Nombres,
                 ApellidoPaterno = administrador.ApellidoPaterno,
                 ApellidoMaterno = administrador.ApellidoMaterno,
-                Dni = administrador.Dni,
+                Dni = administrador.DNI, // ✅ Manteniendo en mayúsculas
                 TelefonoMovil = administrador.TelefonoMovil,
                 CorreoElectronico = administrador.CorreoElectronico,
                 Cargo = administrador.Cargo
@@ -79,10 +79,11 @@ namespace Business
                 Nombres = request.Nombres,
                 ApellidoPaterno = request.ApellidoPaterno,
                 ApellidoMaterno = request.ApellidoMaterno,
-                Dni = request.Dni,
+                DNI = request.Dni, // ✅ Se mantiene Dni en mayúsculas
                 TelefonoMovil = request.TelefonoMovil,
                 CorreoElectronico = request.CorreoElectronico,
-                Cargo = request.Cargo
+                Cargo = request.Cargo,
+                Contraseña = BCrypt.Net.BCrypt.HashPassword(request.Contraseña) // 🔐 Encriptar la contraseña
             };
 
             _dbContext.Administradores.Add(administrador);
@@ -94,7 +95,7 @@ namespace Business
                 Nombres = administrador.Nombres,
                 ApellidoPaterno = administrador.ApellidoPaterno,
                 ApellidoMaterno = administrador.ApellidoMaterno,
-                Dni = administrador.Dni,
+                Dni = administrador.DNI, // ✅ Dni en mayúsculas
                 TelefonoMovil = administrador.TelefonoMovil,
                 CorreoElectronico = administrador.CorreoElectronico,
                 Cargo = administrador.Cargo
@@ -109,10 +110,15 @@ namespace Business
             administrador.Nombres = request.Nombres;
             administrador.ApellidoPaterno = request.ApellidoPaterno;
             administrador.ApellidoMaterno = request.ApellidoMaterno;
-            administrador.Dni = request.Dni;
+            administrador.DNI = request.Dni; // ✅ Dni en mayúsculas
             administrador.TelefonoMovil = request.TelefonoMovil;
             administrador.CorreoElectronico = request.CorreoElectronico;
             administrador.Cargo = request.Cargo;
+
+            if (!string.IsNullOrWhiteSpace(request.Contraseña))
+            {
+                administrador.Contraseña = BCrypt.Net.BCrypt.HashPassword(request.Contraseña); // 🔐 Encriptar nueva contraseña si se envía
+            }
 
             await _dbContext.SaveChangesAsync();
 
@@ -122,7 +128,7 @@ namespace Business
                 Nombres = administrador.Nombres,
                 ApellidoPaterno = administrador.ApellidoPaterno,
                 ApellidoMaterno = administrador.ApellidoMaterno,
-                Dni = administrador.Dni,
+                Dni = administrador.DNI, // ✅ Se mantiene en mayúsculas
                 TelefonoMovil = administrador.TelefonoMovil,
                 CorreoElectronico = administrador.CorreoElectronico,
                 Cargo = administrador.Cargo
@@ -140,10 +146,7 @@ namespace Business
 
         public async Task<int> DeleteMultiple(List<int> ids)
         {
-            var administradores = await _dbContext.Administradores
-                .Where(a => ids.Contains(a.Id))
-                .ToListAsync();
-
+            var administradores = await _dbContext.Administradores.Where(a => ids.Contains(a.Id)).ToListAsync();
             if (!administradores.Any()) return 0;
 
             _dbContext.Administradores.RemoveRange(administradores);
@@ -157,10 +160,11 @@ namespace Business
                 Nombres = request.Nombres,
                 ApellidoPaterno = request.ApellidoPaterno,
                 ApellidoMaterno = request.ApellidoMaterno,
-                Dni = request.Dni,
+                DNI = request.Dni, // ✅ Se mantiene en mayúsculas
                 TelefonoMovil = request.TelefonoMovil,
                 CorreoElectronico = request.CorreoElectronico,
-                Cargo = request.Cargo
+                Cargo = request.Cargo,
+                Contraseña = BCrypt.Net.BCrypt.HashPassword(request.Contraseña) // 🔐 Encriptar cada contraseña
             }).ToList();
 
             _dbContext.Administradores.AddRange(administradores);
@@ -172,7 +176,7 @@ namespace Business
                 Nombres = admin.Nombres,
                 ApellidoPaterno = admin.ApellidoPaterno,
                 ApellidoMaterno = admin.ApellidoMaterno,
-                Dni = admin.Dni,
+                Dni = admin.DNI, // ✅ Dni en mayúsculas
                 TelefonoMovil = admin.TelefonoMovil,
                 CorreoElectronico = admin.CorreoElectronico,
                 Cargo = admin.Cargo

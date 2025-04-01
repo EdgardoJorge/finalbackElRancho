@@ -66,6 +66,7 @@ builder.Services.AddScoped<IOfertaRepository, OfertaRepository>();
 builder.Services.AddScoped<ITipoEntregaRepository, TipoEntregaRepository>();
 builder.Services.AddScoped<IMesaRepository, MesaRepository>();
 builder.Services.AddScoped<IReservaRepository, ReservaRepository>();
+
 builder.Services.AddScoped<IAdministradorBusiness, AdministradorBusiness>();
 builder.Services.AddScoped<IBannerBusiness, BannerBusiness>();
 builder.Services.AddScoped<ICategoriaBusiness, CategoriaBusiness>();
@@ -79,6 +80,7 @@ builder.Services.AddScoped<IOfertaBusiness, OfertaBusiness>();
 builder.Services.AddScoped<ITipoEntregaBusiness, TipoEntregaBusiness>();
 builder.Services.AddScoped<IMesaBusiness, MesaBusiness>();
 builder.Services.AddScoped<IReservaBusiness, ReservaBusiness>();
+builder.Services.AddScoped<AuthAdminService>();
 
 // =============================================
 // 5. Configuración de autenticación JWT

@@ -20,7 +20,7 @@ namespace DbModel.ElRancho
         public string ApellidoMaterno { get; set; }
 
         [Required]
-        public string Dni { get; set; }  // Cambié de "DNI" a "Dni"
+        public string DNI { get; set; }  // Está en mayúsculas como solicitaste
 
         [Required]
         public string TelefonoMovil { get; set; }
@@ -30,5 +30,8 @@ namespace DbModel.ElRancho
 
         [Required]
         public string Cargo { get; set; }
+
+        [Required]
+        public string Contraseña { get; set; }  // Se agregó la contraseña
     }
 }
