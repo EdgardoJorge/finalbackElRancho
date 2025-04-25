@@ -47,8 +47,8 @@ namespace YourNamespace.Controllers
         [HttpPost]
         public async Task<ActionResult<AdministradorResponse>> Create([FromBody] AdministradorRequest request)
         {
-            if (string.IsNullOrWhiteSpace(request.Contraseña))
-                return BadRequest(new { message = "La contraseña es obligatoria" });
+            if (string.IsNullOrWhiteSpace(request.Password))
+                return BadRequest(new { message = "La Password es obligatoria" });
 
             var administrador = await _administradorBusiness.Create(request);
             return CreatedAtAction(nameof(GetById), new { id = administrador.Id }, administrador);

@@ -7,7 +7,7 @@ using Model.Response;
 using IBusiness;
 using Microsoft.EntityFrameworkCore;
 using DbModel.ElRancho;
-using BCrypt.Net; // 🔐 Para encriptar contraseñas
+using BCrypt.Net; // 🔐 Para encriptar Passwords
 
 namespace Business
 {
@@ -83,7 +83,7 @@ namespace Business
                 TelefonoMovil = request.TelefonoMovil,
                 CorreoElectronico = request.CorreoElectronico,
                 Cargo = request.Cargo,
-                Contraseña = BCrypt.Net.BCrypt.HashPassword(request.Contraseña) // 🔐 Encriptar la contraseña
+                Password = BCrypt.Net.BCrypt.HashPassword(request.Password) // 🔐 Encriptar la Password
             };
 
             _dbContext.Administradores.Add(administrador);
@@ -115,9 +115,9 @@ namespace Business
             administrador.CorreoElectronico = request.CorreoElectronico;
             administrador.Cargo = request.Cargo;
 
-            if (!string.IsNullOrWhiteSpace(request.Contraseña))
+            if (!string.IsNullOrWhiteSpace(request.Password))
             {
-                administrador.Contraseña = BCrypt.Net.BCrypt.HashPassword(request.Contraseña); // 🔐 Encriptar nueva contraseña si se envía
+                administrador.Password = BCrypt.Net.BCrypt.HashPassword(request.Password); // 🔐 Encriptar nueva Password si se envía
             }
 
             await _dbContext.SaveChangesAsync();
@@ -164,7 +164,7 @@ namespace Business
                 TelefonoMovil = request.TelefonoMovil,
                 CorreoElectronico = request.CorreoElectronico,
                 Cargo = request.Cargo,
-                Contraseña = BCrypt.Net.BCrypt.HashPassword(request.Contraseña) // 🔐 Encriptar cada contraseña
+                Password = BCrypt.Net.BCrypt.HashPassword(request.Password) // 🔐 Encriptar cada Password
             }).ToList();
 
             _dbContext.Administradores.AddRange(administradores);

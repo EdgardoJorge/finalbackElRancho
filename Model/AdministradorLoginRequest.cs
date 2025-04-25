@@ -8,6 +8,6 @@ namespace Model.Request
         public string CorreoElectronico { get; set; }
 
         [Required]
-        public string Contraseña { get; set; }
+        public string Password { get; set; }
     }
 }

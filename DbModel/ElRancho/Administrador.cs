@@ -32,6 +32,6 @@ namespace DbModel.ElRancho
         public string Cargo { get; set; }
 
         [Required]
-        public string Contraseña { get; set; }  // Se agregó la contraseña
+        public string Password { get; set; }  // Se agregó la contraseña
     }
 }

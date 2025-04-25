@@ -82,6 +82,17 @@ builder.Services.AddScoped<IMesaBusiness, MesaBusiness>();
 builder.Services.AddScoped<IReservaBusiness, ReservaBusiness>();
 builder.Services.AddScoped<AuthAdminService>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:4200") // Cambia esto si tu frontend está en otro puerto/dominio
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
+
 // =============================================
 // 5. Configuración de autenticación JWT
 // =============================================
@@ -121,7 +132,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("AllowFrontend");
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();

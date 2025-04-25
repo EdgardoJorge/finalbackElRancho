@@ -520,7 +520,6 @@ C:/Users/edgardo/Documents/finalbackElRancho/ElRancho/obj/Debug/net8.0/ElRancho.
 C:/Users/edgardo/Documents/finalbackElRancho/ElRancho/obj/Debug/net8.0/ref/ElRancho.dll
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/bin/Debug/net8.0/appsettings.Development.json
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/bin/Debug/net8.0/appsettings.json
-/home/edgardo/Documentos/finalbackElRancho/ElRancho/bin/Debug/net8.0/ElRancho.staticwebassets.endpoints.json
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/bin/Debug/net8.0/ElRancho
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/bin/Debug/net8.0/ElRancho.deps.json
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/bin/Debug/net8.0/ElRancho.runtimeconfig.json
@@ -699,9 +698,7 @@ C:/Users/edgardo/Documents/finalbackElRancho/ElRancho/obj/Debug/net8.0/ref/ElRan
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/scopedcss/bundle/ElRancho.styles.css
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/staticwebassets.build.json
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/staticwebassets.development.json
-/home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/staticwebassets.build.endpoints.json
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/staticwebassets/msbuild.ElRancho.Microsoft.AspNetCore.StaticWebAssets.props
-/home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/staticwebassets/msbuild.ElRancho.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/staticwebassets/msbuild.build.ElRancho.props
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.ElRancho.props
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.ElRancho.props

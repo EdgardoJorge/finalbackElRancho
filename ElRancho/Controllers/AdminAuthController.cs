@@ -19,7 +19,7 @@ namespace API.Controllers
         [HttpPost("login")]
         public IActionResult Login([FromBody] AdministradorLoginRequest request)
         {
-            var token = _authAdminService.AuthenticateAdmin(request.CorreoElectronico, request.Contraseña);
+            var token = _authAdminService.AuthenticateAdmin(request.CorreoElectronico, request.Password);
             if (token == null)
                 return Unauthorized(new { message = "Credenciales inválidas" });
 

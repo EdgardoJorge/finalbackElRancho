@@ -22,12 +22,12 @@ namespace Business
         }
 
         // 🟢 Método para autenticar administrador y generar un token
-        public string? AuthenticateAdmin(string correo, string contraseña)
+        public string? AuthenticateAdmin(string correo, string Password)
         {
             var admin = _dbContext.Administradores.FirstOrDefault(a => a.CorreoElectronico == correo);
-            if (admin == null || !BCrypt.Net.BCrypt.Verify(contraseña, admin.Contraseña))
+            if (admin == null || !BCrypt.Net.BCrypt.Verify(Password, admin.Password))
             {
-                return null; // Usuario o contraseña incorrectos
+                return null; // Usuario o Password incorrectos
             }
 
             return GenerateJwtToken(admin);
