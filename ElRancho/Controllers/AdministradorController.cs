@@ -79,5 +79,18 @@ namespace YourNamespace.Controllers
 
             return NoContent();
         }
+
+        /// <summary>
+        /// Buscar administradores por nombre, apellido, correo o cargo.
+        /// </summary>
+        [HttpGet("buscar")]
+        public async Task<ActionResult<List<AdministradorResponse>>> Buscar([FromQuery] string criterio)
+        {
+            if (string.IsNullOrWhiteSpace(criterio))
+                return BadRequest(new { message = "Debe proporcionar un criterio de búsqueda." });
+
+            var resultados = await _administradorBusiness.BuscarAsync(criterio);
+            return Ok(resultados);
+        }
     }
 }

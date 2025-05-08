@@ -709,3 +709,6 @@ C:/Users/edgardo/Documents/finalbackElRancho/ElRancho/obj/Debug/net8.0/ref/ElRan
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/ElRancho.pdb
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/ElRancho.genruntimeconfig.cache
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/ref/ElRancho.dll
+/home/edgardo/Documentos/finalbackElRancho/ElRancho/bin/Debug/net8.0/ElRancho.staticwebassets.endpoints.json
+/home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/staticwebassets.build.endpoints.json
+/home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/staticwebassets/msbuild.ElRancho.Microsoft.AspNetCore.StaticWebAssetEndpoints.props

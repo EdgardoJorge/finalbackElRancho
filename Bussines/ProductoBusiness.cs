@@ -4,6 +4,7 @@ using IRepository;
 using Model.Request;
 using Model.Response;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Business
@@ -29,7 +30,8 @@ namespace Business
                 Activo = p.Activo,
                 Imagen = p.Imagen,
                 Imagen2 = p.Imagen2,
-                Imagen3 = p.Imagen3
+                Imagen3 = p.Imagen3,
+                IdCategoria = p.IdCategoria.ToString(),
             });
         }
 
@@ -47,7 +49,8 @@ namespace Business
                 Activo = producto.Activo,
                 Imagen = producto.Imagen,
                 Imagen2 = producto.Imagen2,
-                Imagen3 = producto.Imagen3
+                Imagen3 = producto.Imagen3,
+                IdCategoria = producto.IdCategoria.ToString(),
             };
         }
 
@@ -61,7 +64,8 @@ namespace Business
                 Activo = request.Activo,
                 Imagen = request.Imagen,
                 Imagen2 = request.Imagen2,
-                Imagen3 = request.Imagen3
+                Imagen3 = request.Imagen3,
+                IdCategoria = request.IdCategoria,
             };
 
             await _productoRepository.AddAsync(producto);
@@ -76,7 +80,8 @@ namespace Business
                 Activo = producto.Activo,
                 Imagen = producto.Imagen,
                 Imagen2 = producto.Imagen2,
-                Imagen3 = producto.Imagen3
+                Imagen3 = producto.Imagen3,
+                IdCategoria = producto.IdCategoria.ToString(),
             };
         }
 
@@ -92,6 +97,7 @@ namespace Business
             producto.Imagen = request.Imagen;
             producto.Imagen2 = request.Imagen2;
             producto.Imagen3 = request.Imagen3;
+            producto.IdCategoria = request.IdCategoria;
 
             await _productoRepository.UpdateAsync(producto);
             await _productoRepository.SaveChangesAsync();
@@ -106,6 +112,30 @@ namespace Business
             await _productoRepository.DeleteAsync(producto);
             await _productoRepository.SaveChangesAsync();
             return true;
+        }
+
+        public async Task<List<ProductoResponse>> BuscarProductosAsync(string criterio)
+        {
+            var productos = await _productoRepository.GetAllAsync();
+
+            var resultado = productos
+                .Where(p =>
+                    (!string.IsNullOrEmpty(p.Nombre) && p.Nombre.ToLower().Contains(criterio.ToLower())) ||
+                    (!string.IsNullOrEmpty(p.Descripcion) && p.Descripcion.ToLower().Contains(criterio.ToLower())))
+                .ToList();
+
+            return resultado.ConvertAll(p => new ProductoResponse
+            {
+                Id = p.Id,
+                Nombre = p.Nombre,
+                Descripcion = p.Descripcion,
+                Precio = p.Precio,
+                Activo = p.Activo,
+                Imagen = p.Imagen,
+                Imagen2 = p.Imagen2,
+                Imagen3 = p.Imagen3,
+                IdCategoria = p.IdCategoria.ToString(),
+            });
         }
     }
 }

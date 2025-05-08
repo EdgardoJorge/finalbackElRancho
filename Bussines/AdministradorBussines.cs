@@ -194,5 +194,28 @@ namespace Business
             }
             return responses;
         }
+        public async Task<List<AdministradorResponse>> BuscarAsync(string criterio)
+        {
+            var resultados = await _dbContext.Administradores
+                .Where(a =>
+                    a.Nombres.Contains(criterio) ||
+                    a.ApellidoPaterno.Contains(criterio) ||
+                    a.ApellidoMaterno.Contains(criterio) ||
+                    a.CorreoElectronico.Contains(criterio) ||
+                    a.Cargo.Contains(criterio))
+                .ToListAsync();
+
+            return resultados.Select(admin => new AdministradorResponse
+            {
+                Id = admin.Id,
+                Nombres = admin.Nombres,
+                ApellidoPaterno = admin.ApellidoPaterno,
+                ApellidoMaterno = admin.ApellidoMaterno,
+                Dni = admin.DNI,
+                TelefonoMovil = admin.TelefonoMovil,
+                CorreoElectronico = admin.CorreoElectronico,
+                Cargo = admin.Cargo
+            }).ToList();
+        }
     }
 }

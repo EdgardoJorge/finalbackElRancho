@@ -16,5 +16,6 @@ namespace IBusiness
         Task<List<AdministradorResponse>> CreateMultiple(List<AdministradorRequest> requests);
         Task<List<AdministradorResponse>> UpdateMultiple(Dictionary<int, AdministradorRequest> requests);
         Task<AdministradorResponse?> GetByName(string name);
+        Task<List<AdministradorResponse>> BuscarAsync(string criterio);
     }
 }

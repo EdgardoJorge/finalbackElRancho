@@ -54,5 +54,19 @@ namespace ElRancho.Controllers
             if (!deleted) return NotFound();
             return NoContent();
         }
+
+        /// <summary>
+        /// Buscar productos por criterio (nombre o descripción).
+        /// </summary>
+        /// <param name="criterio">Texto a buscar</param>
+        [HttpGet("buscar")]
+        public async Task<ActionResult<List<ProductoResponse>>> BuscarProductos([FromQuery] string criterio)
+        {
+            if (string.IsNullOrWhiteSpace(criterio))
+                return BadRequest(new { message = "El criterio de búsqueda es obligatorio." });
+
+            var productos = await _productoBusiness.BuscarProductosAsync(criterio);
+            return Ok(productos);
+        }
     }
 }
