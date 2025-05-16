@@ -61,7 +61,8 @@ namespace Business
                 Activo = request.Activo,
                 Imagen = request.Imagen,
                 Imagen2 = request.Imagen2,
-                Imagen3 = request.Imagen3
+                Imagen3 = request.Imagen3,
+                IdCategoria = request.IdCategoria,
             };
 
             await _productoRepository.AddAsync(producto);
@@ -92,6 +93,7 @@ namespace Business
             producto.Imagen = request.Imagen;
             producto.Imagen2 = request.Imagen2;
             producto.Imagen3 = request.Imagen3;
+            producto.IdCategoria = request.IdCategoria;
 
             await _productoRepository.UpdateAsync(producto);
             await _productoRepository.SaveChangesAsync();

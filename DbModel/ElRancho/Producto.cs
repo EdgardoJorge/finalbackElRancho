@@ -26,5 +26,6 @@ namespace DbModel.ElRancho
         [Required]
         public string Imagen2 { get; set; }
         public string Imagen3 { get; set; }
+        public int IdCategoria { get; set; }
     }
 }

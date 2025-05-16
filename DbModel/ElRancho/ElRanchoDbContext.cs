@@ -71,6 +71,10 @@ namespace DbModel.ElRancho
                 .HasOne<Mesa>()
                 .WithMany()
                 .HasForeignKey(r => r.MesaId);
+            modelBuilder.Entity<Producto>()
+                .HasOne<Categoria>()
+                .WithMany()
+                .HasForeignKey(p => p.IdCategoria);
         }
     }
 }

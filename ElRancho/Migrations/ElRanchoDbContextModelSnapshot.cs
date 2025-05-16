@@ -420,6 +420,9 @@ namespace ElRancho.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("IdCategoria")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Imagen")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -440,6 +443,8 @@ namespace ElRancho.Migrations
                         .HasColumnType("REAL");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("IdCategoria");
 
                     b.ToTable("Producto", "producto");
                 });
@@ -536,6 +541,15 @@ namespace ElRancho.Migrations
                     b.HasOne("DbModel.ElRancho.Producto", null)
                         .WithMany()
                         .HasForeignKey("ProductoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("DbModel.ElRancho.Producto", b =>
+                {
+                    b.HasOne("DbModel.ElRancho.Categoria", null)
+                        .WithMany()
+                        .HasForeignKey("IdCategoria")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
