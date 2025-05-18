@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ElRancho.Migrations
 {
     /// <inheritdoc />
-    public partial class inicial : Migration
+    public partial class test : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -26,6 +26,9 @@ namespace ElRancho.Migrations
             migrationBuilder.EnsureSchema(
                 name: "error");
 
+            migrationBuilder.EnsureSchema(
+                name: "reservas");
+
             migrationBuilder.CreateTable(
                 name: "Administrador",
                 schema: "Persona",
@@ -39,7 +42,8 @@ namespace ElRancho.Migrations
                     DNI = table.Column<string>(type: "TEXT", nullable: false),
                     TelefonoMovil = table.Column<string>(type: "TEXT", nullable: false),
                     CorreoElectronico = table.Column<string>(type: "TEXT", nullable: false),
-                    Cargo = table.Column<string>(type: "TEXT", nullable: false)
+                    Cargo = table.Column<string>(type: "TEXT", nullable: false),
+                    Password = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -53,7 +57,8 @@ namespace ElRancho.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    CategoriaNombre = table.Column<string>(type: "TEXT", nullable: false)
+                    CategoriaNombre = table.Column<string>(type: "TEXT", nullable: false),
+                    Imagen = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -76,7 +81,9 @@ namespace ElRancho.Migrations
                     TelefonoFijo = table.Column<string>(type: "TEXT", maxLength: 10, nullable: true),
                     CorreoElectronico = table.Column<string>(type: "TEXT", nullable: false),
                     Direccion = table.Column<string>(type: "TEXT", nullable: false),
-                    CodigoPostal = table.Column<string>(type: "TEXT", nullable: false)
+                    CodigoPostal = table.Column<string>(type: "TEXT", nullable: false),
+                    ContraseñaHash = table.Column<string>(type: "TEXT", nullable: false),
+                    TokenRecuperacion = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -141,6 +148,23 @@ namespace ElRancho.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "mesa",
+                schema: "reservas",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Numero = table.Column<int>(type: "INTEGER", nullable: false),
+                    Capacidad = table.Column<int>(type: "INTEGER", nullable: false),
+                    Disponible = table.Column<bool>(type: "INTEGER", nullable: false),
+                    Ubicacion = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_mesa", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Pedido",
                 schema: "pedido",
                 columns: table => new
@@ -159,6 +183,20 @@ namespace ElRancho.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "TipoEntrega",
+                schema: "pedido",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    FormaEntrega = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TipoEntrega", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Producto",
                 schema: "producto",
                 columns: table => new
@@ -171,25 +209,53 @@ namespace ElRancho.Migrations
                     Activo = table.Column<bool>(type: "INTEGER", nullable: false),
                     Imagen = table.Column<string>(type: "TEXT", nullable: false),
                     Imagen2 = table.Column<string>(type: "TEXT", nullable: false),
-                    Imagen3 = table.Column<string>(type: "TEXT", nullable: false)
+                    Imagen3 = table.Column<string>(type: "TEXT", nullable: false),
+                    IdCategoria = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Producto", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Producto_Categoria_IdCategoria",
+                        column: x => x.IdCategoria,
+                        principalSchema: "producto",
+                        principalTable: "Categoria",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
-                name: "TipoEntrega",
-                schema: "pedido",
+                name: "reserva",
+                schema: "reservas",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    FormaEntrega = table.Column<string>(type: "TEXT", nullable: false)
+                    ClienteId = table.Column<int>(type: "INTEGER", nullable: false),
+                    MesaId = table.Column<int>(type: "INTEGER", nullable: false),
+                    FechaReserva = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    HoraReserva = table.Column<TimeSpan>(type: "TEXT", nullable: false),
+                    NumeroPersonas = table.Column<int>(type: "INTEGER", nullable: false),
+                    Confirmada = table.Column<bool>(type: "INTEGER", nullable: false),
+                    Adelanto = table.Column<decimal>(type: "decimal(10,2)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_TipoEntrega", x => x.Id);
+                    table.PrimaryKey("PK_reserva", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_reserva_Cliente_ClienteId",
+                        column: x => x.ClienteId,
+                        principalSchema: "persona",
+                        principalTable: "Cliente",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_reserva_mesa_MesaId",
+                        column: x => x.MesaId,
+                        principalSchema: "reservas",
+                        principalTable: "mesa",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -326,6 +392,24 @@ namespace ElRancho.Migrations
                 schema: "producto",
                 table: "Oferta",
                 column: "ProductoId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Producto_IdCategoria",
+                schema: "producto",
+                table: "Producto",
+                column: "IdCategoria");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_reserva_ClienteId",
+                schema: "reservas",
+                table: "reserva",
+                column: "ClienteId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_reserva_MesaId",
+                schema: "reservas",
+                table: "reserva",
+                column: "MesaId");
         }
 
         /// <inheritdoc />
@@ -338,10 +422,6 @@ namespace ElRancho.Migrations
             migrationBuilder.DropTable(
                 name: "banner",
                 schema: "producto");
-
-            migrationBuilder.DropTable(
-                name: "Cliente",
-                schema: "persona");
 
             migrationBuilder.DropTable(
                 name: "DetallePedido",
@@ -363,6 +443,10 @@ namespace ElRancho.Migrations
                 schema: "producto");
 
             migrationBuilder.DropTable(
+                name: "reserva",
+                schema: "reservas");
+
+            migrationBuilder.DropTable(
                 name: "TipoEntrega",
                 schema: "pedido");
 
@@ -371,11 +455,19 @@ namespace ElRancho.Migrations
                 schema: "pedido");
 
             migrationBuilder.DropTable(
-                name: "Categoria",
+                name: "Producto",
                 schema: "producto");
 
             migrationBuilder.DropTable(
-                name: "Producto",
+                name: "Cliente",
+                schema: "persona");
+
+            migrationBuilder.DropTable(
+                name: "mesa",
+                schema: "reservas");
+
+            migrationBuilder.DropTable(
+                name: "Categoria",
                 schema: "producto");
         }
     }

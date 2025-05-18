@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ElRancho.Migrations
 {
     [DbContext(typeof(ElRanchoDbContext))]
-    [Migration("20250423213051_Password")]
-    partial class Password
+    [Migration("20250517195314_test")]
+    partial class test
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -106,6 +106,10 @@ namespace ElRancho.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("CategoriaNombre")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Imagen")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -423,6 +427,9 @@ namespace ElRancho.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("IdCategoria")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Imagen")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -443,6 +450,8 @@ namespace ElRancho.Migrations
                         .HasColumnType("REAL");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("IdCategoria");
 
                     b.ToTable("Producto", "producto");
                 });
@@ -539,6 +548,15 @@ namespace ElRancho.Migrations
                     b.HasOne("DbModel.ElRancho.Producto", null)
                         .WithMany()
                         .HasForeignKey("ProductoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("DbModel.ElRancho.Producto", b =>
+                {
+                    b.HasOne("DbModel.ElRancho.Categoria", null)
+                        .WithMany()
+                        .HasForeignKey("IdCategoria")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

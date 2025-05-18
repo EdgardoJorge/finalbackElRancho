@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ElRancho.Migrations
 {
     [DbContext(typeof(ElRanchoDbContext))]
-    [Migration("20250331022105_second")]
-    partial class second
+    [Migration("20250517195709_data")]
+    partial class data
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,11 +42,15 @@ namespace ElRancho.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Dni")
+                    b.Property<string>("DNI")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Nombres")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -105,6 +109,9 @@ namespace ElRancho.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Imagen")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("Id");
 
                     b.ToTable("Categoria", "producto");
@@ -125,6 +132,10 @@ namespace ElRancho.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("CodigoPostal")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ContraseñaHash")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -157,6 +168,9 @@ namespace ElRancho.Migrations
                     b.Property<string>("TelefonoMovil")
                         .IsRequired()
                         .HasMaxLength(9)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("TokenRecuperacion")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -412,6 +426,9 @@ namespace ElRancho.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("IdCategoria")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Imagen")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -432,6 +449,8 @@ namespace ElRancho.Migrations
                         .HasColumnType("REAL");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("IdCategoria");
 
                     b.ToTable("Producto", "producto");
                 });
@@ -528,6 +547,15 @@ namespace ElRancho.Migrations
                     b.HasOne("DbModel.ElRancho.Producto", null)
                         .WithMany()
                         .HasForeignKey("ProductoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("DbModel.ElRancho.Producto", b =>
+                {
+                    b.HasOne("DbModel.ElRancho.Categoria", null)
+                        .WithMany()
+                        .HasForeignKey("IdCategoria")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

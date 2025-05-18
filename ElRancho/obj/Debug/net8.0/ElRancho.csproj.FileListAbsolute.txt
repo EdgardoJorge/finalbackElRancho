@@ -703,12 +703,9 @@ C:/Users/edgardo/Documents/finalbackElRancho/ElRancho/obj/Debug/net8.0/ref/ElRan
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.ElRancho.props
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.ElRancho.props
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/staticwebassets.pack.json
-/home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/ElRancho.csproj.Up2Date
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/ElRancho.dll
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/refint/ElRancho.dll
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/ElRancho.pdb
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/ElRancho.genruntimeconfig.cache
 /home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/ref/ElRancho.dll
-/home/edgardo/Documentos/finalbackElRancho/ElRancho/bin/Debug/net8.0/ElRancho.staticwebassets.endpoints.json
-/home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/staticwebassets.build.endpoints.json
-/home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/staticwebassets/msbuild.ElRancho.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/home/edgardo/Documentos/finalbackElRancho/ElRancho/obj/Debug/net8.0/ElRancho.csproj.CopyComplete

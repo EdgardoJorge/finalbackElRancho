@@ -5,15 +5,15 @@
 namespace ElRancho.Migrations
 {
     /// <inheritdoc />
-    public partial class imagen3 : Migration
+    public partial class data : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<string>(
-                name: "Imagen3",
+                name: "Imagen",
                 schema: "producto",
-                table: "Producto",
+                table: "Categoria",
                 type: "TEXT",
                 nullable: true,
                 oldClrType: typeof(string),
@@ -24,9 +24,9 @@ namespace ElRancho.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<string>(
-                name: "Imagen3",
+                name: "Imagen",
                 schema: "producto",
-                table: "Producto",
+                table: "Categoria",
                 type: "TEXT",
                 nullable: false,
                 defaultValue: "",

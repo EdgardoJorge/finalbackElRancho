@@ -106,6 +106,9 @@ namespace ElRancho.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Imagen")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("Id");
 
                     b.ToTable("Categoria", "producto");
@@ -432,6 +435,7 @@ namespace ElRancho.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Imagen3")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Nombre")
