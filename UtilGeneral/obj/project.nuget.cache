@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "YdiUJUQ+Ck4=",
+  "dgSpecHash": "SDP/HeLEKN8=",
   "success": true,
   "projectFilePath": "/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/UtilGeneral.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/edgardo/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.15/microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512"
+  ],
   "logs": []
 }

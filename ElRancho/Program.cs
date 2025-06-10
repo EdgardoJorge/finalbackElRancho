@@ -22,7 +22,7 @@ builder.Services.AddSwaggerGen();
 // =============================================
 // 2. Configuración de la base de datos (SQLite)
 // =============================================
-const string connectionString = "Data Source=ElRancho.db";
+const string connectionString = "Data Source=ElRancho";
 builder.Services.AddDbContext<ElRanchoDbContext>(options =>
     options.UseSqlite(
         connectionString,

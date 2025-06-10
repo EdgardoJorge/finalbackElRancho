@@ -107,6 +107,7 @@ namespace ElRancho.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Imagen")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
