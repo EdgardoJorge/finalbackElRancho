@@ -29,7 +29,8 @@ namespace Business
                 Activo = p.Activo,
                 Imagen = p.Imagen,
                 Imagen2 = p.Imagen2,
-                Imagen3 = p.Imagen3
+                Imagen3 = p.Imagen3,
+                IdCategoria = p.IdCategoria
             });
         }
 
@@ -47,7 +48,8 @@ namespace Business
                 Activo = producto.Activo,
                 Imagen = producto.Imagen,
                 Imagen2 = producto.Imagen2,
-                Imagen3 = producto.Imagen3
+                Imagen3 = producto.Imagen3,
+                IdCategoria = producto.IdCategoria
             };
         }
 
@@ -77,7 +79,8 @@ namespace Business
                 Activo = producto.Activo,
                 Imagen = producto.Imagen,
                 Imagen2 = producto.Imagen2,
-                Imagen3 = producto.Imagen3
+                Imagen3 = producto.Imagen3,
+                IdCategoria = producto.IdCategoria
             };
         }
 
@@ -108,6 +111,24 @@ namespace Business
             await _productoRepository.DeleteAsync(producto);
             await _productoRepository.SaveChangesAsync();
             return true;
+        }
+
+        public async Task<List<ProductoResponse>> SearchProductoAsync(string nombre)
+        {
+            var productos = await _productoRepository.SearchProduct(nombre);
+    
+            return productos.ConvertAll(p => new ProductoResponse
+            {
+                Id = p.Id,
+                Nombre = p.Nombre,
+                Descripcion = p.Descripcion,
+                Precio = p.Precio,
+                Activo = p.Activo,
+                Imagen = p.Imagen,
+                Imagen2 = p.Imagen2,
+                Imagen3 = p.Imagen3,
+                IdCategoria = p.IdCategoria
+            });
         }
     }
 }

@@ -12,5 +12,6 @@ namespace IBusiness
         Task<ProductoResponse> CreateProductoAsync(ProductoRequest request);
         Task<bool> UpdateProductoAsync(int id, ProductoRequest request);
         Task<bool> DeleteProductoAsync(int id);
+        Task<List<ProductoResponse>> SearchProductoAsync(string nombre);
     }
 }

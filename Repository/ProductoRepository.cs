@@ -21,5 +21,13 @@ namespace Repository
                 .Where(p => p.Activo)
                 .ToListAsync();
         }
+        public async Task<List<Producto>> SearchProduct(string nombre)
+        {
+            string busqueda = nombre?.ToLower() ?? "";
+
+            return await _context.Productos
+                .Where(p => p.Activo && p.Nombre.ToLower().Contains(busqueda))
+                .ToListAsync();
+        }
     }
 }
