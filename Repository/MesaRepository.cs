@@ -1,4 +1,4 @@
-using DbModel.ElRancho;
+    using DbModel.ElRancho;
 using IRepository;
 using Microsoft.EntityFrameworkCore;
 

@@ -321,6 +321,26 @@ namespace ElRancho.Migrations
                     b.ToTable("Evento");
                 });
 
+            modelBuilder.Entity("DbModel.ElRancho.Imagen", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("IdProductos")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Imagenes")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdProductos");
+
+                    b.ToTable("Imagenes", "producto");
+                });
+
             modelBuilder.Entity("DbModel.ElRancho.Mesa", b =>
                 {
                     b.Property<int>("Id")
@@ -530,6 +550,15 @@ namespace ElRancho.Migrations
                     b.HasOne("DbModel.ElRancho.Producto", null)
                         .WithMany()
                         .HasForeignKey("ProductoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("DbModel.ElRancho.Imagen", b =>
+                {
+                    b.HasOne("DbModel.ElRancho.Producto", null)
+                        .WithMany()
+                        .HasForeignKey("IdProductos")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

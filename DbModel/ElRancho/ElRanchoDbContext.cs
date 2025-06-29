@@ -18,7 +18,8 @@ namespace DbModel.ElRancho
         public DbSet<TipoEntrega> TiposEntrega { get; set; }
         public DbSet<Reserva> Reservas { get; set; }
         public DbSet<Mesa> Mesas { get; set; }
-        public object? UpdateBehavior { get; private set; }
+        public DbSet<Imagen> Imagenes { get; set; }
+        //public object? UpdateBehavior { get; private set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -75,6 +76,11 @@ namespace DbModel.ElRancho
                 .HasOne<Categoria>()
                 .WithMany()
                 .HasForeignKey(p => p.IdCategoria);
+            //relacion entre imagen y producto
+            modelBuilder.Entity<Imagen>()
+                .HasOne<Producto>()
+                .WithMany()
+                .HasForeignKey(i => i.IdProductos);
         }
     }
 }
