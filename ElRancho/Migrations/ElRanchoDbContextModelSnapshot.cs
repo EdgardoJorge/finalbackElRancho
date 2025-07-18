@@ -38,10 +38,6 @@ namespace ElRancho.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Cargo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("CorreoElectronico")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

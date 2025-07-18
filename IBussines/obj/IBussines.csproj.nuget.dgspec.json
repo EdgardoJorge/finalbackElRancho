@@ -1,33 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "/home/edgardo/Documentos/finalbackElRancho/IBussines/IBussines.csproj": {}
+    "C:\\Users\\labb\\Documents\\finalbackElRancho\\IBussines\\IBussines.csproj": {}
   },
   "projects": {
-    "/home/edgardo/Documentos/finalbackElRancho/IBussines/IBussines.csproj": {
+    "C:\\Users\\labb\\Documents\\finalbackElRancho\\IBussines\\IBussines.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/edgardo/Documentos/finalbackElRancho/IBussines/IBussines.csproj",
+        "projectUniqueName": "C:\\Users\\labb\\Documents\\finalbackElRancho\\IBussines\\IBussines.csproj",
         "projectName": "IBussines",
-        "projectPath": "/home/edgardo/Documentos/finalbackElRancho/IBussines/IBussines.csproj",
-        "packagesPath": "/home/edgardo/.nuget/packages/",
-        "outputPath": "/home/edgardo/Documentos/finalbackElRancho/IBussines/obj/",
+        "projectPath": "C:\\Users\\labb\\Documents\\finalbackElRancho\\IBussines\\IBussines.csproj",
+        "packagesPath": "C:\\Users\\labb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\labb\\Documents\\finalbackElRancho\\IBussines\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/edgardo/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\labb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/edgardo/Documentos/finalbackElRancho/Model/Model.csproj": {
-                "projectPath": "/home/edgardo/Documentos/finalbackElRancho/Model/Model.csproj"
+              "C:\\Users\\labb\\Documents\\finalbackElRancho\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\labb\\Documents\\finalbackElRancho\\Model\\Model.csproj"
               }
             }
           }
@@ -41,8 +48,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -58,41 +64,38 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.106/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/edgardo/Documentos/finalbackElRancho/Model/Model.csproj": {
+    "C:\\Users\\labb\\Documents\\finalbackElRancho\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/edgardo/Documentos/finalbackElRancho/Model/Model.csproj",
+        "projectUniqueName": "C:\\Users\\labb\\Documents\\finalbackElRancho\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "/home/edgardo/Documentos/finalbackElRancho/Model/Model.csproj",
-        "packagesPath": "/home/edgardo/.nuget/packages/",
-        "outputPath": "/home/edgardo/Documentos/finalbackElRancho/Model/obj/",
+        "projectPath": "C:\\Users\\labb\\Documents\\finalbackElRancho\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\labb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\labb\\Documents\\finalbackElRancho\\Model\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/edgardo/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\labb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -110,8 +113,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -127,22 +129,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.106/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

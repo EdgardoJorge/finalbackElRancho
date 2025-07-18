@@ -13,6 +13,6 @@ namespace Model.Response
     public string Dni { get; set; }
     public string TelefonoMovil { get; set; }
     public string CorreoElectronico { get; set; }
-    public string Cargo { get; set; }
+    public int IdRol { get; set; }
 }
 }

@@ -24,10 +24,9 @@ namespace Model.Request
 
     [Required]
     public string CorreoElectronico { get; set; }
-
     [Required]
-    public string Cargo { get; set; }
+    public int IdRol { get; set; }
     [Required]
-    public string Password { get; set; }  // Se agregó la contraseña
+    public string Password { get; set; }  
 }
 }

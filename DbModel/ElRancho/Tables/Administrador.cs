@@ -27,10 +27,6 @@ namespace DbModel.ElRancho
 
         [Required]
         public string CorreoElectronico { get; set; }
-
-        [Required]
-        public string Cargo { get; set; }
-
         [Required]
         public string Password { get; set; }  
         public int IdRol { get; set; }

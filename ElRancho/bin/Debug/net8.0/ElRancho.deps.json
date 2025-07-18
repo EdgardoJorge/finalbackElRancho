@@ -405,22 +405,22 @@
           "runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-arm",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "5.1.1.0"
           },
           "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "5.1.1.0"
           },
           "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "5.1.1.0"
           },
           "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "5.1.1.0"
           }
         }
       },
@@ -1089,7 +1089,14 @@
           }
         }
       },
-      "System.Formats.Asn1/8.0.2": {},
+      "System.Formats.Asn1/8.0.2": {
+        "runtime": {
+          "lib/net8.0/System.Formats.Asn1.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1325.6609"
+          }
+        }
+      },
       "System.IdentityModel.Tokens.Jwt/8.7.0": {
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "8.7.0",
@@ -1219,10 +1226,7 @@
           "UtilGeneral": "1.0.0"
         },
         "runtime": {
-          "Bussines.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Bussines.dll": {}
         }
       },
       "DbModel/1.0.0": {
@@ -1230,10 +1234,7 @@
           "Microsoft.EntityFrameworkCore": "8.0.13"
         },
         "runtime": {
-          "DbModel.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "DbModel.dll": {}
         }
       },
       "IBussines/1.0.0": {
@@ -1241,10 +1242,7 @@
           "Model": "1.0.0"
         },
         "runtime": {
-          "IBussines.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "IBussines.dll": {}
         }
       },
       "IRepository/1.0.0": {
@@ -1253,18 +1251,12 @@
           "Model": "1.0.0"
         },
         "runtime": {
-          "IRepository.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "IRepository.dll": {}
         }
       },
       "Model/1.0.0": {
         "runtime": {
-          "Model.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Model.dll": {}
         }
       },
       "Repository/1.0.0": {
@@ -1275,18 +1267,12 @@
           "Microsoft.Extensions.Configuration": "9.0.2"
         },
         "runtime": {
-          "Repository.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Repository.dll": {}
         }
       },
       "UtilGeneral/1.0.0": {
         "runtime": {
-          "UtilGeneral.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "UtilGeneral.dll": {}
         }
       }
     }

@@ -22,6 +22,22 @@ public class RolBussines : IRolBussines
         return result.Select(MapToResponse).ToList();
     }
 
+    public async Task<RolResponse> Create(RolRequest request)
+    {
+        var rol = MapToEntity(request);
+        await _repository.AddAsync(rol);
+        await _repository.SaveChangesAsync();
+        return MapToResponse(rol);
+    }
+    
+    private Rol MapToEntity(RolRequest request)
+    {
+        return new Rol()
+        {
+            Name = request.Name,
+            Permisos = request.Permisos
+        };
+    }
     private RolResponse MapToResponse(Rol rol)
     {
         return new RolResponse()

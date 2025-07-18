@@ -29,10 +29,11 @@ namespace Business
                 Nombres = admin.Nombres,
                 ApellidoPaterno = admin.ApellidoPaterno,
                 ApellidoMaterno = admin.ApellidoMaterno,
-                Dni = admin.DNI, // ✅ Se mantiene en mayúsculas
+                Dni = admin.DNI,
                 TelefonoMovil = admin.TelefonoMovil,
                 CorreoElectronico = admin.CorreoElectronico,
-                Cargo = admin.Cargo
+      
+                IdRol = admin.IdRol,
             }).ToList();
         }
 
@@ -50,8 +51,8 @@ namespace Business
                 Dni = administrador.DNI, // ✅ Dni en mayúsculas
                 TelefonoMovil = administrador.TelefonoMovil,
                 CorreoElectronico = administrador.CorreoElectronico,
-                Cargo = administrador.Cargo
-            };
+                IdRol = administrador.IdRol,
+          };
         }
 
         public async Task<AdministradorResponse?> GetByName(string name)
@@ -67,9 +68,9 @@ namespace Business
                 ApellidoMaterno = administrador.ApellidoMaterno,
                 Dni = administrador.DNI, // ✅ Manteniendo en mayúsculas
                 TelefonoMovil = administrador.TelefonoMovil,
+                IdRol = administrador.IdRol,
                 CorreoElectronico = administrador.CorreoElectronico,
-                Cargo = administrador.Cargo
-            };
+       };
         }
 
         public async Task<AdministradorResponse> Create(AdministradorRequest request)
@@ -82,7 +83,8 @@ namespace Business
                 DNI = request.Dni, // ✅ Se mantiene Dni en mayúsculas
                 TelefonoMovil = request.TelefonoMovil,
                 CorreoElectronico = request.CorreoElectronico,
-                Cargo = request.Cargo,
+                IdRol = request.IdRol,
+      
                 Password = BCrypt.Net.BCrypt.HashPassword(request.Password) // 🔐 Encriptar la Password
             };
 
@@ -97,9 +99,9 @@ namespace Business
                 ApellidoMaterno = administrador.ApellidoMaterno,
                 Dni = administrador.DNI, // ✅ Dni en mayúsculas
                 TelefonoMovil = administrador.TelefonoMovil,
+                IdRol = administrador.IdRol,
                 CorreoElectronico = administrador.CorreoElectronico,
-                Cargo = administrador.Cargo
-            };
+               };
         }
 
         public async Task<AdministradorResponse> Update(int id, AdministradorRequest request)
@@ -113,7 +115,7 @@ namespace Business
             administrador.DNI = request.Dni; // ✅ Dni en mayúsculas
             administrador.TelefonoMovil = request.TelefonoMovil;
             administrador.CorreoElectronico = request.CorreoElectronico;
-            administrador.Cargo = request.Cargo;
+            administrador.IdRol = request.IdRol;
 
             if (!string.IsNullOrWhiteSpace(request.Password))
             {
@@ -131,8 +133,8 @@ namespace Business
                 Dni = administrador.DNI, // ✅ Se mantiene en mayúsculas
                 TelefonoMovil = administrador.TelefonoMovil,
                 CorreoElectronico = administrador.CorreoElectronico,
-                Cargo = administrador.Cargo
-            };
+                IdRol = administrador.IdRol,
+                 };
         }
 
         public async Task<int> DeleteById(int id)
@@ -163,7 +165,8 @@ namespace Business
                 DNI = request.Dni, // ✅ Se mantiene en mayúsculas
                 TelefonoMovil = request.TelefonoMovil,
                 CorreoElectronico = request.CorreoElectronico,
-                Cargo = request.Cargo,
+      
+                IdRol = request.IdRol,
                 Password = BCrypt.Net.BCrypt.HashPassword(request.Password) // 🔐 Encriptar cada Password
             }).ToList();
 
@@ -179,8 +182,8 @@ namespace Business
                 Dni = admin.DNI, // ✅ Dni en mayúsculas
                 TelefonoMovil = admin.TelefonoMovil,
                 CorreoElectronico = admin.CorreoElectronico,
-                Cargo = admin.Cargo
-            }).ToList();
+                IdRol = admin.IdRol,
+                  }).ToList();
         }
 
         public async Task<List<AdministradorResponse>> UpdateMultiple(Dictionary<int, AdministradorRequest> updates)

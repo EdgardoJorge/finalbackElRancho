@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using IBusiness;
 using IBussines;
+using Model.Request;
 using Model.Response;
 
 namespace ElRancho.Controllers{
