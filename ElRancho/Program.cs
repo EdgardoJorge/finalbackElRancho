@@ -9,6 +9,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Repository;
 using System.Text;
+using IBussines;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,13 +24,17 @@ builder.Services.AddSwaggerGen();
 // =============================================
 // 2. Configuración de la base de datos (SQLite)
 // =============================================
-const string connectionString = "Data Source=ElRancho.db";
+const string connectionString =
+    "Server=localhost,1433;Database=ElRancho;User Id=sa;Password=Edgardo.,01;TrustServerCertificate=True;";
+builder.Services.AddDbContext<ElRanchoDbContext>(Options =>
+    Options.UseSqlServer(connectionString, b => b.MigrationsAssembly("ElRancho")));
+/*const string connectionString = "Data Source=ElRancho";
 builder.Services.AddDbContext<ElRanchoDbContext>(options =>
     options.UseSqlite(
         connectionString,
         b => b.MigrationsAssembly("ElRancho")
     )
-);
+); */
 
 // =============================================
 // 3. Configuración de AutoMapper
@@ -43,10 +49,11 @@ builder.Services.AddAutoMapper(
     typeof(PedidoProfile),
     typeof(EstadoPedidoProfile),
     typeof(EventoProfile),
-    typeof(OfertaProfile),
     typeof(TipoEntregaProfile),
     typeof(MesaProfile),
-    typeof(ReservaProfile)
+    typeof(ReservaProfile),
+    typeof(ImagenProfile),
+    typeof(rolProfile)
 );
 
 // =============================================
@@ -62,10 +69,11 @@ builder.Services.AddScoped<IDetallePedidoRepository, DetallePedidoRepository>();
 builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
 builder.Services.AddScoped<IEstadoPedidoRepository, EstadoPedidoRepository>();
 builder.Services.AddScoped<IEventoRepository, EventoRepository>();
-builder.Services.AddScoped<IOfertaRepository, OfertaRepository>();
 builder.Services.AddScoped<ITipoEntregaRepository, TipoEntregaRepository>();
 builder.Services.AddScoped<IMesaRepository, MesaRepository>();
 builder.Services.AddScoped<IReservaRepository, ReservaRepository>();
+builder.Services.AddScoped<IImagenRepository, ImagenRepository>();
+builder.Services.AddScoped<IRolRepository, RolRepository>();
 
 builder.Services.AddScoped<IAdministradorBusiness, AdministradorBusiness>();
 builder.Services.AddScoped<IBannerBusiness, BannerBusiness>();
@@ -76,10 +84,11 @@ builder.Services.AddScoped<IDetallePedidoBusiness, DetalleDePedidoBusiness>();
 builder.Services.AddScoped<IPedidoBusiness, PedidoBusiness>();
 builder.Services.AddScoped<IEstadoPedidoBusiness, EstadoPedidoBusiness>();
 builder.Services.AddScoped<IEventoBusiness, EventoBusiness>();
-builder.Services.AddScoped<IOfertaBusiness, OfertaBusiness>();
 builder.Services.AddScoped<ITipoEntregaBusiness, TipoEntregaBusiness>();
 builder.Services.AddScoped<IMesaBusiness, MesaBusiness>();
 builder.Services.AddScoped<IReservaBusiness, ReservaBusiness>();
+builder.Services.AddScoped<IImagenBusiness, ImagenBusiness>();
+builder.Services.AddScoped<IRolBussines, RolBussines>();
 builder.Services.AddScoped<AuthAdminService>();
 
 builder.Services.AddCors(options =>
@@ -87,7 +96,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend",
         policy =>
         {
-            policy.WithOrigins("http://localhost:4200") // Cambia esto si tu frontend está en otro puerto/dominio
+            policy.WithOrigins("http://localhost:4200")
                   .AllowAnyHeader()
                   .AllowAnyMethod();
         });

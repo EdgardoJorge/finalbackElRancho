@@ -1,0 +1,12 @@
+/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/bin/Release/net8.0/UtilGeneral.deps.json
+/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/bin/Release/net8.0/UtilGeneral.dll
+/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/bin/Release/net8.0/UtilGeneral.pdb
+/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/obj/Release/net8.0/UtilGeneral.GeneratedMSBuildEditorConfig.editorconfig
+/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/obj/Release/net8.0/UtilGeneral.AssemblyInfoInputs.cache
+/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/obj/Release/net8.0/UtilGeneral.AssemblyInfo.cs
+/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/obj/Release/net8.0/UtilGeneral.csproj.CoreCompileInputs.cache
+/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/obj/Release/net8.0/UtilGeneral.sourcelink.json
+/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/obj/Release/net8.0/UtilGeneral.dll
+/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/obj/Release/net8.0/refint/UtilGeneral.dll
+/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/obj/Release/net8.0/UtilGeneral.pdb
+/home/edgardo/Documentos/finalbackElRancho/UtilGeneral/obj/Release/net8.0/ref/UtilGeneral.dll

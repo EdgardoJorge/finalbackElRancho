@@ -12,41 +12,25 @@ namespace DbModel.ElRancho
         public DbSet<Error> Errores { get; set; }
         public DbSet<EstadoPedido> EstadosPedido { get; set; }
         public DbSet<Evento> Eventos { get; set; }
-        public DbSet<Oferta> Ofertas { get; set; }
         public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<Producto> Productos { get; set; }
         public DbSet<TipoEntrega> TiposEntrega { get; set; }
         public DbSet<Reserva> Reservas { get; set; }
+        public DbSet<Rol> Roles { get; set; }
         public DbSet<Mesa> Mesas { get; set; }
-        public object? UpdateBehavior { get; private set; }
+        public DbSet<Imagen> Imagenes { get; set; }
+        //public object? UpdateBehavior { get; private set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            // Relación entre Oferta y Producto
-            modelBuilder.Entity<Oferta>()
-                .HasOne<Producto>()
-                .WithMany()
-                .HasForeignKey(o => o.ProductoId);
-
-            // Relación entre Oferta y Categoria
-            modelBuilder.Entity<Oferta>()
-                .HasOne<Categoria>()
-                .WithMany()
-                .HasForeignKey(o => o.CategoriaId);
-
             // Relación entre Banner y Producto
             modelBuilder.Entity<Banner>()
                 .HasOne<Producto>()
                 .WithMany()
-                .HasForeignKey(b => b.ProductoId);
-
-            // Relación entre Banner y Categoria
-            modelBuilder.Entity<Banner>()
-                .HasOne<Categoria>()
-                .WithMany()
-                .HasForeignKey(b => b.CategoriaId);
+                .HasForeignKey(b => b.ProductoId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             // Relación entre DetallePedido y Producto
             modelBuilder.Entity<DetallePedido>()
@@ -71,6 +55,19 @@ namespace DbModel.ElRancho
                 .HasOne<Mesa>()
                 .WithMany()
                 .HasForeignKey(r => r.MesaId);
+            modelBuilder.Entity<Producto>()
+                .HasOne<Categoria>()
+                .WithMany()
+                .HasForeignKey(p => p.IdCategoria);
+            //relacion entre imagen y producto
+            modelBuilder.Entity<Imagen>()
+                .HasOne<Producto>()
+                .WithMany()
+                .HasForeignKey(i => i.IdProductos);
+            modelBuilder.Entity<Administrador>()
+                .HasOne<Rol>()
+                .WithMany()
+                .HasForeignKey(r => r.IdRol);
         }
     }
 }

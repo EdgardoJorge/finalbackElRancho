@@ -28,7 +28,6 @@ namespace Business
                 Redireccion = b.Redireccion,
                 Activo = b.Activo,
                 ProductoId = b.ProductoId,
-                CategoriaId = b.CategoriaId
             });
         }
 
@@ -45,7 +44,6 @@ namespace Business
                 Redireccion = banner.Redireccion,
                 Activo = banner.Activo,
                 ProductoId = banner.ProductoId,
-                CategoriaId = banner.CategoriaId
             };
         }
 
@@ -61,7 +59,6 @@ namespace Business
                 Redireccion = request.Redireccion,
                 Activo = request.Activo,
                 ProductoId = request.ProductoId,
-                CategoriaId = request.CategoriaId
             };
 
             await _bannerRepository.AddAsync(banner);
@@ -75,7 +72,6 @@ namespace Business
                 Redireccion = banner.Redireccion,
                 Activo = banner.Activo,
                 ProductoId = banner.ProductoId,
-                CategoriaId = banner.CategoriaId
             };
         }
 
@@ -89,7 +85,6 @@ namespace Business
             existingBanner.Redireccion = request.Redireccion;
             existingBanner.Activo = request.Activo;
             existingBanner.ProductoId = request.ProductoId;
-            existingBanner.CategoriaId = request.CategoriaId;
 
             await _bannerRepository.UpdateAsync(existingBanner);
             await _bannerRepository.SaveChangesAsync();

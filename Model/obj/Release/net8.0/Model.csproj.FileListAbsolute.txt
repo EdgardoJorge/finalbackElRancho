@@ -1,0 +1,12 @@
+/home/edgardo/Documentos/finalbackElRancho/Model/bin/Release/net8.0/Model.deps.json
+/home/edgardo/Documentos/finalbackElRancho/Model/bin/Release/net8.0/Model.dll
+/home/edgardo/Documentos/finalbackElRancho/Model/bin/Release/net8.0/Model.pdb
+/home/edgardo/Documentos/finalbackElRancho/Model/obj/Release/net8.0/Model.GeneratedMSBuildEditorConfig.editorconfig
+/home/edgardo/Documentos/finalbackElRancho/Model/obj/Release/net8.0/Model.AssemblyInfoInputs.cache
+/home/edgardo/Documentos/finalbackElRancho/Model/obj/Release/net8.0/Model.AssemblyInfo.cs
+/home/edgardo/Documentos/finalbackElRancho/Model/obj/Release/net8.0/Model.csproj.CoreCompileInputs.cache
+/home/edgardo/Documentos/finalbackElRancho/Model/obj/Release/net8.0/Model.sourcelink.json
+/home/edgardo/Documentos/finalbackElRancho/Model/obj/Release/net8.0/Model.dll
+/home/edgardo/Documentos/finalbackElRancho/Model/obj/Release/net8.0/refint/Model.dll
+/home/edgardo/Documentos/finalbackElRancho/Model/obj/Release/net8.0/Model.pdb
+/home/edgardo/Documentos/finalbackElRancho/Model/obj/Release/net8.0/ref/Model.dll

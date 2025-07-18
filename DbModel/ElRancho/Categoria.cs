@@ -15,5 +15,7 @@ namespace DbModel.ElRancho
         public int Id { get; set; }
         [Required]
         public string CategoriaNombre { get; set; }
+        [Required]
+        public string Imagen { get; set; }
     }
 }

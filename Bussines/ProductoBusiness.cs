@@ -26,10 +26,12 @@ namespace Business
                 Nombre = p.Nombre,
                 Descripcion = p.Descripcion,
                 Precio = p.Precio,
+                Precio_Oferta = p.Precio_Oferta,
                 Activo = p.Activo,
                 Imagen = p.Imagen,
                 Imagen2 = p.Imagen2,
-                Imagen3 = p.Imagen3
+                Imagen3 = p.Imagen3,
+                IdCategoria = p.IdCategoria
             });
         }
 
@@ -44,10 +46,12 @@ namespace Business
                 Nombre = producto.Nombre,
                 Descripcion = producto.Descripcion,
                 Precio = producto.Precio,
+                Precio_Oferta = producto.Precio_Oferta,
                 Activo = producto.Activo,
                 Imagen = producto.Imagen,
                 Imagen2 = producto.Imagen2,
-                Imagen3 = producto.Imagen3
+                Imagen3 = producto.Imagen3,
+                IdCategoria = producto.IdCategoria
             };
         }
 
@@ -58,10 +62,12 @@ namespace Business
                 Nombre = request.Nombre,
                 Descripcion = request.Descripcion,
                 Precio = request.Precio,
+                Precio_Oferta = request.Precio_Oferta,
                 Activo = request.Activo,
                 Imagen = request.Imagen,
                 Imagen2 = request.Imagen2,
-                Imagen3 = request.Imagen3
+                Imagen3 = request.Imagen3,
+                IdCategoria = request.IdCategoria,
             };
 
             await _productoRepository.AddAsync(producto);
@@ -73,10 +79,12 @@ namespace Business
                 Nombre = producto.Nombre,
                 Descripcion = producto.Descripcion,
                 Precio = producto.Precio,
+                Precio_Oferta = producto.Precio_Oferta,
                 Activo = producto.Activo,
                 Imagen = producto.Imagen,
                 Imagen2 = producto.Imagen2,
-                Imagen3 = producto.Imagen3
+                Imagen3 = producto.Imagen3,
+                IdCategoria = producto.IdCategoria
             };
         }
 
@@ -88,10 +96,12 @@ namespace Business
             producto.Nombre = request.Nombre;
             producto.Descripcion = request.Descripcion;
             producto.Precio = request.Precio;
+            producto.Precio_Oferta = request.Precio_Oferta;
             producto.Activo = request.Activo;
             producto.Imagen = request.Imagen;
             producto.Imagen2 = request.Imagen2;
             producto.Imagen3 = request.Imagen3;
+            producto.IdCategoria = request.IdCategoria;
 
             await _productoRepository.UpdateAsync(producto);
             await _productoRepository.SaveChangesAsync();
@@ -106,6 +116,25 @@ namespace Business
             await _productoRepository.DeleteAsync(producto);
             await _productoRepository.SaveChangesAsync();
             return true;
+        }
+
+        public async Task<List<ProductoResponse>> SearchProductoAsync(string nombre)
+        {
+            var productos = await _productoRepository.SearchProduct(nombre);
+    
+            return productos.ConvertAll(p => new ProductoResponse
+            {
+                Id = p.Id,
+                Nombre = p.Nombre,
+                Descripcion = p.Descripcion,
+                Precio = p.Precio,
+                Precio_Oferta = p.Precio_Oferta,
+                Activo = p.Activo,
+                Imagen = p.Imagen,
+                Imagen2 = p.Imagen2,
+                Imagen3 = p.Imagen3,
+                IdCategoria = p.IdCategoria
+            });
         }
     }
 }

@@ -4,7 +4,7 @@ namespace Model.Request
 {
     public class CategoriaRequest
     {
-        [Required]
-        public string CategoriaNombre { get; set; }
+        public required string  CategoriaNombre { get; set; }
+        public required string Imagen { get; set; }
     }
 }

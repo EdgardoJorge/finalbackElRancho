@@ -19,6 +19,7 @@ namespace DbModel.ElRancho
         public string Descripcion { get; set; }
         [Required]
         public double Precio { get; set; }
+        public double Precio_Oferta { get; set; }
         [Required]
         public Boolean Activo { get; set; }
         [Required]
@@ -26,5 +27,6 @@ namespace DbModel.ElRancho
         [Required]
         public string Imagen2 { get; set; }
         public string Imagen3 { get; set; }
+        public int IdCategoria { get; set; }
     }
 }

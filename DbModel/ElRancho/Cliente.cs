@@ -20,12 +20,9 @@ namespace DbModel.ElRancho
         public string RUC { get; set; }
         [StringLength(9)]
         public string TelefonoMovil { get; set; }
-        [StringLength(10)]
-        public string? TelefonoFijo { get; set; }
         public string CorreoElectronico { get; set; }
         [Required]
         public string Direccion { get; set; }
-        public string CodigoPostal { get; set; }
 
         // 🔐 Nueva propiedad para autenticación
         [Required]

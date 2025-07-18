@@ -17,6 +17,5 @@ namespace DbModel.ElRancho
         public string Redireccion { get; set; }
         public bool Activo { get; set; }
         public int ProductoId { get; set; }
-        public int CategoriaId { get; set; }
     }
 }

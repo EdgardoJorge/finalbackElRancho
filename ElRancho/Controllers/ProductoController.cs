@@ -54,5 +54,11 @@ namespace ElRancho.Controllers
             if (!deleted) return NotFound();
             return NoContent();
         }
+        [HttpGet("buscar")]
+        public async Task<ActionResult<List<ProductoResponse>>> BuscarProductos([FromQuery] string nombre)
+        {
+            var productos = await _productoBusiness.SearchProductoAsync(nombre);
+            return Ok(productos);
+        }
     }
 }

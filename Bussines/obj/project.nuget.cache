@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mD/LUnNaY7A=",
+  "dgSpecHash": "1Sm6Uqpf060=",
   "success": true,
   "projectFilePath": "/home/edgardo/Documentos/finalbackElRancho/Bussines/Bussines.csproj",
   "expectedPackageFiles": [
@@ -32,7 +32,9 @@
     "/home/edgardo/.nuget/packages/microsoft.net.http.headers/2.3.0/microsoft.net.http.headers.2.3.0.nupkg.sha512",
     "/home/edgardo/.nuget/packages/system.buffers/4.6.0/system.buffers.4.6.0.nupkg.sha512",
     "/home/edgardo/.nuget/packages/system.identitymodel.tokens.jwt/8.7.0/system.identitymodel.tokens.jwt.8.7.0.nupkg.sha512",
-    "/home/edgardo/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512"
+    "/home/edgardo/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
+    "/home/edgardo/.nuget/packages/microsoft.netcore.app.ref/8.0.16/microsoft.netcore.app.ref.8.0.16.nupkg.sha512",
+    "/home/edgardo/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.16/microsoft.aspnetcore.app.ref.8.0.16.nupkg.sha512"
   ],
   "logs": []
 }

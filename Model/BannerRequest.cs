@@ -16,7 +16,6 @@ namespace Model.Request{
 
     public int ProductoId { get; set; }
 
-    public int CategoriaId { get; set; }
 }
 
 }

@@ -1,0 +1,25 @@
+meta {
+  name: postproducts
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://localhost:7173/api/producto
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nombre": "string",
+    "descripcion": "string",
+    "precio": 0,
+    "precio_Oferta": 0,
+    "activo": true,
+    "imagen": "string",
+    "imagen2": "string",
+    "imagen3": "string",
+    "idCategoria": 1
+  }
+}

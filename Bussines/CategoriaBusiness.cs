@@ -23,7 +23,8 @@ namespace Business
             return categorias.ConvertAll(c => new CategoriaResponse
             {
                 Id = c.Id,
-                CategoriaNombre = c.CategoriaNombre
+                CategoriaNombre = c.CategoriaNombre,
+                Imagen = c.Imagen
             });
         }
 
@@ -35,7 +36,8 @@ namespace Business
             return new CategoriaResponse
             {
                 Id = categoria.Id,
-                CategoriaNombre = categoria.CategoriaNombre
+                CategoriaNombre = categoria.CategoriaNombre,
+                Imagen = categoria.Imagen
             };
         }
 
@@ -43,7 +45,8 @@ namespace Business
         {
             var categoria = new Categoria
             {
-                CategoriaNombre = request.CategoriaNombre
+                CategoriaNombre = request.CategoriaNombre,
+                Imagen = request.Imagen
             };
 
             await _categoriaRepository.AddAsync(categoria);
@@ -52,7 +55,8 @@ namespace Business
             return new CategoriaResponse
             {
                 Id = categoria.Id,
-                CategoriaNombre = categoria.CategoriaNombre
+                CategoriaNombre = categoria.CategoriaNombre,
+                Imagen = categoria.Imagen
             };
         }
 
@@ -62,6 +66,7 @@ namespace Business
             if (categoria == null) return false;
 
             categoria.CategoriaNombre = request.CategoriaNombre;
+            categoria.Imagen = request.Imagen;
 
             await _categoriaRepository.UpdateAsync(categoria);
             await _categoriaRepository.SaveChangesAsync();

@@ -114,10 +114,8 @@ namespace Business
                 DNI = request.DNI,
                 RUC = request.RUC,
                 TelefonoMovil = request.TelefonoMovil,
-                TelefonoFijo = request.TelefonoFijo,
                 CorreoElectronico = request.CorreoElectronico,
                 Direccion = request.Direccion,
-                CodigoPostal = request.CodigoPostal,
                 ContraseñaHash = BCrypt.Net.BCrypt.HashPassword(request.Contraseña) // ✅ Encriptar la contraseña antes de guardar
             };
         }
@@ -133,10 +131,9 @@ namespace Business
                 DNI = cliente.DNI,
                 RUC = cliente.RUC,
                 TelefonoMovil = cliente.TelefonoMovil,
-                TelefonoFijo = cliente.TelefonoFijo,
                 CorreoElectronico = cliente.CorreoElectronico,
                 Direccion = cliente.Direccion,
-                CodigoPostal = cliente.CodigoPostal
+
                 // 🔹 No devolvemos la contraseña por seguridad
             };
         }
@@ -149,10 +146,8 @@ namespace Business
             cliente.DNI = request.DNI;
             cliente.RUC = request.RUC;
             cliente.TelefonoMovil = request.TelefonoMovil;
-            cliente.TelefonoFijo = request.TelefonoFijo;
             cliente.CorreoElectronico = request.CorreoElectronico;
             cliente.Direccion = request.Direccion;
-            cliente.CodigoPostal = request.CodigoPostal;
 
             if (!string.IsNullOrEmpty(request.Contraseña))
             {
