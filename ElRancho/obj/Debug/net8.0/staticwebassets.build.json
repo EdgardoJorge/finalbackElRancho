@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "9v9LL2G+ToUj1FpgX9oA95LOGkJUrOpssIJo7tvV0Qg=",
+  "Hash": "Kd2tCI5aIRfPNPW5EP0M2bR7HJwdkxcnymG5mjbkSy0=",
   "Source": "ElRancho",
   "BasePath": "_content/ElRancho",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

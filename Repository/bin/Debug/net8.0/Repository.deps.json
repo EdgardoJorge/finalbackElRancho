@@ -229,7 +229,10 @@
           "Microsoft.EntityFrameworkCore": "8.0.13"
         },
         "runtime": {
-          "DbModel.dll": {}
+          "DbModel.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "IRepository/1.0.0": {
@@ -238,12 +241,18 @@
           "Model": "1.0.0"
         },
         "runtime": {
-          "IRepository.dll": {}
+          "IRepository.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Model/1.0.0": {
         "runtime": {
-          "Model.dll": {}
+          "Model.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

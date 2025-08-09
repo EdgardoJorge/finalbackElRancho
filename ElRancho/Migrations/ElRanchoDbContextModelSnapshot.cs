@@ -79,10 +79,20 @@ namespace ElRancho.Migrations
                     b.Property<bool>("Activo")
                         .HasColumnType("bit");
 
+                    b.Property<DateTime>("FechaFin")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("FechaInicio")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("ProductoId")
                         .HasColumnType("int");
 
                     b.Property<string>("Redireccion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TerminosYCondiciones")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -338,7 +348,7 @@ namespace ElRancho.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("IdProductos")
+                    b.Property<int>("IdProducto")
                         .HasColumnType("int");
 
                     b.Property<string>("Imagenes")
@@ -347,7 +357,7 @@ namespace ElRancho.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IdProductos");
+                    b.HasIndex("IdProducto");
 
                     b.ToTable("Imagenes", "producto");
                 });
@@ -425,18 +435,6 @@ namespace ElRancho.Migrations
 
                     b.Property<int>("IdCategoria")
                         .HasColumnType("int");
-
-                    b.Property<string>("Imagen")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Imagen2")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Imagen3")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -568,7 +566,7 @@ namespace ElRancho.Migrations
                 {
                     b.HasOne("DbModel.ElRancho.Producto", null)
                         .WithMany()
-                        .HasForeignKey("IdProductos")
+                        .HasForeignKey("IdProducto")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

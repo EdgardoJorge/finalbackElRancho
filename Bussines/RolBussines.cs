@@ -29,7 +29,23 @@ public class RolBussines : IRolBussines
         await _repository.SaveChangesAsync();
         return MapToResponse(rol);
     }
-    
+
+    public async Task<RolResponse> GetById(int id)
+    {
+        var rol = await _repository.GetByIdAsync(id);
+        if (rol == null)
+        {
+            return null;
+        }
+
+        return new RolResponse
+        {
+            Id = rol.Id,
+            Name = rol.Name,
+            Permisos = rol.Permisos,
+        };
+    }
+
     private Rol MapToEntity(RolRequest request)
     {
         return new Rol()
@@ -42,6 +58,7 @@ public class RolBussines : IRolBussines
     {
         return new RolResponse()
         {
+            Id = rol.Id,
             Name = rol.Name,
             Permisos = rol.Permisos
         };

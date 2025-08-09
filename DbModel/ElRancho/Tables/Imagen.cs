@@ -11,6 +11,6 @@ namespace DbModel.ElRancho
         [Required]
         public string Imagenes { get; set; } = "";
         [Required]
-        public int IdProductos { get; set; }
+        public int IdProducto { get; set; }
     }
 }

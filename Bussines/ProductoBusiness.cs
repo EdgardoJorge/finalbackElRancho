@@ -28,9 +28,6 @@ namespace Business
                 Precio = p.Precio,
                 Precio_Oferta = p.Precio_Oferta,
                 Activo = p.Activo,
-                Imagen = p.Imagen,
-                Imagen2 = p.Imagen2,
-                Imagen3 = p.Imagen3,
                 IdCategoria = p.IdCategoria
             });
         }
@@ -48,9 +45,6 @@ namespace Business
                 Precio = producto.Precio,
                 Precio_Oferta = producto.Precio_Oferta,
                 Activo = producto.Activo,
-                Imagen = producto.Imagen,
-                Imagen2 = producto.Imagen2,
-                Imagen3 = producto.Imagen3,
                 IdCategoria = producto.IdCategoria
             };
         }
@@ -64,9 +58,6 @@ namespace Business
                 Precio = request.Precio,
                 Precio_Oferta = request.Precio_Oferta,
                 Activo = request.Activo,
-                Imagen = request.Imagen,
-                Imagen2 = request.Imagen2,
-                Imagen3 = request.Imagen3,
                 IdCategoria = request.IdCategoria,
             };
 
@@ -81,9 +72,6 @@ namespace Business
                 Precio = producto.Precio,
                 Precio_Oferta = producto.Precio_Oferta,
                 Activo = producto.Activo,
-                Imagen = producto.Imagen,
-                Imagen2 = producto.Imagen2,
-                Imagen3 = producto.Imagen3,
                 IdCategoria = producto.IdCategoria
             };
         }
@@ -98,9 +86,6 @@ namespace Business
             producto.Precio = request.Precio;
             producto.Precio_Oferta = request.Precio_Oferta;
             producto.Activo = request.Activo;
-            producto.Imagen = request.Imagen;
-            producto.Imagen2 = request.Imagen2;
-            producto.Imagen3 = request.Imagen3;
             producto.IdCategoria = request.IdCategoria;
 
             await _productoRepository.UpdateAsync(producto);
@@ -130,9 +115,6 @@ namespace Business
                 Precio = p.Precio,
                 Precio_Oferta = p.Precio_Oferta,
                 Activo = p.Activo,
-                Imagen = p.Imagen,
-                Imagen2 = p.Imagen2,
-                Imagen3 = p.Imagen3,
                 IdCategoria = p.IdCategoria
             });
         }

@@ -26,6 +26,9 @@ namespace Business
                 Titulo = b.Titulo,
                 UrlImagen = b.UrlImagen,
                 Redireccion = b.Redireccion,
+                TerminosYCondiciones = b.TerminosYCondiciones,
+                FechaInicio = b.FechaInicio,
+                FechaFin = b.FechaFin,
                 Activo = b.Activo,
                 ProductoId = b.ProductoId,
             });
@@ -42,6 +45,9 @@ namespace Business
                 Titulo = banner.Titulo,
                 UrlImagen = banner.UrlImagen,
                 Redireccion = banner.Redireccion,
+                TerminosYCondiciones = banner.TerminosYCondiciones,
+                FechaInicio = banner.FechaInicio,
+                FechaFin = banner.FechaFin,
                 Activo = banner.Activo,
                 ProductoId = banner.ProductoId,
             };
@@ -57,6 +63,9 @@ namespace Business
                 Titulo = request.Titulo,
                 UrlImagen = request.UrlImagen,
                 Redireccion = request.Redireccion,
+                TerminosYCondiciones = request.TerminosYCondiciones,
+                FechaInicio = request.FechaInicio,
+                FechaFin = request.FechaFin,
                 Activo = request.Activo,
                 ProductoId = request.ProductoId,
             };
@@ -70,6 +79,9 @@ namespace Business
                 Titulo = banner.Titulo,
                 UrlImagen = banner.UrlImagen,
                 Redireccion = banner.Redireccion,
+                TerminosYCondiciones = banner.TerminosYCondiciones,
+                FechaInicio = banner.FechaInicio,
+                FechaFin = banner.FechaFin,
                 Activo = banner.Activo,
                 ProductoId = banner.ProductoId,
             };
@@ -83,6 +95,9 @@ namespace Business
             existingBanner.Titulo = request.Titulo;
             existingBanner.UrlImagen = request.UrlImagen;
             existingBanner.Redireccion = request.Redireccion;
+            existingBanner.TerminosYCondiciones = request.TerminosYCondiciones;
+            existingBanner.FechaInicio = request.FechaInicio;
+            existingBanner.FechaFin = request.FechaFin;
             existingBanner.Activo = request.Activo;
             existingBanner.ProductoId = request.ProductoId;
 

@@ -561,33 +561,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\labb\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/home/edgardo/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\labb\\Documents\\finalbackElRancho\\DbModel\\DbModel.csproj",
+      "projectUniqueName": "/home/edgardo/Documentos/finalbackElRancho/DbModel/DbModel.csproj",
       "projectName": "DbModel",
-      "projectPath": "C:\\Users\\labb\\Documents\\finalbackElRancho\\DbModel\\DbModel.csproj",
-      "packagesPath": "C:\\Users\\labb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\labb\\Documents\\finalbackElRancho\\DbModel\\obj\\",
+      "projectPath": "/home/edgardo/Documentos/finalbackElRancho/DbModel/DbModel.csproj",
+      "packagesPath": "/home/edgardo/.nuget/packages/",
+      "outputPath": "/home/edgardo/Documentos/finalbackElRancho/DbModel/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\labb\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/home/edgardo/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -605,7 +596,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -627,12 +619,18 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.18, 8.0.18]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.108/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

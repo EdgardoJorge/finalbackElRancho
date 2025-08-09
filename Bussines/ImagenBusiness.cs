@@ -1,4 +1,4 @@
-    using DbModel.ElRancho;
+using DbModel.ElRancho;
 using IBussines;
 using IRepository;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +23,7 @@ namespace Bussines
             return imagenes.Select(imagen => new ImagenResponse
             {
                 Imagenes = imagen.Imagenes,
+                IdProducto = imagen.IdProducto,
             }).ToList();
         }
 
@@ -33,7 +34,8 @@ namespace Bussines
 
             return new ImagenResponse
             {
-                Imagenes = imagen.Imagenes
+                Imagenes = imagen.Imagenes,
+                IdProducto = imagen.IdProducto
             };
         }
 
@@ -42,7 +44,7 @@ namespace Bussines
             var imagen = new DbModel.ElRancho.Imagen
             {
                 Imagenes = request.Imagenes,
-                IdProductos = request.IdProducto
+                IdProducto = request.IdProducto
             };
 
             _imagenRepository.AddAsync(imagen);
@@ -50,7 +52,8 @@ namespace Bussines
 
             return new ImagenResponse
             {
-                Imagenes = imagen.Imagenes
+                Imagenes = imagen.Imagenes,
+                IdProducto = imagen.IdProducto
             };
         }
 
@@ -70,13 +73,14 @@ namespace Bussines
         private void UpdateEntity(Imagen imagen, ImagenRequest request)
         {
             imagen.Imagenes = request.Imagenes;
-            imagen.IdProductos = request.IdProducto;
+            imagen.IdProducto = request.IdProducto;
         }
         private ImagenResponse MapToResponse(Imagen imagen)
         {
             return new ImagenResponse
             {
                 Imagenes = imagen.Imagenes,
+                IdProducto = imagen.IdProducto
             };
         }
         public async Task<int> Delete(int id)

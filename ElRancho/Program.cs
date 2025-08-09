@@ -28,7 +28,7 @@ const string connectionString =
     "Server=localhost,1433;Database=ElRancho;User Id=sa;Password=Edgardo.,01;TrustServerCertificate=True;";
 const string connectionString1 = "Server=IHR80PBAB36\\MSSQLSERVER1;Database=ElRancho;User Id=sa;Password=continental;TrustServerCertificate=True;";
 builder.Services.AddDbContext<ElRanchoDbContext>(Options =>
-    Options.UseSqlServer(connectionString1, b => b.MigrationsAssembly("ElRancho")));
+    Options.UseSqlServer(connectionString, b => b.MigrationsAssembly("ElRancho")));
 /*const string connectionString = "Data Source=ElRancho";
 builder.Services.AddDbContext<ElRanchoDbContext>(options =>
     options.UseSqlite(

@@ -23,10 +23,6 @@ namespace DbModel.ElRancho
         [Required]
         public Boolean Activo { get; set; }
         [Required]
-        public string Imagen { get; set; }
-        [Required]
-        public string Imagen2 { get; set; }
-        public string Imagen3 { get; set; }
         public int IdCategoria { get; set; }
     }
 }

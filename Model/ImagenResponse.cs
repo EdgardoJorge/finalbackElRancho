@@ -6,4 +6,5 @@ public class ImagenResponse
 {
  public int Id { get; set; } = 0;
  [Required] public string Imagenes { get; set; } = "";
+    public int IdProducto { get; set; } = 0;
 }}

@@ -63,7 +63,7 @@ namespace DbModel.ElRancho
             modelBuilder.Entity<Imagen>()
                 .HasOne<Producto>()
                 .WithMany()
-                .HasForeignKey(i => i.IdProductos);
+                .HasForeignKey(i => i.IdProducto);
             modelBuilder.Entity<Administrador>()
                 .HasOne<Rol>()
                 .WithMany()
