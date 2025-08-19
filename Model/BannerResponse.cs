@@ -3,6 +3,7 @@ namespace Model.Response{
 {
     public int Id { get; set; }
         public string Titulo { get; set; } = "";
+        public string Descripcion { get; set; } = "";
         public string UrlImagen { get; set; } = "";
         public string Redireccion { get; set; } = "";
         public string TerminosYCondiciones { get; set; } = "";

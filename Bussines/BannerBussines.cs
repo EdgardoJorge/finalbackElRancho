@@ -24,6 +24,7 @@ namespace Business
             {
                 Id = b.Id,
                 Titulo = b.Titulo,
+                Descripcion = b.Descripcion,
                 UrlImagen = b.UrlImagen,
                 Redireccion = b.Redireccion,
                 TerminosYCondiciones = b.TerminosYCondiciones,
@@ -43,6 +44,7 @@ namespace Business
             {
                 Id = banner.Id,
                 Titulo = banner.Titulo,
+                Descripcion = banner.Descripcion,
                 UrlImagen = banner.UrlImagen,
                 Redireccion = banner.Redireccion,
                 TerminosYCondiciones = banner.TerminosYCondiciones,
@@ -61,6 +63,7 @@ namespace Business
             var banner = new Banner
             {
                 Titulo = request.Titulo,
+                Descripcion = request.Descripcion,
                 UrlImagen = request.UrlImagen,
                 Redireccion = request.Redireccion,
                 TerminosYCondiciones = request.TerminosYCondiciones,
@@ -77,6 +80,7 @@ namespace Business
             {
                 Id = banner.Id,
                 Titulo = banner.Titulo,
+                Descripcion = banner.Descripcion,
                 UrlImagen = banner.UrlImagen,
                 Redireccion = banner.Redireccion,
                 TerminosYCondiciones = banner.TerminosYCondiciones,
@@ -93,6 +97,7 @@ namespace Business
             if (existingBanner == null) return false;
 
             existingBanner.Titulo = request.Titulo;
+            existingBanner.Descripcion = request.Descripcion;
             existingBanner.UrlImagen = request.UrlImagen;
             existingBanner.Redireccion = request.Redireccion;
             existingBanner.TerminosYCondiciones = request.TerminosYCondiciones;
