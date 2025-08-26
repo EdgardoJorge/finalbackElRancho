@@ -8,10 +8,8 @@ namespace Model.Request{
         [Required]
         public string Descripcion { get; set; } = "";
 
-        [Required]
-        public string UrlImagen { get; set; } = "";
+        public string? UrlImagen { get; set; } = "";
 
-        [Required]
         public string Redireccion { get; set; } = "";
         [Required]
         public string TerminosYCondiciones { get; set; } = "";

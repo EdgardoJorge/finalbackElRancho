@@ -13,10 +13,8 @@ namespace DbModel.ElRancho
         public string Titulo { get; set; } = "";
         [Required]
         public string Descripcion { get; set; } = "";
-        [Required]
-        public string UrlImagen { get; set; } = "";
-        [Required]
-        public string Redireccion { get; set; } = "";
+        public string? UrlImagen { get; set; } = "";
+        public string? Redireccion { get; set; } = "";
         [Required]
         public string TerminosYCondiciones {get; set;} = "";
         [Required]

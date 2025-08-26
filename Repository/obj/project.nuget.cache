@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0V35TRF4e4I=",
+  "dgSpecHash": "VYH6ENXpLi8=",
   "success": true,
   "projectFilePath": "/home/edgardo/Documentos/finalbackElRancho/Repository/Repository.csproj",
   "expectedPackageFiles": [
@@ -24,8 +24,7 @@
     "/home/edgardo/.nuget/packages/microsoft.extensions.primitives/9.0.2/microsoft.extensions.primitives.9.0.2.nupkg.sha512",
     "/home/edgardo/.nuget/packages/microsoft.net.http.headers/2.3.0/microsoft.net.http.headers.2.3.0.nupkg.sha512",
     "/home/edgardo/.nuget/packages/system.buffers/4.6.0/system.buffers.4.6.0.nupkg.sha512",
-    "/home/edgardo/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
-    "/home/edgardo/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.18/microsoft.aspnetcore.app.ref.8.0.18.nupkg.sha512"
+    "/home/edgardo/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

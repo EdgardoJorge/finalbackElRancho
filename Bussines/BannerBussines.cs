@@ -57,7 +57,7 @@ namespace Business
 
         public async Task<BannerResponse> CreateBannerAsync(BannerRequest request)
         {
-            if (string.IsNullOrWhiteSpace(request.Titulo) || string.IsNullOrWhiteSpace(request.UrlImagen))
+            if (string.IsNullOrWhiteSpace(request.Titulo))
                 throw new System.Exception("Título y URL de imagen son obligatorios.");
 
             var banner = new Banner
