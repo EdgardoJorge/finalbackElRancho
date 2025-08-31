@@ -310,7 +310,12 @@ namespace ElRancho.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("IdPedido")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("IdPedido");
 
                     b.ToTable("EstadoPedido", "pedido");
                 });
@@ -409,7 +414,7 @@ namespace ElRancho.Migrations
                     b.Property<DateOnly>("FechaPedido")
                         .HasColumnType("date");
 
-                    b.Property<DateOnly>("FechaRecojo")
+                    b.Property<DateOnly?>("FechaRecojo")
                         .HasColumnType("date");
 
                     b.Property<double>("Total")
@@ -560,6 +565,15 @@ namespace ElRancho.Migrations
                     b.HasOne("DbModel.ElRancho.Producto", null)
                         .WithMany()
                         .HasForeignKey("ProductoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("DbModel.ElRancho.EstadoPedido", b =>
+                {
+                    b.HasOne("DbModel.ElRancho.Pedido", null)
+                        .WithMany()
+                        .HasForeignKey("IdPedido")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

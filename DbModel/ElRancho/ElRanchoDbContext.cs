@@ -24,6 +24,11 @@ namespace DbModel.ElRancho
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            // Relacion estado pedido con pedido
+            modelBuilder.Entity<EstadoPedido>()
+                .HasOne<Pedido>()
+                .WithMany()
+                .HasForeignKey(e => e.IdPedido);
 
             // Relación entre Banner y Producto
             modelBuilder.Entity<Banner>()

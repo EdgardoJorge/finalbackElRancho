@@ -11,9 +11,8 @@ namespace DbModel.ElRancho
     [Table("EstadoPedido", Schema = "pedido")]
     public class EstadoPedido
     {
-        [Key]
-        public int Id { get; set; }
-        [Required]
-        public string Estado { get; set; }
+        [Key] public int Id { get; set; } = 0;
+        [Required] public string Estado { get; set; } = "";
+        [Required] public int IdPedido { get; set; } = 0;
     }
 }

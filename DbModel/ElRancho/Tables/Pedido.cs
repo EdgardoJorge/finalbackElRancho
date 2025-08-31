@@ -12,17 +12,15 @@ namespace DbModel.ElRancho
     [Table("Pedido", Schema = "pedido")]
     public class Pedido
     {
-        [Key]
-        public int Id { get; set; }
+        [Key] public int Id { get; set; } = 0;
         [Required]
         public DateOnly FechaPedido { get; set; }
         [Required]
         public double Total { get; set; }
         [Required]
-        public string Direccion { get; set; }
+        public string? Direccion { get; set; }
         [Required]
-        public string CodigoPostal { get; set; }
-        [Required]
-        public DateOnly FechaRecojo { get; set; }
+        public string? CodigoPostal { get; set; }
+        public DateOnly? FechaRecojo { get; set; }
     }
 }

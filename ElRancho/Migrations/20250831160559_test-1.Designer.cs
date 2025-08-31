@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ElRancho.Migrations
 {
     [DbContext(typeof(ElRanchoDbContext))]
-    [Migration("20250718012130_adminup")]
-    partial class adminup
+    [Migration("20250831160559_test-1")]
+    partial class test1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -82,10 +82,23 @@ namespace ElRancho.Migrations
                     b.Property<bool>("Activo")
                         .HasColumnType("bit");
 
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaFin")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("FechaInicio")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("ProductoId")
                         .HasColumnType("int");
 
                     b.Property<string>("Redireccion")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TerminosYCondiciones")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -94,7 +107,6 @@ namespace ElRancho.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UrlImagen")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -301,7 +313,12 @@ namespace ElRancho.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("IdPedido")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("IdPedido");
 
                     b.ToTable("EstadoPedido", "pedido");
                 });
@@ -341,7 +358,7 @@ namespace ElRancho.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("IdProductos")
+                    b.Property<int>("IdProducto")
                         .HasColumnType("int");
 
                     b.Property<string>("Imagenes")
@@ -350,7 +367,7 @@ namespace ElRancho.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IdProductos");
+                    b.HasIndex("IdProducto");
 
                     b.ToTable("Imagenes", "producto");
                 });
@@ -400,7 +417,7 @@ namespace ElRancho.Migrations
                     b.Property<DateOnly>("FechaPedido")
                         .HasColumnType("date");
 
-                    b.Property<DateOnly>("FechaRecojo")
+                    b.Property<DateOnly?>("FechaRecojo")
                         .HasColumnType("date");
 
                     b.Property<double>("Total")
@@ -428,18 +445,6 @@ namespace ElRancho.Migrations
 
                     b.Property<int>("IdCategoria")
                         .HasColumnType("int");
-
-                    b.Property<string>("Imagen")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Imagen2")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Imagen3")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -567,11 +572,20 @@ namespace ElRancho.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("DbModel.ElRancho.EstadoPedido", b =>
+                {
+                    b.HasOne("DbModel.ElRancho.Pedido", null)
+                        .WithMany()
+                        .HasForeignKey("IdPedido")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("DbModel.ElRancho.Imagen", b =>
                 {
                     b.HasOne("DbModel.ElRancho.Producto", null)
                         .WithMany()
-                        .HasForeignKey("IdProductos")
+                        .HasForeignKey("IdProducto")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
