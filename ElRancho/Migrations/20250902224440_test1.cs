@@ -56,10 +56,10 @@ namespace ElRancho.Migrations
                     ApellidoMaterno = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DNI = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false),
                     RUC = table.Column<string>(type: "nvarchar(11)", maxLength: 11, nullable: false),
-                    TelefonoMovil = table.Column<string>(type: "nvarchar(9)", maxLength: 9, nullable: false),
-                    CorreoElectronico = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Direccion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ContraseñaHash = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    TelefonoMovil = table.Column<string>(type: "nvarchar(9)", maxLength: 9, nullable: true),
+                    CorreoElectronico = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Direccion = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ContraseñaHash = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     TokenRecuperacion = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
@@ -128,24 +128,6 @@ namespace ElRancho.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Pedido",
-                schema: "pedido",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    FechaPedido = table.Column<DateOnly>(type: "date", nullable: false),
-                    Total = table.Column<double>(type: "float", nullable: false),
-                    Direccion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CodigoPostal = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FechaRecojo = table.Column<DateOnly>(type: "date", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Pedido", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Rol",
                 schema: "Persona",
                 columns: table => new
@@ -201,6 +183,32 @@ namespace ElRancho.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Pedido",
+                schema: "pedido",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FechaPedido = table.Column<DateOnly>(type: "date", nullable: false),
+                    Total = table.Column<double>(type: "float", nullable: false),
+                    Direccion = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CodigoPostal = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FechaRecojo = table.Column<DateOnly>(type: "date", nullable: true),
+                    IdCliente = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Pedido", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Pedido_Cliente_IdCliente",
+                        column: x => x.IdCliente,
+                        principalSchema: "persona",
+                        principalTable: "Cliente",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "reserva",
                 schema: "reservas",
                 columns: table => new
@@ -230,28 +238,6 @@ namespace ElRancho.Migrations
                         column: x => x.MesaId,
                         principalSchema: "reservas",
                         principalTable: "mesa",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "EstadoPedido",
-                schema: "pedido",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Estado = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IdPedido = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_EstadoPedido", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_EstadoPedido_Pedido_IdPedido",
-                        column: x => x.IdPedido,
-                        principalSchema: "pedido",
-                        principalTable: "Pedido",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -314,6 +300,28 @@ namespace ElRancho.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Imagenes",
+                schema: "producto",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Imagenes = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IdProducto = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Imagenes", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Imagenes_Producto_IdProducto",
+                        column: x => x.IdProducto,
+                        principalSchema: "producto",
+                        principalTable: "Producto",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "DetallePedido",
                 schema: "pedido",
                 columns: table => new
@@ -346,23 +354,23 @@ namespace ElRancho.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Imagenes",
-                schema: "producto",
+                name: "EstadoPedido",
+                schema: "pedido",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Imagenes = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IdProducto = table.Column<int>(type: "int", nullable: false)
+                    Estado = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IdPedido = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Imagenes", x => x.Id);
+                    table.PrimaryKey("PK_EstadoPedido", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Imagenes_Producto_IdProducto",
-                        column: x => x.IdProducto,
-                        principalSchema: "producto",
-                        principalTable: "Producto",
+                        name: "FK_EstadoPedido_Pedido_IdPedido",
+                        column: x => x.IdPedido,
+                        principalSchema: "pedido",
+                        principalTable: "Pedido",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -402,6 +410,12 @@ namespace ElRancho.Migrations
                 schema: "producto",
                 table: "Imagenes",
                 column: "IdProducto");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Pedido_IdCliente",
+                schema: "pedido",
+                table: "Pedido",
+                column: "IdCliente");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Producto_IdCategoria",
@@ -473,12 +487,12 @@ namespace ElRancho.Migrations
                 schema: "producto");
 
             migrationBuilder.DropTable(
-                name: "Cliente",
-                schema: "persona");
-
-            migrationBuilder.DropTable(
                 name: "mesa",
                 schema: "reservas");
+
+            migrationBuilder.DropTable(
+                name: "Cliente",
+                schema: "persona");
 
             migrationBuilder.DropTable(
                 name: "Categoria",

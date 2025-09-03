@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ElRancho.Migrations
 {
     [DbContext(typeof(ElRanchoDbContext))]
-    [Migration("20250901164110_test5")]
-    partial class test5
+    [Migration("20250902224440_test1")]
+    partial class test1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

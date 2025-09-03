@@ -34,9 +34,11 @@ namespace ElRancho.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] PedidoRequest request)
         {
-            await _pedidoBusiness.Create(request);
-            return CreatedAtAction(nameof(GetById), new { id = request }, request);
+            var createdPedido = await _pedidoBusiness.Create(request);
+            return CreatedAtAction(nameof(GetById), new { id = createdPedido.Id }, createdPedido);
         }
+
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] PedidoRequest request)

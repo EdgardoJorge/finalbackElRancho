@@ -35,8 +35,11 @@ public class DetalleDePedidoController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] DetallePedidoRequest request)
     {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
         await _detalleDePedidoBusiness.Create(request);
-        return CreatedAtAction(nameof(GetById), new { id = request.Id }, request);
+        return Ok();
     }
 
     [HttpPut("{id}")]
